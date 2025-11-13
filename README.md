@@ -33,14 +33,12 @@ Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 </tr>
 </table> -->
 
-<div style="width:100%;">
-  <div style="display:inline-block; vertical-align:middle;">
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <div>
     <strong><a href="https://www.kurtlab.com/">KurtLab, University of Washington</a></strong><br/>
     <strong><a href="https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/">Microsoft Health AI, Microsoft</a></strong>
   </div>
-  <div style="float:right;">
-    <img src="assets/affiliations.png" width="200" alt="BTReport affiliations"/>
-  </div>
+  <img src="assets/affiliations.png" width="200"/>
 </div>
 
 
