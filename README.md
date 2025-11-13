@@ -33,15 +33,16 @@ Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 </tr>
 </table> -->
 
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div>
+<div style="width:100%;">
+  <div style="display:inline-block; vertical-align:middle;">
     <strong><a href="https://www.kurtlab.com/">KurtLab, University of Washington</a></strong><br/>
     <strong><a href="https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/">Microsoft Health AI, Microsoft</a></strong>
   </div>
-  <div>
+  <div style="float:right;">
     <img src="assets/affiliations.png" width="200" alt="BTReport affiliations"/>
   </div>
 </div>
+
 
 ## Overview
 BTReport is an open-source framework for brain tumor radiology report generation using quantitative neuroimaging features.  BTReport first extracts clinically relevant features (patient metadata, VASARI features, midline shift) using a patients scan and tumor segmentation mask, then uses large language models for report formatting.
