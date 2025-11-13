@@ -17,7 +17,7 @@
 Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 \*equal contribution
 
-<!-- <table>
+<table>
 <tr>
 <td>
 
@@ -25,21 +25,13 @@ Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 **[Microsoft Health AI, Microsoft](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/)**
 
 </td>
-<td width="200"></td> <!-- spacer column -->
-
-<!-- <td align="right">
+<!-- <td width="200"></td> spacer column -->
+<td align="right">
   <img src="assets/affiliations.png" width="200" alt="BTReport affiliations">
 </td>
 </tr>
-</table> -->
+</table>
 
-<div style="display:flex; justify-content:space-between; align-items:center;">
-  <div>
-    <strong><a href="https://www.kurtlab.com/">KurtLab, University of Washington</a></strong><br/>
-    <strong><a href="https://www.microsoft.com/en-us/research/lab/microsoft-health-futures/">Microsoft Health AI, Microsoft</a></strong>
-  </div>
-  <img src="assets/affiliations.png" width="200"/>
-</div>
 
 
 ## Overview
