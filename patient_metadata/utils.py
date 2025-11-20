@@ -198,9 +198,9 @@ def plots(df, x_list, y_variable="GBM_Subjects_Spreadsheet__survival_days",
         ax.spines["right"].set_visible(False)
 
     plt.tight_layout(h_pad=3.0)
-    plt.show()
     if save_path is not None:
-        plt.savefig(save_path)
+        fig.savefig(save_path)
+    plt.show()
 
 
 
@@ -402,7 +402,7 @@ def plots_survival(
                 bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#999", alpha=0.95))
 
     plt.tight_layout(h_pad=3.0)
-    plt.show()
     if save_path is not None:
-        plt.savefig(save_path)
+        fig.savefig(save_path)
+    plt.show()
 
