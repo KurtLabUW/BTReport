@@ -33,6 +33,21 @@ NAME_MAPPING={
 'IDH status': 'IDH status',
 'max midline shift mm': 'Max midline shift (mm)',
 'survival days':'Survival days',
+'vasari f14 proportion of oedema':'Proportion edema',
+'vasari f11 thickness of enhancing margin':'Thickness of enhancing margin',
+'vasari f7 proportion necrosis':'Proportion necrosis',
+'vasari f3 eloquent brain':'Eloquent brain regions invaded',
+'vasari f2 side of tumor epicenter':'Side of tumor epicenter',
+'vasari f24 satellites':'Presence of satellites',
+'vasari f20 cortical involvement':'Cortical involvement',
+    
+'er volume': 'Edema volume',
+'nr volume': 'Necrotic Core volume',
+'mean distance mm': 'Mean midline shift (mm)',   
+'p95 distance mm': '95% midline shift (mm)',   
+'etiv': 'ETIV',
+
+    
     
 }
 
@@ -246,6 +261,223 @@ def plots(df, x_list, y_variable="GBM_Subjects_Spreadsheet__survival_days",
 
 
 
+# def plots_survival(
+#     df, 
+#     x_list,
+#     duration_col="GBM_Subjects_Spreadsheet__survival_days",
+#     event_col="event",
+#     only_significant=False,
+#     alpha=0.05,
+#     save_path=None
+# ):
+#     """
+#     - First pass: test significance using Cox + log-rank
+#     - Second pass: draw KM curves + HR boxes
+#     """
+
+#     significant_vars = []
+#     kmf = KaplanMeierFitter()
+
+#     for x_variable in x_list:
+#         tmp = df[[duration_col, event_col, x_variable]].copy().dropna()
+
+#         # skip tiny or no-event groups
+#         if tmp.shape[0] < 10 or tmp[event_col].sum() == 0:
+#             continue
+
+#         x_raw = tmp[x_variable]
+
+#         # detect type
+#         is_bool = pd.api.types.is_bool_dtype(x_raw)
+#         is_numeric = pd.api.types.is_numeric_dtype(x_raw)
+#         if not (is_numeric or is_bool):
+#             maybe = pd.to_numeric(x_raw, errors="coerce")
+#             is_numeric = maybe.notna().mean() > 0.8
+
+#         # ---- numeric predictor: Cox on continuous; log-rank on median split ----
+#         if is_numeric and not is_bool:
+#             tmp[x_variable] = pd.to_numeric(tmp[x_variable], errors="coerce")
+#             tmp = tmp.dropna()
+
+#             try:
+#                 # Cox
+#                 cph = CoxPHFitter()
+#                 cph.fit(tmp[[duration_col, event_col, x_variable]],
+#                         duration_col=duration_col,
+#                         event_col=event_col)
+#                 p_cox = float(cph.summary.loc[x_variable, "p"])
+#             except:
+#                 continue
+
+#             # log-rank (Low vs High)
+#             median_val = tmp[x_variable].median()
+#             grp = np.where(tmp[x_variable] <= median_val, 0, 1)
+#             try:
+#                 lr = logrank_test(
+#                     tmp.loc[grp==0, duration_col],
+#                     tmp.loc[grp==1, duration_col],
+#                     tmp.loc[grp==0, event_col],
+#                     tmp.loc[grp==1, event_col]
+#                 )
+#                 p_lr = lr.p_value
+#             except:
+#                 p_lr = 1.0
+
+#             if min(p_cox, p_lr) < alpha:
+#                 significant_vars.append(x_variable)
+
+#         # ---- categorical predictor ----
+#         else:
+#             cats = tmp[x_variable].value_counts()
+#             if len(cats) < 2:
+#                 continue
+
+#             # log-rank across groups
+#             try:
+#                 lr_multi = multivariate_logrank_test(
+#                     tmp[duration_col], tmp[x_variable], tmp[event_col]
+#                 )
+#                 p_lr = lr_multi.p_value
+#             except:
+#                 p_lr = 1.0
+
+#             if p_lr < alpha:
+#                 significant_vars.append(x_variable)
+
+#     # filter if needed
+#     if only_significant:
+#         x_list = [v for v in x_list if v in significant_vars]
+#         if not x_list:
+#             print("No significant survival associations found.")
+#             return
+   
+#     ncols = 3
+#     nrows = math.ceil(len(x_list) / ncols)
+#     fig = plt.figure(figsize=(8 * ncols, 5 * nrows))
+
+#     for idx, x_variable in enumerate(x_list, start=1):
+#         ax = plt.subplot(nrows, ncols, idx)
+#         tmp = df[[duration_col, event_col, x_variable]].copy().dropna()
+
+#         if tmp.shape[0] < 10 or tmp[event_col].sum() == 0:
+#             ax.set_visible(False)
+#             continue
+
+#         x_raw = tmp[x_variable]
+#         is_bool = pd.api.types.is_bool_dtype(x_raw)
+#         is_numeric = pd.api.types.is_numeric_dtype(x_raw)
+#         if not (is_numeric or is_bool):
+#             maybe = pd.to_numeric(x_raw, errors="coerce")
+#             is_numeric = maybe.notna().mean() > 0.8
+
+#         stats_text = ""
+
+#         #  numeric predictor 
+#         if is_numeric and not is_bool:
+#             tmp[x_variable] = pd.to_numeric(tmp[x_variable], errors="coerce")
+#             tmp = tmp.dropna()
+
+#             median_val = tmp[x_variable].median()
+#             tmp["group"] = np.where(tmp[x_variable] <= median_val, "Low", "High")
+
+#             colors = _PALETTE
+#             for i, grp in enumerate(["Low", "High"]):
+#                 mask = tmp["group"] == grp
+#                 if mask.sum() < 5:
+#                     continue
+#                 kmf.fit(tmp.loc[mask, duration_col],
+#                         event_observed=tmp.loc[mask, event_col],
+#                         label=f"{grp} (n={mask.sum()})")
+#                 kmf.plot(ax=ax, ci_show=False, linewidth=2.0,
+#                          color=colors[i % len(colors)])
+
+#             # log-rank
+#             g_low = tmp["group"] == "Low"
+#             g_high = tmp["group"] == "High"
+#             lr = logrank_test(
+#                 tmp.loc[g_low, duration_col],
+#                 tmp.loc[g_high, duration_col],
+#                 tmp.loc[g_low, event_col],
+#                 tmp.loc[g_high, event_col]
+#             )
+#             p_lr = lr.p_value
+
+#             # Cox
+#             try:
+#                 cph = CoxPHFitter()
+#                 cph.fit(tmp[[duration_col, event_col, x_variable]],
+#                         duration_col=duration_col,
+#                         event_col=event_col)
+#                 row = cph.summary.loc[x_variable]
+#                 stats_text = (
+#                     f"HR={row['exp(coef)']:.2f} "
+#                     f"[{row['exp(coef) lower 95%']:.2f}, {row['exp(coef) upper 95%']:.2f}]\n"
+#                     f"p(Cox)={row['p']:.2e}\n"
+#                     f"p(log-rank)={p_lr:.2e}"
+#                 )
+#             except:
+#                 stats_text = f"p(log-rank)={p_lr:.2e}"
+
+#         #  categorical predictor 
+#         else: 
+#             cats = sorted(tmp[x_variable].unique(), key=lambda x: str(x))
+#             colors = _PALETTE
+#             for i, cat in enumerate(cats):
+#                 mask = tmp[x_variable] == cat
+#                 if mask.sum() < 5:
+#                     continue
+#                 kmf.fit(tmp.loc[mask, duration_col],
+#                         event_observed=tmp.loc[mask, event_col],
+#                         label=f"{cat} (n={mask.sum()})")
+#                 kmf.plot(ax=ax, ci_show=False, linewidth=2.0,
+#                          color=colors[i % len(colors)])
+
+#             # log-rank across groups
+#             try:
+#                 lr_multi = multivariate_logrank_test(
+#                     tmp[duration_col], tmp[x_variable], tmp[event_col]
+#                 )
+#                 p_lr = lr_multi.p_value
+#             except:
+#                 p_lr = 1.0
+
+#             stats_text = f"p(log-rank)={p_lr:.2e}"
+
+
+        
+#         #  aesthetics 
+#         ax.set_xlabel("Time (days)", fontsize=20)
+#         ax.set_ylabel("Survival probability", fontsize=20)
+
+
+#         clean_xvar=' '.join((x_variable.split('__')[-1]).split('_')).lower()
+#         xv = NAME_MAPPING.get(clean_xvar, clean_xvar.capitalize())
+
+#         ax.set_title(xv, fontsize=20)
+#         ax.tick_params(axis="both", labelsize=18)
+#         ax.grid(True, axis="both", color="#E6E6E6", linewidth=0.6)
+#         ax.spines["top"].set_visible(False)
+#         ax.spines["right"].set_visible(False)
+#         ax.legend(fontsize=14, loc="center right")
+
+#         # ax.text(1.02, 0.5, stats_text,
+#         #         transform=ax.transAxes, fontsize=9, va="center", ha="left",
+#         #         bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#999", alpha=0.95))
+
+#         ax.text(
+#         0.95, 0.95, stats_text,
+#         transform=ax.transAxes,
+#         fontsize=14,             # << bigger font
+#         va="top", ha="right",
+#         bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#555", alpha=0.9)
+#         )
+
+#     plt.tight_layout(h_pad=3.0)
+#     if save_path is not None:
+#         fig.savefig(save_path)
+#     plt.show()
+
+
 def plots_survival(
     df, 
     x_list,
@@ -253,21 +485,25 @@ def plots_survival(
     event_col="event",
     only_significant=False,
     alpha=0.05,
+    sort=False,
     save_path=None
 ):
     """
-    - First pass: test significance using Cox + log-rank
-    - Second pass: draw KM curves + HR boxes
+    Sort plots by p(log-rank), but still compute CoxPH + HR for numeric predictors.
     """
 
-    significant_vars = []
     kmf = KaplanMeierFitter()
 
+    # store log-rank p-values for sorting
+    plogrank = {}
+
+    # --------------------------- FIRST PASS ----------------------------------
     for x_variable in x_list:
         tmp = df[[duration_col, event_col, x_variable]].copy().dropna()
 
         # skip tiny or no-event groups
         if tmp.shape[0] < 10 or tmp[event_col].sum() == 0:
+            plogrank[x_variable] = 1.0
             continue
 
         x_raw = tmp[x_variable]
@@ -279,24 +515,14 @@ def plots_survival(
             maybe = pd.to_numeric(x_raw, errors="coerce")
             is_numeric = maybe.notna().mean() > 0.8
 
-        # ---- numeric predictor: Cox on continuous; log-rank on median split ----
+        # ---- NUMERIC predictor: median split log-rank ----
         if is_numeric and not is_bool:
             tmp[x_variable] = pd.to_numeric(tmp[x_variable], errors="coerce")
             tmp = tmp.dropna()
 
-            try:
-                # Cox
-                cph = CoxPHFitter()
-                cph.fit(tmp[[duration_col, event_col, x_variable]],
-                        duration_col=duration_col,
-                        event_col=event_col)
-                p_cox = float(cph.summary.loc[x_variable, "p"])
-            except:
-                continue
-
-            # log-rank (Low vs High)
             median_val = tmp[x_variable].median()
             grp = np.where(tmp[x_variable] <= median_val, 0, 1)
+
             try:
                 lr = logrank_test(
                     tmp.loc[grp==0, duration_col],
@@ -304,38 +530,39 @@ def plots_survival(
                     tmp.loc[grp==0, event_col],
                     tmp.loc[grp==1, event_col]
                 )
-                p_lr = lr.p_value
+                p_lr = float(lr.p_value)
             except:
                 p_lr = 1.0
 
-            if min(p_cox, p_lr) < alpha:
-                significant_vars.append(x_variable)
+            # store log-rank p only
+            plogrank[x_variable] = p_lr
 
-        # ---- categorical predictor ----
+        # ---- CATEGORICAL predictor ----
         else:
-            cats = tmp[x_variable].value_counts()
-            if len(cats) < 2:
-                continue
-
-            # log-rank across groups
             try:
                 lr_multi = multivariate_logrank_test(
                     tmp[duration_col], tmp[x_variable], tmp[event_col]
                 )
-                p_lr = lr_multi.p_value
+                p_lr = float(lr_multi.p_value)
             except:
                 p_lr = 1.0
 
-            if p_lr < alpha:
-                significant_vars.append(x_variable)
+            plogrank[x_variable] = p_lr
 
-    # filter if needed
+    # --------------------------- FILTER / SORT ----------------------------------
+
     if only_significant:
-        x_list = [v for v in x_list if v in significant_vars]
+        x_list = [v for v in x_list if plogrank.get(v, 1.0) < alpha]
         if not x_list:
             print("No significant survival associations found.")
             return
-   
+
+    # SORT BY log-rank p-value ASCENDING (most significant first)
+    if sort:
+        x_list = sorted(x_list, key=lambda v: plogrank.get(v, 1.0))
+
+    # --------------------------- PLOTTING PASS ----------------------------------
+
     ncols = 3
     nrows = math.ceil(len(x_list) / ncols)
     fig = plt.figure(figsize=(8 * ncols, 5 * nrows))
@@ -351,13 +578,14 @@ def plots_survival(
         x_raw = tmp[x_variable]
         is_bool = pd.api.types.is_bool_dtype(x_raw)
         is_numeric = pd.api.types.is_numeric_dtype(x_raw)
+
         if not (is_numeric or is_bool):
             maybe = pd.to_numeric(x_raw, errors="coerce")
             is_numeric = maybe.notna().mean() > 0.8
 
         stats_text = ""
 
-        #  numeric predictor 
+        # --------------------- NUMERIC PREDICTOR ---------------------
         if is_numeric and not is_bool:
             tmp[x_variable] = pd.to_numeric(tmp[x_variable], errors="coerce")
             tmp = tmp.dropna()
@@ -366,13 +594,17 @@ def plots_survival(
             tmp["group"] = np.where(tmp[x_variable] <= median_val, "Low", "High")
 
             colors = _PALETTE
+
+            # KM curves
             for i, grp in enumerate(["Low", "High"]):
                 mask = tmp["group"] == grp
                 if mask.sum() < 5:
                     continue
-                kmf.fit(tmp.loc[mask, duration_col],
-                        event_observed=tmp.loc[mask, event_col],
-                        label=f"{grp} (n={mask.sum()})")
+                kmf.fit(
+                    tmp.loc[mask, duration_col],
+                    event_observed=tmp.loc[mask, event_col],
+                    label=f"{grp} (n={mask.sum()})"
+                )
                 kmf.plot(ax=ax, ci_show=False, linewidth=2.0,
                          color=colors[i % len(colors)])
 
@@ -385,9 +617,9 @@ def plots_survival(
                 tmp.loc[g_low, event_col],
                 tmp.loc[g_high, event_col]
             )
-            p_lr = lr.p_value
+            p_lr = float(lr.p_value)
 
-            # Cox
+            # CoxPH (still computed, not used for sorting)
             try:
                 cph = CoxPHFitter()
                 cph.fit(tmp[[duration_col, event_col, x_variable]],
@@ -403,62 +635,59 @@ def plots_survival(
             except:
                 stats_text = f"p(log-rank)={p_lr:.2e}"
 
-        #  categorical predictor 
-        else: 
+        # --------------------- CATEGORICAL PREDICTOR ---------------------
+        else:
             cats = sorted(tmp[x_variable].unique(), key=lambda x: str(x))
             colors = _PALETTE
+
             for i, cat in enumerate(cats):
                 mask = tmp[x_variable] == cat
                 if mask.sum() < 5:
                     continue
-                kmf.fit(tmp.loc[mask, duration_col],
-                        event_observed=tmp.loc[mask, event_col],
-                        label=f"{cat} (n={mask.sum()})")
+                kmf.fit(
+                    tmp.loc[mask, duration_col],
+                    event_observed=tmp.loc[mask, event_col],
+                    label=f"{cat} (n={mask.sum()})"
+                )
                 kmf.plot(ax=ax, ci_show=False, linewidth=2.0,
                          color=colors[i % len(colors)])
 
-            # log-rank across groups
             try:
                 lr_multi = multivariate_logrank_test(
                     tmp[duration_col], tmp[x_variable], tmp[event_col]
                 )
-                p_lr = lr_multi.p_value
+                p_lr = float(lr_multi.p_value)
             except:
                 p_lr = 1.0
 
             stats_text = f"p(log-rank)={p_lr:.2e}"
 
-
-        
-        #  aesthetics 
+        # ------------------ Aesthetics -----------------------
         ax.set_xlabel("Time (days)", fontsize=20)
         ax.set_ylabel("Survival probability", fontsize=20)
 
-
-        clean_xvar=' '.join((x_variable.split('__')[-1]).split('_')).lower()
+        clean_xvar = ' '.join((x_variable.split('__')[-1]).split('_')).lower()
         xv = NAME_MAPPING.get(clean_xvar, clean_xvar.capitalize())
-
         ax.set_title(xv, fontsize=20)
+
         ax.tick_params(axis="both", labelsize=18)
         ax.grid(True, axis="both", color="#E6E6E6", linewidth=0.6)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
         ax.legend(fontsize=14, loc="center right")
 
-        # ax.text(1.02, 0.5, stats_text,
-        #         transform=ax.transAxes, fontsize=9, va="center", ha="left",
-        #         bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#999", alpha=0.95))
-
         ax.text(
-        0.95, 0.95, stats_text,
-        transform=ax.transAxes,
-        fontsize=14,             # << bigger font
-        va="top", ha="right",
-        bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#555", alpha=0.9)
+            0.95, 0.95, stats_text,
+            transform=ax.transAxes,
+            fontsize=14,
+            va="top", ha="right",
+            bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#555", alpha=0.9)
         )
 
     plt.tight_layout(h_pad=3.0)
     if save_path is not None:
         fig.savefig(save_path)
     plt.show()
+
+
 

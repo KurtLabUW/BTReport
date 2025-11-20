@@ -5,32 +5,6 @@ including demographics, clinical outcomes (e.g., survival_days), imaging-derived
 features, and quantitative midline shift metrics. It also provides plotting
 utilities for generating Kaplan–Meier-style survival curves.
 
-
-<!-- ## Kaplan–Meier Plots
-
-The `assets/` directory contains several KM survival plots illustrating how
-different patient characteristics relate to survival_days. These plots assume
-all observations are uncensored (no event column available).
-
-### Demographics vs Survival
-![Demographics KM](assets/demographics_vs_surv_KM.png)
-
-
-### Demographics vs Survival
-![Demographics KM](assets/demographics_vs_surv_KM.png)
-
-### Tumor Burden / Lesion Stats vs Survival
-![Lesion Stats KM](assets/lesionstats_vs_surv_KM.png)
-
-### Midline Shift vs Survival
-![Midline KM](assets/midline_vs_surv_KM.png)
-
-### Molecular Mutations vs Survival
-![Mutation KM](assets/mutation_vs_surv_KM.png)
-
-### VASARI Imaging Features vs Survival
-![VASARI KM](assets/vasari_vs_surv_KM.png) -->
-
 ## Data Overview
 
 The datasheets directory contains:
@@ -41,4 +15,14 @@ The datasheets directory contains:
 
 `merge_metadata.py` joins these sources into a unified metadata table used by
 BTReport.
+
+
+## Kaplan–Meier Plots
+
+The `assets/` directory contains several KM survival plots illustrating how
+different patient characteristics relate to survival_days.  The figure below shows Kaplan–Meier Plots over all patient features collected, both significant (p < 0.05) and non-significant (p > 0.05).
+
+![Demographics KM](assets/all_vs_surv_KM.png)
+
+
 
