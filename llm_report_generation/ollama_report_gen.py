@@ -60,17 +60,17 @@ def generate_report(subject_id, metadata, model="gpt-oss:120b"):
     return response["message"]["content"]
 
 
-
+# TODO: add merge logic
 def main(args):
-    MODEL_NAME=args.model_name
+    model_name=args.model_name
     num_splits = args.num_splits
     save_every = args.save_every
     split_no = args.split_no
     
     input_json = "brats23_metadata.json"
-    outdir = f"reports/{MODEL_NAME}"
+    outdir = f"reports/{model_name}"
     os.makedirs(outdir, exist_ok=True)
-    output_json = f"{outdir}/brats23_metadata-report-{MODEL_NAME}-split{split_no}of{num_splits}.json"
+    output_json = f"{outdir}/brats23_metadata-report-{model_name.replace(':','-')}-split{split_no}of{num_splits}.json"
 
     # load all subjects
     with open(input_json, "r") as f:
@@ -122,15 +122,15 @@ def main(args):
 
 
 
-# MODEL_NAME="gpt-oss:120b"
-# # MODEL_NAME="deepseek-r1:32b"
+# model_name="gpt-oss:120b"
+# # model_name="deepseek-r1:32b"
     
-
+# python ollama_report_gen.py --num_splits 4 --split_no 3
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--model_name", type=str, default="gpt-oss:120b", options=)
+    parser.add_argument("--model_name", type=str, default="gpt-oss:120b")
     parser.add_argument("--save_every", type=int, default=15)
     parser.add_argument("--num_splits", type=int, default=1)
     parser.add_argument("--split_no", type=int, default=1)
