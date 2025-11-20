@@ -5,35 +5,16 @@ including demographics, clinical outcomes (e.g., survival_days), imaging-derived
 features, and quantitative midline shift metrics. It also provides plotting
 utilities for generating Kaplan–Meier-style survival curves.
 
-## Directory Structure
 
-patient_metadata/
-├── README.md
-├── merge_metadata.py
-├── utils.py
-├── metadata_analysis.ipynb
-├── assets/
-│   ├── demographics_vs_surv_KM.png
-│   ├── lesionstats_vs_surv_KM.png
-│   ├── midline_vs_surv_KM.png
-│   ├── mutation_vs_surv_KM.png
-│   └── vasari_vs_surv_KM.png
-└── datasheets/
-    ├── all_merged.csv
-    ├── cleaned_merged.csv
-    ├── brats23_metadata_flattened.csv
-    ├── midline_summary.csv
-    ├── GBM_Subjects_Spreadsheet.xlsx
-    ├── UCSF-PDGM-Clinical.csv
-    ├── CPTAC-GBM-Clinical.csv
-    ├── UPENN-GBM_Clinical.csv
-    └── TCGA-TCIA-BraTS-Mapping.xlsx
-
-## Kaplan–Meier Plots
+<!-- ## Kaplan–Meier Plots
 
 The `assets/` directory contains several KM survival plots illustrating how
 different patient characteristics relate to survival_days. These plots assume
 all observations are uncensored (no event column available).
+
+### Demographics vs Survival
+![Demographics KM](assets/demographics_vs_surv_KM.png)
+
 
 ### Demographics vs Survival
 ![Demographics KM](assets/demographics_vs_surv_KM.png)
@@ -48,7 +29,7 @@ all observations are uncensored (no event column available).
 ![Mutation KM](assets/mutation_vs_surv_KM.png)
 
 ### VASARI Imaging Features vs Survival
-![VASARI KM](assets/vasari_vs_surv_KM.png)
+![VASARI KM](assets/vasari_vs_surv_KM.png) -->
 
 ## Data Overview
 

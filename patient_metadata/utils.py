@@ -13,6 +13,29 @@ from scipy.stats import linregress, mannwhitneyu, kruskal
 
 
 
+NAME_MAPPING={
+'vasari asymmetrical ventricles': 'Asymmetrical ventricles',
+'vasari enlarged ventricles': 'Enlarged ventricles',
+'idh status':'IDH mutation status',
+'vasari f1 tumour location': 'Tumor location',
+'vasari f19 ependymal invasion':'Ependymal invasion',
+'vasari f21 deep wm invasion':'Deep WM invasion',
+'vasari f23 cet crosses midline':'CET crosses midline',
+'vasari f4 enhancement quality':'Enhancement quality',
+'vasari f5 proportion enhancing': 'Proportion enhancing',
+'vasari f9 multifocal or multicentric':'Multifocal or multicentric',
+'et volume':'ET volume',
+'tumor burden':'Tumor burden',
+'resection status': 'Resection status',
+'age': 'Age',
+'final pathologic diagnosis (who 2021)': 'Pathologic diagnosis (WHO 2021)',
+'mgmt status': 'MGMT status',
+'IDH status': 'IDH status',
+'max midline shift mm': 'Max midline shift (mm)',
+'survival days':'Survival days',
+    
+}
+
 # PLOTTING FUNCTION
 import matplotlib.pyplot as plt
 from scipy.stats import linregress, mannwhitneyu, kruskal
@@ -134,10 +157,19 @@ def plots(df, x_list, y_variable="GBM_Subjects_Spreadsheet__survival_days",
                 xx = np.linspace(x[valid].min(), x[valid].max(), 100)
                 ax.plot(xx, slope * xx + intercept, color="#1F2937", linewidth=2.2)
                 stats_text = f"y = {slope:.2f}x + {intercept:.2f}\nR = {r:.2f}\np = {p:.2e}"
-                ax.text(1.02, 0.5, stats_text, transform=ax.transAxes,
-                        fontsize=10, va="center", ha="left",
-                        bbox=dict(boxstyle="round,pad=0.5", fc="white", ec="#999", alpha=0.95))
+                # ax.text(1.02, 0.5, stats_text, transform=ax.transAxes,
+                #         fontsize=10, va="center", ha="left",
+                #         bbox=dict(boxstyle="round,pad=0.5", fc="white", ec="#999", alpha=0.95))
 
+                ax.text(
+                    0.95, 0.95, stats_text,
+                    transform=ax.transAxes,
+                    fontsize=14,             # << bigger font
+                    va="top", ha="right",
+                    bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#555", alpha=0.9)
+                )
+
+        
         # categorical predictor
         else:
             tmp = pd.DataFrame({x_variable: x_raw, y_variable: y_all}).dropna()
@@ -188,9 +220,18 @@ def plots(df, x_list, y_variable="GBM_Subjects_Spreadsheet__survival_days",
                 _, p = kruskal(*groups)
                 # optionally annotate
 
-        ax.set_xlabel(x_variable)
-        ax.set_ylabel(y_variable)
-        ax.set_title(f"{x_variable.split('brats23_metadata_flattened__global__')[-1]} vs {y_variable}")
+
+        clean_xvar=' '.join((x_variable.split('__')[-1]).split('_')).lower()
+        clean_yvar = ' '.join((y_variable.split('__')[-1]).split('_')).lower()
+
+        xv = NAME_MAPPING.get(clean_xvar, clean_xvar.capitalize())
+        yv = NAME_MAPPING.get(clean_yvar, clean_yvar.capitalize())
+        
+        ax.set_xlabel(xv, fontsize=16)
+        ax.set_ylabel(yv, fontsize=16)
+        ax.set_title(f"{xv} vs {yv}", fontsize=20)
+        # ax.set_title(f"{x_variable.split('brats23_metadata_flattened__global__')[-1]} vs {y_variable}")
+        
 
         ax.set_facecolor("white")
         ax.grid(True, axis="y", color="#E6E6E6", linewidth=0.6)
@@ -357,7 +398,7 @@ def plots_survival(
                     f"HR={row['exp(coef)']:.2f} "
                     f"[{row['exp(coef) lower 95%']:.2f}, {row['exp(coef) upper 95%']:.2f}]\n"
                     f"p(Cox)={row['p']:.2e}\n"
-                    f"p(LR)={p_lr:.2e}"
+                    f"p(log-rank)={p_lr:.2e}"
                 )
             except:
                 stats_text = f"p(log-rank)={p_lr:.2e}"
@@ -387,19 +428,34 @@ def plots_survival(
 
             stats_text = f"p(log-rank)={p_lr:.2e}"
 
+
+        
         #  aesthetics 
-        ax.set_xlabel("Time (days)")
-        ax.set_ylabel("Survival probability")
-        clean_name = x_variable.split("__")[-1]
-        ax.set_title(clean_name)
+        ax.set_xlabel("Time (days)", fontsize=20)
+        ax.set_ylabel("Survival probability", fontsize=20)
+
+
+        clean_xvar=' '.join((x_variable.split('__')[-1]).split('_')).lower()
+        xv = NAME_MAPPING.get(clean_xvar, clean_xvar.capitalize())
+
+        ax.set_title(xv, fontsize=20)
+        ax.tick_params(axis="both", labelsize=18)
         ax.grid(True, axis="both", color="#E6E6E6", linewidth=0.6)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
-        ax.legend(fontsize=8)
+        ax.legend(fontsize=14, loc="center right")
 
-        ax.text(1.02, 0.5, stats_text,
-                transform=ax.transAxes, fontsize=9, va="center", ha="left",
-                bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#999", alpha=0.95))
+        # ax.text(1.02, 0.5, stats_text,
+        #         transform=ax.transAxes, fontsize=9, va="center", ha="left",
+        #         bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#999", alpha=0.95))
+
+        ax.text(
+        0.95, 0.95, stats_text,
+        transform=ax.transAxes,
+        fontsize=14,             # << bigger font
+        va="top", ha="right",
+        bbox=dict(boxstyle="round,pad=0.4", fc="white", ec="#555", alpha=0.9)
+        )
 
     plt.tight_layout(h_pad=3.0)
     if save_path is not None:

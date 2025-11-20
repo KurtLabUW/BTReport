@@ -34,6 +34,15 @@ Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 
 
 
+## Clinically relevant features 
+BTReport extracts a set of interpretable, clinically meaningful variables from each case, including patient demographics, VASARI morphology, and 3D midline shift measurements. These features summarize key aspects of tumor biology and mass effect that are routinely used in radiology reports and neuro-oncology decision-making.Kaplan–Meier analyses show that many of these features are predictive of overall survival, highlighting their clinical relevance and utility as structured inputs for downstream report generation.
+
+<p align="center"> <img src="assets/survival.png" width="900"/> </p>
+
+
+
+
+
 ## Overview
 BTReport is an open-source framework for brain tumor radiology report generation using quantitative neuroimaging features.  BTReport first extracts clinically relevant features (patient metadata, VASARI features, midline shift) using a patients scan and tumor segmentation mask, then uses large language models for report formatting.
 
