@@ -1,0 +1,1610 @@
+[Tue Oct 14 20:44:28 PDT 2025] Starting SynthMorph split 5 / 9
+Processing split 6/10: rows 1361-1632 of 2711
+Skipping row 1360: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01736-000/BraTS-GLI-01736-000-t1n.nii.gz)
+Skipping row 1361: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01689-000/BraTS-GLI-01689-000-t1n.nii.gz)
+Skipping row 1362: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00333-000/BraTS-GLI-00333-000-t1n.nii.gz)
+Skipping row 1363: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00997-000/BraTS-GLI-00997-000-t1n.nii.gz)
+Skipping row 1364: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01690-000/BraTS-GLI-01690-000-t1n.nii.gz)
+Skipping row 1365: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01789-000/BraTS-GLI-01789-000-t1n.nii.gz)
+Skipping row 1366: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01708-000/BraTS-GLI-01708-000-t1n.nii.gz)
+Skipping row 1367: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01674-000/BraTS-GLI-01674-000-t1n.nii.gz)
+Skipping row 1368: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00229-000/BraTS-GLI-00229-000-t1n.nii.gz)
+Skipping row 1369: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00467-001/BraTS-GLI-00467-001-t1n.nii.gz)
+Skipping row 1370: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01682-000/BraTS-GLI-01682-000-t1n.nii.gz)
+Skipping row 1371: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01721-000/BraTS-GLI-01721-000-t1n.nii.gz)
+Skipping row 1372: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01692-000/BraTS-GLI-01692-000-t1n.nii.gz)
+Skipping row 1373: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01768-000/BraTS-GLI-01768-000-t1n.nii.gz)
+Skipping row 1374: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00647-000/BraTS-GLI-00647-000-t1n.nii.gz)
+Skipping row 1375: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00129-000/BraTS-GLI-00129-000-t1n.nii.gz)
+Skipping row 1376: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01719-000/BraTS-GLI-01719-000-t1n.nii.gz)
+Skipping row 1377: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01730-000/BraTS-GLI-01730-000-t1n.nii.gz)
+Skipping row 1378: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00595-000/BraTS-GLI-00595-000-t1n.nii.gz)
+Skipping row 1379: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01705-000/BraTS-GLI-01705-000-t1n.nii.gz)
+Skipping row 1380: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00434-000/BraTS-GLI-00434-000-t1n.nii.gz)
+Skipping row 1381: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01745-000/BraTS-GLI-01745-000-t1n.nii.gz)
+Skipping row 1382: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01734-000/BraTS-GLI-01734-000-t1n.nii.gz)
+Skipping row 1383: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00721-001/BraTS-GLI-00721-001-t1n.nii.gz)
+Skipping row 1384: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00208-000/BraTS-GLI-00208-000-t1n.nii.gz)
+Skipping row 1385: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00573-000/BraTS-GLI-00573-000-t1n.nii.gz)
+Skipping row 1386: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01753-000/BraTS-GLI-01753-000-t1n.nii.gz)
+Skipping row 1387: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00699-000/BraTS-GLI-00699-000-t1n.nii.gz)
+Skipping row 1388: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01717-000/BraTS-GLI-01717-000-t1n.nii.gz)
+Skipping row 1389: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01756-000/BraTS-GLI-01756-000-t1n.nii.gz)
+Skipping row 1390: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00355-000/BraTS-GLI-00355-000-t1n.nii.gz)
+Skipping row 1391: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01691-000/BraTS-GLI-01691-000-t1n.nii.gz)
+Skipping row 1392: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01718-000/BraTS-GLI-01718-000-t1n.nii.gz)
+Skipping row 1393: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00762-001/BraTS-GLI-00762-001-t1n.nii.gz)
+Skipping row 1394: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01709-000/BraTS-GLI-01709-000-t1n.nii.gz)
+Skipping row 1395: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00474-001/BraTS-GLI-00474-001-t1n.nii.gz)
+Skipping row 1396: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00833-000/BraTS-GLI-00833-000-t1n.nii.gz)
+Skipping row 1397: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00779-000/BraTS-GLI-00779-000-t1n.nii.gz)
+Skipping row 1398: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00428-000/BraTS-GLI-00428-000-t1n.nii.gz)
+Skipping row 1399: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00553-001/BraTS-GLI-00553-001-t1n.nii.gz)
+Skipping row 1400: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01679-000/BraTS-GLI-01679-000-t1n.nii.gz)
+Skipping row 1401: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01750-000/BraTS-GLI-01750-000-t1n.nii.gz)
+Skipping row 1402: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01714-000/BraTS-GLI-01714-000-t1n.nii.gz)
+Skipping row 1403: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01669-000/BraTS-GLI-01669-000-t1n.nii.gz)
+Skipping row 1404: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00647-001/BraTS-GLI-00647-001-t1n.nii.gz)
+Skipping row 1405: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00200-000/BraTS-GLI-00200-000-t1n.nii.gz)
+Skipping row 1406: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01697-000/BraTS-GLI-01697-000-t1n.nii.gz)
+Skipping row 1407: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01774-000/BraTS-GLI-01774-000-t1n.nii.gz)
+Skipping row 1408: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01712-000/BraTS-GLI-01712-000-t1n.nii.gz)
+Skipping row 1409: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01696-000/BraTS-GLI-01696-000-t1n.nii.gz)
+Skipping row 1410: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00699-001/BraTS-GLI-00699-001-t1n.nii.gz)
+Skipping row 1411: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01684-000/BraTS-GLI-01684-000-t1n.nii.gz)
+Skipping row 1412: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01743-000/BraTS-GLI-01743-000-t1n.nii.gz)
+Skipping row 1413: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01706-000/BraTS-GLI-01706-000-t1n.nii.gz)
+Skipping row 1414: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00037-000/BraTS-GLI-00037-000-t1n.nii.gz)
+Skipping row 1415: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01752-000/BraTS-GLI-01752-000-t1n.nii.gz)
+Skipping row 1416: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01673-000/BraTS-GLI-01673-000-t1n.nii.gz)
+Skipping row 1417: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00337-000/BraTS-GLI-00337-000-t1n.nii.gz)
+Skipping row 1418: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01764-000/BraTS-GLI-01764-000-t1n.nii.gz)
+Skipping row 1419: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00080-000/BraTS-GLI-00080-000-t1n.nii.gz)
+Skipping row 1420: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00213-000/BraTS-GLI-00213-000-t1n.nii.gz)
+Skipping row 1421: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01761-000/BraTS-GLI-01761-000-t1n.nii.gz)
+Skipping row 1422: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01762-000/BraTS-GLI-01762-000-t1n.nii.gz)
+Skipping row 1423: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01668-000/BraTS-GLI-01668-000-t1n.nii.gz)
+Skipping row 1424: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00438-000/BraTS-GLI-00438-000-t1n.nii.gz)
+Skipping row 1425: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01724-000/BraTS-GLI-01724-000-t1n.nii.gz)
+Skipping row 1426: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00460-000/BraTS-GLI-00460-000-t1n.nii.gz)
+Skipping row 1427: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00462-001/BraTS-GLI-00462-001-t1n.nii.gz)
+Skipping row 1428: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00560-001/BraTS-GLI-00560-001-t1n.nii.gz)
+Skipping row 1429: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00474-000/BraTS-GLI-00474-000-t1n.nii.gz)
+Skipping row 1430: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00585-000/BraTS-GLI-00585-000-t1n.nii.gz)
+Skipping row 1431: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00153-000/BraTS-GLI-00153-000-t1n.nii.gz)
+Skipping row 1432: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01711-000/BraTS-GLI-01711-000-t1n.nii.gz)
+Skipping row 1433: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01751-000/BraTS-GLI-01751-000-t1n.nii.gz)
+Skipping row 1434: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00829-000/BraTS-GLI-00829-000-t1n.nii.gz)
+Skipping row 1435: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00145-000/BraTS-GLI-00145-000-t1n.nii.gz)
+Skipping row 1436: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01769-000/BraTS-GLI-01769-000-t1n.nii.gz)
+Skipping row 1437: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00521-000/BraTS-GLI-00521-000-t1n.nii.gz)
+Skipping row 1438: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01006-000/BraTS-GLI-01006-000-t1n.nii.gz)
+Skipping row 1439: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00535-000/BraTS-GLI-00535-000-t1n.nii.gz)
+Skipping row 1440: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00463-000/BraTS-GLI-00463-000-t1n.nii.gz)
+Skipping row 1441: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00161-000/BraTS-GLI-00161-000-t1n.nii.gz)
+Skipping row 1442: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01723-000/BraTS-GLI-01723-000-t1n.nii.gz)
+Skipping row 1443: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00503-000/BraTS-GLI-00503-000-t1n.nii.gz)
+Skipping row 1444: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01695-000/BraTS-GLI-01695-000-t1n.nii.gz)
+Skipping row 1445: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00001-000/BraTS-GLI-00001-000-t1n.nii.gz)
+Skipping row 1446: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01740-000/BraTS-GLI-01740-000-t1n.nii.gz)
+Skipping row 1447: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01776-000/BraTS-GLI-01776-000-t1n.nii.gz)
+Skipping row 1448: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01757-000/BraTS-GLI-01757-000-t1n.nii.gz)
+Skipping row 1449: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00447-000/BraTS-GLI-00447-000-t1n.nii.gz)
+Skipping row 1450: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01681-000/BraTS-GLI-01681-000-t1n.nii.gz)
+Skipping row 1451: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00681-000/BraTS-GLI-00681-000-t1n.nii.gz)
+Skipping row 1452: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00521-001/BraTS-GLI-00521-001-t1n.nii.gz)
+Skipping row 1453: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00592-000/BraTS-GLI-00592-000-t1n.nii.gz)
+Skipping row 1454: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00323-000/BraTS-GLI-00323-000-t1n.nii.gz)
+Skipping row 1455: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01725-000/BraTS-GLI-01725-000-t1n.nii.gz)
+Skipping row 1456: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00163-000/BraTS-GLI-00163-000-t1n.nii.gz)
+Skipping row 1457: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00467-000/BraTS-GLI-00467-000-t1n.nii.gz)
+Skipping row 1458: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00287-000/BraTS-GLI-00287-000-t1n.nii.gz)
+Skipping row 1459: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00779-001/BraTS-GLI-00779-001-t1n.nii.gz)
+Skipping row 1460: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01707-000/BraTS-GLI-01707-000-t1n.nii.gz)
+Skipping row 1461: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01680-000/BraTS-GLI-01680-000-t1n.nii.gz)
+Skipping row 1462: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01763-000/BraTS-GLI-01763-000-t1n.nii.gz)
+Skipping row 1463: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00013-001/BraTS-GLI-00013-001-t1n.nii.gz)
+Skipping row 1464: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01728-000/BraTS-GLI-01728-000-t1n.nii.gz)
+Skipping row 1465: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01670-000/BraTS-GLI-01670-000-t1n.nii.gz)
+Skipping row 1466: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00535-001/BraTS-GLI-00535-001-t1n.nii.gz)
+Skipping row 1467: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01746-000/BraTS-GLI-01746-000-t1n.nii.gz)
+Skipping row 1468: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-01767-000/BraTS-GLI-01767-000-t1n.nii.gz)
+Skipping row 1469: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-ValidationData/BraTS-GLI-00458-000/BraTS-GLI-00458-000-t1n.nii.gz)
+Skipping row 1470: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01327-000/BraTS-MEN-01327-000-t1n.nii.gz)
+Skipping row 1471: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00965-000/BraTS-MEN-00965-000-t1n.nii.gz)
+Skipping row 1472: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01259-000/BraTS-MEN-01259-000-t1n.nii.gz)
+Skipping row 1473: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01225-000/BraTS-MEN-01225-000-t1n.nii.gz)
+Skipping row 1474: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00630-000/BraTS-MEN-00630-000-t1n.nii.gz)
+Skipping row 1475: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00983-006/BraTS-MEN-00983-006-t1n.nii.gz)
+Skipping row 1476: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01075-000/BraTS-MEN-01075-000-t1n.nii.gz)
+Skipping row 1477: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00810-000/BraTS-MEN-00810-000-t1n.nii.gz)
+Skipping row 1478: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00179-000/BraTS-MEN-00179-000-t1n.nii.gz)
+Skipping row 1479: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01078-000/BraTS-MEN-01078-000-t1n.nii.gz)
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00817-000/BraTS-MEN-00817-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00817-000/BraTS-MEN-00817-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00817-000/BraTS-MEN-00817-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58733980
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00817-000/BraTS-MEN-00817-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00817-000/BraTS-MEN-00817-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00817-000/BraTS-MEN-00817-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00859-000/BraTS-MEN-00859-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00859-000/BraTS-MEN-00859-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00859-000/BraTS-MEN-00859-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58775096
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00859-000/BraTS-MEN-00859-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00859-000/BraTS-MEN-00859-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00859-000/BraTS-MEN-00859-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01264-000/BraTS-MEN-01264-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01264-000/BraTS-MEN-01264-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01264-000/BraTS-MEN-01264-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786156
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01264-000/BraTS-MEN-01264-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01264-000/BraTS-MEN-01264-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01264-000/BraTS-MEN-01264-000-t1n.nii.gz
+Skipping row 1483: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00693-000/BraTS-MEN-00693-000-t1n.nii.gz)
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01399-000/BraTS-MEN-01399-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01399-000/BraTS-MEN-01399-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01399-000/BraTS-MEN-01399-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58741176
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01399-000/BraTS-MEN-01399-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01399-000/BraTS-MEN-01399-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01399-000/BraTS-MEN-01399-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00641-000/BraTS-MEN-00641-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00641-000/BraTS-MEN-00641-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00641-000/BraTS-MEN-00641-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58775232
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00641-000/BraTS-MEN-00641-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00641-000/BraTS-MEN-00641-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00641-000/BraTS-MEN-00641-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00854-000/BraTS-MEN-00854-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00854-000/BraTS-MEN-00854-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00854-000/BraTS-MEN-00854-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786152
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00854-000/BraTS-MEN-00854-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00854-000/BraTS-MEN-00854-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00854-000/BraTS-MEN-00854-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01003-009/BraTS-MEN-01003-009-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01003-009/BraTS-MEN-01003-009-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01003-009/BraTS-MEN-01003-009-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786140
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01003-009/BraTS-MEN-01003-009-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01003-009/BraTS-MEN-01003-009-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01003-009/BraTS-MEN-01003-009-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00677-000/BraTS-MEN-00677-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00677-000/BraTS-MEN-00677-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00677-000/BraTS-MEN-00677-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58778828
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00677-000/BraTS-MEN-00677-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00677-000/BraTS-MEN-00677-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00677-000/BraTS-MEN-00677-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00298-000/BraTS-MEN-00298-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00298-000/BraTS-MEN-00298-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00298-000/BraTS-MEN-00298-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786136
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00298-000/BraTS-MEN-00298-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00298-000/BraTS-MEN-00298-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00298-000/BraTS-MEN-00298-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00059-000/BraTS-MEN-00059-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00059-000/BraTS-MEN-00059-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00059-000/BraTS-MEN-00059-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58745028
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00059-000/BraTS-MEN-00059-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00059-000/BraTS-MEN-00059-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00059-000/BraTS-MEN-00059-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-007/BraTS-MEN-00932-007-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-007/BraTS-MEN-00932-007-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-007/BraTS-MEN-00932-007-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58745028
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-007/BraTS-MEN-00932-007-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-007/BraTS-MEN-00932-007-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-007/BraTS-MEN-00932-007-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00164-000/BraTS-MEN-00164-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00164-000/BraTS-MEN-00164-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00164-000/BraTS-MEN-00164-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58774968
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00164-000/BraTS-MEN-00164-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00164-000/BraTS-MEN-00164-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00164-000/BraTS-MEN-00164-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00161-000/BraTS-MEN-00161-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00161-000/BraTS-MEN-00161-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00161-000/BraTS-MEN-00161-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786272
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00161-000/BraTS-MEN-00161-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00161-000/BraTS-MEN-00161-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00161-000/BraTS-MEN-00161-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00857-000/BraTS-MEN-00857-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00857-000/BraTS-MEN-00857-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00857-000/BraTS-MEN-00857-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58774072
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00857-000/BraTS-MEN-00857-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00857-000/BraTS-MEN-00857-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00857-000/BraTS-MEN-00857-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01308-000/BraTS-MEN-01308-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01308-000/BraTS-MEN-01308-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01308-000/BraTS-MEN-01308-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58778828
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01308-000/BraTS-MEN-01308-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01308-000/BraTS-MEN-01308-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01308-000/BraTS-MEN-01308-000-t1n.nii.gz
+Skipping row 1496: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01334-000/BraTS-MEN-01334-000-t1n.nii.gz)
+Skipping row 1497: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01198-013/BraTS-MEN-01198-013-t1n.nii.gz)
+Skipping row 1498: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01107-000/BraTS-MEN-01107-000-t1n.nii.gz)
+Skipping row 1499: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00060-000/BraTS-MEN-00060-000-t1n.nii.gz)
+Skipping row 1500: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01153-000/BraTS-MEN-01153-000-t1n.nii.gz)
+Skipping row 1501: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00074-008/BraTS-MEN-00074-008-t1n.nii.gz)
+Skipping row 1502: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00514-000/BraTS-MEN-00514-000-t1n.nii.gz)
+Skipping row 1503: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00096-000/BraTS-MEN-00096-000-t1n.nii.gz)
+Skipping row 1504: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00304-000/BraTS-MEN-00304-000-t1n.nii.gz)
+Skipping row 1505: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00808-000/BraTS-MEN-00808-000-t1n.nii.gz)
+Skipping row 1506: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00861-000/BraTS-MEN-00861-000-t1n.nii.gz)
+Skipping row 1507: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00844-000/BraTS-MEN-00844-000-t1n.nii.gz)
+Skipping row 1508: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00813-000/BraTS-MEN-00813-000-t1n.nii.gz)
+Skipping row 1509: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00402-000/BraTS-MEN-00402-000-t1n.nii.gz)
+Skipping row 1510: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00747-000/BraTS-MEN-00747-000-t1n.nii.gz)
+Skipping row 1511: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00155-000/BraTS-MEN-00155-000-t1n.nii.gz)
+Skipping row 1512: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00487-000/BraTS-MEN-00487-000-t1n.nii.gz)
+Skipping row 1513: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00878-000/BraTS-MEN-00878-000-t1n.nii.gz)
+Skipping row 1514: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00671-000/BraTS-MEN-00671-000-t1n.nii.gz)
+Skipping row 1515: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00932-009/BraTS-MEN-00932-009-t1n.nii.gz)
+Skipping row 1516: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01435-000/BraTS-MEN-01435-000-t1n.nii.gz)
+Skipping row 1517: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00999-000/BraTS-MEN-00999-000-t1n.nii.gz)
+Skipping row 1518: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00501-000/BraTS-MEN-00501-000-t1n.nii.gz)
+Skipping row 1519: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00770-000/BraTS-MEN-00770-000-t1n.nii.gz)
+Skipping row 1520: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00754-000/BraTS-MEN-00754-000-t1n.nii.gz)
+Skipping row 1521: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01383-005/BraTS-MEN-01383-005-t1n.nii.gz)
+Skipping row 1522: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00018-000/BraTS-MEN-00018-000-t1n.nii.gz)
+Skipping row 1523: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00312-000/BraTS-MEN-00312-000-t1n.nii.gz)
+Skipping row 1524: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01176-000/BraTS-MEN-01176-000-t1n.nii.gz)
+Skipping row 1525: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00359-000/BraTS-MEN-00359-000-t1n.nii.gz)
+Skipping row 1526: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01317-000/BraTS-MEN-01317-000-t1n.nii.gz)
+Skipping row 1527: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01116-000/BraTS-MEN-01116-000-t1n.nii.gz)
+Skipping row 1528: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00173-000/BraTS-MEN-00173-000-t1n.nii.gz)
+Skipping row 1529: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00841-000/BraTS-MEN-00841-000-t1n.nii.gz)
+Skipping row 1530: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01067-000/BraTS-MEN-01067-000-t1n.nii.gz)
+Skipping row 1531: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00889-000/BraTS-MEN-00889-000-t1n.nii.gz)
+Skipping row 1532: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01403-000/BraTS-MEN-01403-000-t1n.nii.gz)
+Skipping row 1533: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01214-000/BraTS-MEN-01214-000-t1n.nii.gz)
+Skipping row 1534: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00576-007/BraTS-MEN-00576-007-t1n.nii.gz)
+Skipping row 1535: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00279-000/BraTS-MEN-00279-000-t1n.nii.gz)
+Skipping row 1536: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00267-000/BraTS-MEN-00267-000-t1n.nii.gz)
+Skipping row 1537: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01411-000/BraTS-MEN-01411-000-t1n.nii.gz)
+Skipping row 1538: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00498-000/BraTS-MEN-00498-000-t1n.nii.gz)
+Skipping row 1539: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01222-000/BraTS-MEN-01222-000-t1n.nii.gz)
+Skipping row 1540: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00897-000/BraTS-MEN-00897-000-t1n.nii.gz)
+Skipping row 1541: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00209-000/BraTS-MEN-00209-000-t1n.nii.gz)
+Skipping row 1542: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01333-000/BraTS-MEN-01333-000-t1n.nii.gz)
+Skipping row 1543: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01274-000/BraTS-MEN-01274-000-t1n.nii.gz)
+Skipping row 1544: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00104-000/BraTS-MEN-00104-000-t1n.nii.gz)
+Skipping row 1545: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01389-000/BraTS-MEN-01389-000-t1n.nii.gz)
+Skipping row 1546: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00508-000/BraTS-MEN-00508-000-t1n.nii.gz)
+Skipping row 1547: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00071-000/BraTS-MEN-00071-000-t1n.nii.gz)
+Skipping row 1548: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00598-000/BraTS-MEN-00598-000-t1n.nii.gz)
+Skipping row 1549: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01384-000/BraTS-MEN-01384-000-t1n.nii.gz)
+Skipping row 1550: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01073-000/BraTS-MEN-01073-000-t1n.nii.gz)
+Skipping row 1551: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00026-000/BraTS-MEN-00026-000-t1n.nii.gz)
+Skipping row 1552: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00851-000/BraTS-MEN-00851-000-t1n.nii.gz)
+Skipping row 1553: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00434-000/BraTS-MEN-00434-000-t1n.nii.gz)
+Skipping row 1554: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00131-000/BraTS-MEN-00131-000-t1n.nii.gz)
+Skipping row 1555: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00873-000/BraTS-MEN-00873-000-t1n.nii.gz)
+Skipping row 1556: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01119-000/BraTS-MEN-01119-000-t1n.nii.gz)
+Skipping row 1557: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00967-000/BraTS-MEN-00967-000-t1n.nii.gz)
+Skipping row 1558: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00125-000/BraTS-MEN-00125-000-t1n.nii.gz)
+Skipping row 1559: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01099-000/BraTS-MEN-01099-000-t1n.nii.gz)
+Skipping row 1560: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00690-000/BraTS-MEN-00690-000-t1n.nii.gz)
+Skipping row 1561: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00028-000/BraTS-MEN-00028-000-t1n.nii.gz)
+Skipping row 1562: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00789-000/BraTS-MEN-00789-000-t1n.nii.gz)
+Skipping row 1563: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01279-010/BraTS-MEN-01279-010-t1n.nii.gz)
+Skipping row 1564: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00846-000/BraTS-MEN-00846-000-t1n.nii.gz)
+Skipping row 1565: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00584-000/BraTS-MEN-00584-000-t1n.nii.gz)
+Skipping row 1566: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00183-000/BraTS-MEN-00183-000-t1n.nii.gz)
+Skipping row 1567: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00109-000/BraTS-MEN-00109-000-t1n.nii.gz)
+Skipping row 1568: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01237-000/BraTS-MEN-01237-000-t1n.nii.gz)
+Skipping row 1569: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00194-000/BraTS-MEN-00194-000-t1n.nii.gz)
+Skipping row 1570: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00094-000/BraTS-MEN-00094-000-t1n.nii.gz)
+Skipping row 1571: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00352-000/BraTS-MEN-00352-000-t1n.nii.gz)
+Skipping row 1572: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00198-000/BraTS-MEN-00198-000-t1n.nii.gz)
+Skipping row 1573: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01156-000/BraTS-MEN-01156-000-t1n.nii.gz)
+Skipping row 1574: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00942-000/BraTS-MEN-00942-000-t1n.nii.gz)
+Skipping row 1575: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00726-000/BraTS-MEN-00726-000-t1n.nii.gz)
+Skipping row 1576: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00751-000/BraTS-MEN-00751-000-t1n.nii.gz)
+Skipping row 1577: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00831-000/BraTS-MEN-00831-000-t1n.nii.gz)
+Skipping row 1578: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00367-000/BraTS-MEN-00367-000-t1n.nii.gz)
+Skipping row 1579: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00734-000/BraTS-MEN-00734-000-t1n.nii.gz)
+Skipping row 1580: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00495-000/BraTS-MEN-00495-000-t1n.nii.gz)
+Skipping row 1581: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00735-000/BraTS-MEN-00735-000-t1n.nii.gz)
+Skipping row 1582: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00016-000/BraTS-MEN-00016-000-t1n.nii.gz)
+Skipping row 1583: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00638-000/BraTS-MEN-00638-000-t1n.nii.gz)
+Skipping row 1584: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00691-000/BraTS-MEN-00691-000-t1n.nii.gz)
+Skipping row 1585: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00772-000/BraTS-MEN-00772-000-t1n.nii.gz)
+Skipping row 1586: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01015-000/BraTS-MEN-01015-000-t1n.nii.gz)
+Skipping row 1587: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00782-000/BraTS-MEN-00782-000-t1n.nii.gz)
+Skipping row 1588: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01283-000/BraTS-MEN-01283-000-t1n.nii.gz)
+Skipping row 1589: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00604-000/BraTS-MEN-00604-000-t1n.nii.gz)
+Skipping row 1590: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01159-000/BraTS-MEN-01159-000-t1n.nii.gz)
+Skipping row 1591: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00027-000/BraTS-MEN-00027-000-t1n.nii.gz)
+Skipping row 1592: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01054-000/BraTS-MEN-01054-000-t1n.nii.gz)
+Skipping row 1593: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00112-000/BraTS-MEN-00112-000-t1n.nii.gz)
+Skipping row 1594: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00996-000/BraTS-MEN-00996-000-t1n.nii.gz)
+Skipping row 1595: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01419-000/BraTS-MEN-01419-000-t1n.nii.gz)
+Skipping row 1596: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00379-000/BraTS-MEN-00379-000-t1n.nii.gz)
+Skipping row 1597: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00166-000/BraTS-MEN-00166-000-t1n.nii.gz)
+Skipping row 1598: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00686-000/BraTS-MEN-00686-000-t1n.nii.gz)
+Skipping row 1599: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00703-000/BraTS-MEN-00703-000-t1n.nii.gz)
+Skipping row 1600: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00159-000/BraTS-MEN-00159-000-t1n.nii.gz)
+Skipping row 1601: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00293-000/BraTS-MEN-00293-000-t1n.nii.gz)
+Skipping row 1602: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00704-000/BraTS-MEN-00704-000-t1n.nii.gz)
+Skipping row 1603: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00493-000/BraTS-MEN-00493-000-t1n.nii.gz)
+Skipping row 1604: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00093-000/BraTS-MEN-00093-000-t1n.nii.gz)
+Skipping row 1605: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00622-000/BraTS-MEN-00622-000-t1n.nii.gz)
+Skipping row 1606: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01290-000/BraTS-MEN-01290-000-t1n.nii.gz)
+Skipping row 1607: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01401-000/BraTS-MEN-01401-000-t1n.nii.gz)
+Skipping row 1608: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01096-000/BraTS-MEN-01096-000-t1n.nii.gz)
+Skipping row 1609: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00259-000/BraTS-MEN-00259-000-t1n.nii.gz)
+Skipping row 1610: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00627-000/BraTS-MEN-00627-000-t1n.nii.gz)
+Skipping row 1611: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00111-000/BraTS-MEN-00111-000-t1n.nii.gz)
+Skipping row 1612: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00108-005/BraTS-MEN-00108-005-t1n.nii.gz)
+Skipping row 1613: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01001-000/BraTS-MEN-01001-000-t1n.nii.gz)
+Skipping row 1614: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00842-000/BraTS-MEN-00842-000-t1n.nii.gz)
+Skipping row 1615: already processed (brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00554-000/BraTS-MEN-00554-000-t1n.nii.gz)
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00153-000/BraTS-MEN-00153-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00153-000/BraTS-MEN-00153-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00153-000/BraTS-MEN-00153-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58767640
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00153-000/BraTS-MEN-00153-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00153-000/BraTS-MEN-00153-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00153-000/BraTS-MEN-00153-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00285-000/BraTS-MEN-00285-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00285-000/BraTS-MEN-00285-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00285-000/BraTS-MEN-00285-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58745564
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00285-000/BraTS-MEN-00285-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00285-000/BraTS-MEN-00285-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00285-000/BraTS-MEN-00285-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01390-000/BraTS-MEN-01390-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01390-000/BraTS-MEN-01390-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01390-000/BraTS-MEN-01390-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58777924
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01390-000/BraTS-MEN-01390-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01390-000/BraTS-MEN-01390-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01390-000/BraTS-MEN-01390-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00971-000/BraTS-MEN-00971-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00971-000/BraTS-MEN-00971-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00971-000/BraTS-MEN-00971-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58778828
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00971-000/BraTS-MEN-00971-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00971-000/BraTS-MEN-00971-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00971-000/BraTS-MEN-00971-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00981-000/BraTS-MEN-00981-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00981-000/BraTS-MEN-00981-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00981-000/BraTS-MEN-00981-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786140
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00981-000/BraTS-MEN-00981-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00981-000/BraTS-MEN-00981-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00981-000/BraTS-MEN-00981-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01316-000/BraTS-MEN-01316-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01316-000/BraTS-MEN-01316-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01316-000/BraTS-MEN-01316-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58741172
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01316-000/BraTS-MEN-01316-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01316-000/BraTS-MEN-01316-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01316-000/BraTS-MEN-01316-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00446-000/BraTS-MEN-00446-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00446-000/BraTS-MEN-00446-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00446-000/BraTS-MEN-00446-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58767776
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00446-000/BraTS-MEN-00446-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00446-000/BraTS-MEN-00446-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00446-000/BraTS-MEN-00446-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00462-000/BraTS-MEN-00462-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00462-000/BraTS-MEN-00462-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00462-000/BraTS-MEN-00462-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58775092
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00462-000/BraTS-MEN-00462-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00462-000/BraTS-MEN-00462-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00462-000/BraTS-MEN-00462-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00667-000/BraTS-MEN-00667-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00667-000/BraTS-MEN-00667-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00667-000/BraTS-MEN-00667-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58775100
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00667-000/BraTS-MEN-00667-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00667-000/BraTS-MEN-00667-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00667-000/BraTS-MEN-00667-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00369-000/BraTS-MEN-00369-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00369-000/BraTS-MEN-00369-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00369-000/BraTS-MEN-00369-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58752356
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00369-000/BraTS-MEN-00369-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00369-000/BraTS-MEN-00369-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00369-000/BraTS-MEN-00369-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01083-000/BraTS-MEN-01083-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01083-000/BraTS-MEN-01083-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01083-000/BraTS-MEN-01083-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58767784
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01083-000/BraTS-MEN-01083-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01083-000/BraTS-MEN-01083-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01083-000/BraTS-MEN-01083-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01154-000/BraTS-MEN-01154-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01154-000/BraTS-MEN-01154-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01154-000/BraTS-MEN-01154-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58775100
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01154-000/BraTS-MEN-01154-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01154-000/BraTS-MEN-01154-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-01154-000/BraTS-MEN-01154-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00207-000/BraTS-MEN-00207-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00207-000/BraTS-MEN-00207-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00207-000/BraTS-MEN-00207-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58778824
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00207-000/BraTS-MEN-00207-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00207-000/BraTS-MEN-00207-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00207-000/BraTS-MEN-00207-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00224-000/BraTS-MEN-00224-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00224-000/BraTS-MEN-00224-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00224-000/BraTS-MEN-00224-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58741176
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00224-000/BraTS-MEN-00224-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00224-000/BraTS-MEN-00224-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00224-000/BraTS-MEN-00224-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00676-000/BraTS-MEN-00676-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00676-000/BraTS-MEN-00676-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00676-000/BraTS-MEN-00676-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786152
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00676-000/BraTS-MEN-00676-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00676-000/BraTS-MEN-00676-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00676-000/BraTS-MEN-00676-000-t1n.nii.gz
+
+========================================
+    SynthMorph Registration
+----------------------------------------
+  Moving    : /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz
+  Fixed     : /gscratch/kurtlab/brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00637-000/BraTS-MEN-00637-000-t1n.nii.gz
+  Output    : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00637-000/BraTS-MEN-00637-000-t1n.nii.gz
+  Transform : /gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00637-000/BraTS-MEN-00637-000-t1n.nii.gz
+========================================
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +  160, +12, dlen =    176, TAG = 10
+[DEBUG] FSNifti1Extension.write(): +   12, +12, dlen =    200, TAG = 13
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    213, TAG = -1
+[DEBUG] FSNifti1Extension.write():              dlen =      4
+[DEBUG] FSNifti1Extension.write(): +    4, +12, dlen =     20, TAG =  7
+[DEBUG] FSNifti1Extension.write(): +   48, +12, dlen =     80, TAG =  8
+[DEBUG] FSNifti1Extension.write(): +   27, +12, dlen =    119, TAG = 45
+[DEBUG] FSNifti1Extension.write(): +    1, +12, dlen =    132, TAG = -1
+#@# mri_synthmorph: joint, threads: None, VmPeak: 58786152
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Running SynthMorph version 4 from https://hub.docker.com/u/freesurfer
+Using /usr/bin/apptainer to manage containers
+Will bind /mnt in image to SUBJECTS_DIR="/gscratch/kurtlab"
+Command: apptainer run --nv --pwd /mnt -e -B /gscratch/kurtlab:/mnt /gscratch/kurtlab/synthmorph/synthmorph_4.sif
+SynthMorph arguments: register -g -o brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00637-000/BraTS-MEN-00637-000-t1n.nii.gz -t brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00637-000/BraTS-MEN-00637-000-t1n.nii.gz MSFT/metadata_analysis/register_mni/MNI152_T1_1mm_Brain.nii.gz brats2023/data/brats-men/ASNR-MICCAI-BraTS2023-Meningioma-Challenge-TrainingData/BraTS-MEN-00637-000/BraTS-MEN-00637-000-t1n.nii.gz
+
+📝 Log written to /gscratch/kurtlab/MSFT/metadata_analysis/register_mni/logs/paths_atlas_to_subject_split_005_log.csv
+[Tue Oct 14 21:38:06 PDT 2025] Finished split 5

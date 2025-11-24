@@ -1,0 +1,322 @@
+{
+  "BraTS-GLI-00000-000": {
+    "findings": "**FINDINGS**\n\n**Mass effect & ventricles:** There is a mild left\u2011ward midline shift centered at the septum pellucidum, with a median displacement of about 1\u202fmm and a maximum of approximately 4\u202fmm. No tonsillar herniation is seen. The basal cisterns remain patent. Ventricular size is symmetric and there is no evidence of ventricular enlargement or asymmetry.\n\n**Brain / tumor:** A solitary, left frontal lobe lesion is present. The mass demonstrates marked, heterogeneous enhancement comprising roughly one\u2011third to two\u2011thirds of the lesion, with an internal component of necrosis (estimated 6\u201133%). Surrounding vasogenic edema is moderate (approximately 6\u201133% of the total tumor volume) and extends across the midline, producing mild effacement of adjacent sulci. Cortical involvement is evident, and there is deep white\u2011matter invasion. The enhancing portion does not cross the midline. There is no ependymal invasion, no satellite nodules, and no involvement of eloquent cortex. No restricted diffusion or susceptibility artefacts suggestive of hemorrhage are identified.",
+    "metadata": {
+      "pathology": "glioma",
+      "data_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00000-000",
+      "seg_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00000-000/BraTS-GLI-00000-000-seg.nii.gz",
+      "data_in_mni_path": "/gscratch/kurtlab/brats2023/data/MNI152/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00000-000",
+      "mni_in_data_path": "/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00000-000",
+      "midline_path": "/gscratch/kurtlab/brats2023/data/midline/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00000-000",
+      "vasari_path": "/gscratch/kurtlab/brats2023/data/vasari/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00000-000",
+      "global": {
+        "ncr_volume": 11738.0,
+        "ed_volume": 12836.0,
+        "et_volume": 32731.0,
+        "total_tumor_volume": 57305.0,
+        "median_midline_shift_mm": 1.0,
+        "mean_midline_shift_mm": 0.6903225806,
+        "max_midline_shift_mm": -4.0,
+        "p95_midline_shift_mm": 4.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": false,
+          "ncr_et": false
+        },
+        "vasari_asymmetrical_ventricles": "Absent",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Frontal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "6-33%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "False",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Marked",
+        "vasari_f5_proportion_enhancing": "34-67%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Frontal Lobe",
+            0.6204029521
+          ]
+        ],
+        "vasari_text_report": "Frontal lobe tumor, in the left hemisphere, mostly enhancing, solitary, no ependymal invasion, deep white matter invasion present, enhancing region does not cross midline, no tumor-associated ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00002-000": {
+    "findings": "**FINDINGS**\n\n**Mass effect & ventricles:** There is a left\u2011to\u2011right midline shift most pronounced at the septum pellucidum, measuring up to 10\u202fmm. The shift is otherwise mild to moderate (median \u22482\u202fmm). Ventricular asymmetry is present, with the left lateral ventricle appearing slightly larger than the right, although no overall ventricular enlargement is seen. No tonsillar herniation is identified and the basal cisterns remain patent.\n\n**Tumor characteristics:** A solitary left\u2011hemispheric glioma is centered in the insular region with extension into the adjacent frontal lobe. The lesion demonstrates mild, heterogeneous enhancement; the enhancing margin exceeds 3\u202fmm in thickness and comprises roughly 6\u201333\u202f% of the tumor volume. Areas of necrosis are present, accounting for approximately 6\u201333\u202f% of the lesion. Moderate peritumoral vasogenic edema is evident, occupying about one\u2011third to two\u2011thirds of the surrounding brain parenchyma.\n\n**Infiltration:** The enhancing component crosses the midline, involving both hemispheres. Deep white\u2011matter invasion and cortical involvement are noted. Ependymal invasion is present. There is no involvement of eloquent cortex. No satellite lesions are identified.\n\n**Additional observations:** No evidence of intratumoral hemorrhage or restricted diffusion is appreciated. The overall appearance is consistent with a left insular, mildly enhancing glioma with substantial edema and cross\u2011midline involvement.",
+    "metadata": {
+      "pathology": "glioma",
+      "data_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00002-000",
+      "seg_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00002-000/BraTS-GLI-00002-000-seg.nii.gz",
+      "data_in_mni_path": "/gscratch/kurtlab/brats2023/data/MNI152/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00002-000",
+      "mni_in_data_path": "/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00002-000",
+      "midline_path": "/gscratch/kurtlab/brats2023/data/midline/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00002-000",
+      "vasari_path": "/gscratch/kurtlab/brats2023/data/vasari/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00002-000",
+      "global": {
+        "ncr_volume": 11248.0,
+        "ed_volume": 155695.0,
+        "et_volume": 23651.0,
+        "total_tumor_volume": 190594.0,
+        "median_midline_shift_mm": 2.0,
+        "mean_midline_shift_mm": 3.2709677419,
+        "max_midline_shift_mm": 10.0,
+        "p95_midline_shift_mm": 10.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": true,
+          "ncr_et": true
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Insula",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Present",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "True",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Insula",
+            0.2147653318
+          ],
+          [
+            "Frontal Lobe",
+            0.185840708
+          ]
+        ],
+        "vasari_text_report": "Insular tumor, in the left hemisphere, mildly enhancing, solitary, ependymal invasion present, deep white matter invasion present, enhancing region crosses midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00003-000": {
+    "findings": "**FINDINGS**\n\n**MASS EFFECT & VENTRICLES:**  \nThere is a left\u2011to\u2011right midline shift, maximal at the level of the falx cerebri above, measuring up to 7\u202fmm (mean shift \u22482\u202fmm). The shift is associated with asymmetry of the lateral ventricles, with relative prominence of the left side, while overall ventricular size remains within normal limits (no generalized ventricular enlargement). No tonsillar herniation is observed. The basal cisterns are patent.\n\n**BRAIN/ENHANCEMENT:**  \nA solitary frontal lobe tumor is centered in the left hemisphere. The lesion demonstrates mild, patchy enhancement comprising roughly 6\u201333\u202f% of the total tumor volume, with an enhancing margin thickness greater than 3\u202fmm. An enhancing component crosses the midline. Areas of necrosis are present, also representing approximately 6\u201333\u202f% of the lesion. The tumor shows cortical involvement, deep white\u2011matter invasion, and ependymal invasion. It abuts an eloquent motor region. Surrounding vasogenic edema is extensive, involving an estimated 34\u201367\u202f% of the surrounding brain tissue. No satellite lesions are identified.",
+    "metadata": {
+      "pathology": "glioma",
+      "data_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00003-000",
+      "seg_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00003-000/BraTS-GLI-00003-000-seg.nii.gz",
+      "data_in_mni_path": "/gscratch/kurtlab/brats2023/data/MNI152/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00003-000",
+      "mni_in_data_path": "/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00003-000",
+      "midline_path": "/gscratch/kurtlab/brats2023/data/midline/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00003-000",
+      "vasari_path": "/gscratch/kurtlab/brats2023/data/vasari/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00003-000",
+      "global": {
+        "ncr_volume": 17214.0,
+        "ed_volume": 57773.0,
+        "et_volume": 24252.0,
+        "total_tumor_volume": 99239.0,
+        "median_midline_shift_mm": 2.0,
+        "mean_midline_shift_mm": 2.3290322581,
+        "max_midline_shift_mm": 7.0,
+        "p95_midline_shift_mm": 6.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": true,
+          "ncr_et": true
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Frontal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Present",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "True",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "Motor",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Frontal Lobe",
+            0.4287622596
+          ]
+        ],
+        "vasari_text_report": "Frontal lobe tumor, in the left hemisphere, mildly enhancing, solitary, ependymal invasion present, deep white matter invasion present, enhancing region crosses midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "falx cerebri above"
+      }
+    }
+  },
+  "BraTS-GLI-00005-000": {
+    "findings": "**FINDINGS**\n\n**MASS EFFECT & VENTRICLES:**  \nThere is a left\u2011sided mass effect evident by a measurable midline shift, with the greatest displacement of approximately 8\u202fmm at the level of the septum pellucidum. The shift is most pronounced in the region of the foramen of Monro. Ventricular asymmetry is present, with the left lateral ventricle appearing smaller relative to the right; there is no overall ventricular enlargement. No tonsillar herniation is identified, and the basal cisterns remain patent.\n\n**BRAIN / ENHANCEMENT:**  \nA solitary lesion is located predominantly in the left parietal lobe (\u224884\u202f% of the tumor volume) with a minor component extending into the left frontal lobe (\u224813\u202f%). The mass demonstrates mild, heterogeneous enhancement comprising roughly 6\u201333\u202f% of the lesion, with an enhancing margin thickness greater than 3\u202fmm. Areas of internal necrosis are present, accounting for about 6\u201333\u202f% of the tumor. Surrounding the enhancing component is a substantial volume of vasogenic edema, representing approximately one\u2011third to two\u2011thirds of the total lesion burden; the edema crosses the midline. Cortical involvement is evident, while there is no deep white\u2011matter invasion, ependymal invasion, or satellite lesions. The lesion does not involve eloquent cortex, and the enhancing portion does not cross the midline.",
+    "metadata": {
+      "pathology": "glioma",
+      "data_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00005-000",
+      "seg_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00005-000/BraTS-GLI-00005-000-seg.nii.gz",
+      "data_in_mni_path": "/gscratch/kurtlab/brats2023/data/MNI152/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00005-000",
+      "mni_in_data_path": "/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00005-000",
+      "midline_path": "/gscratch/kurtlab/brats2023/data/midline/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00005-000",
+      "vasari_path": "/gscratch/kurtlab/brats2023/data/vasari/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00005-000",
+      "global": {
+        "ncr_volume": 24187.0,
+        "ed_volume": 76742.0,
+        "et_volume": 23854.0,
+        "total_tumor_volume": 124783.0,
+        "median_midline_shift_mm": 1.0,
+        "mean_midline_shift_mm": 2.2903225806,
+        "max_midline_shift_mm": 8.0,
+        "p95_midline_shift_mm": 8.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": false,
+          "ncr_et": false
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Parietal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Absent",
+        "vasari_f23_cet_crosses_midline": "False",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Parietal Lobe",
+            0.8442959111
+          ],
+          [
+            "Frontal Lobe",
+            0.1281653025
+          ]
+        ],
+        "vasari_text_report": "Parietal lobe tumor, in the left hemisphere, mildly enhancing, solitary, no ependymal invasion, no deep white matter invasion, enhancing region does not cross midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00006-000": {
+    "findings": "**FINDINGS**\n\n**MASS EFFECT & VENTRICLES:**  \nThere is a left\u2011to\u2011right midline shift reaching up to 8\u202fmm, greatest at the level of the septum pellucidum. Ventricular asymmetry is present, with the left lateral ventricle appearing relatively compressed; overall ventricular size is not enlarged. No ependymal invasion is identified.\n\n**BRAIN / ENHANCEMENT:**  \nA solitary left frontal lobe glioma is demonstrated. The lesion shows mild, heterogeneous enhancement, comprising roughly 6\u201133\u202f% of the tumor volume, with an enhancing margin greater than 3\u202fmm. A component of necrosis (approximately 6\u201133\u202f% of the lesion) is also noted. Cortical involvement and deep white\u2011matter infiltration are evident. The enhancing portion of the tumor crosses the midline, as does a substantial surrounding vasogenic edema, which represents about one\u2011third to two\u2011thirds of the total tumor burden. The edema produces adjacent sulcal effacement but no additional focal mass effect beyond the described midline shift. No satellite lesions are identified. The tumor is situated within an eloquent speech\u2011motor region.",
+    "metadata": {
+      "pathology": "glioma",
+      "data_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00006-000",
+      "seg_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00006-000/BraTS-GLI-00006-000-seg.nii.gz",
+      "data_in_mni_path": "/gscratch/kurtlab/brats2023/data/MNI152/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00006-000",
+      "mni_in_data_path": "/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00006-000",
+      "midline_path": "/gscratch/kurtlab/brats2023/data/midline/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00006-000",
+      "vasari_path": "/gscratch/kurtlab/brats2023/data/vasari/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00006-000",
+      "global": {
+        "ncr_volume": 25506.0,
+        "ed_volume": 85957.0,
+        "et_volume": 26448.0,
+        "total_tumor_volume": 137911.0,
+        "median_midline_shift_mm": 0.0,
+        "mean_midline_shift_mm": 1.4322580645,
+        "max_midline_shift_mm": 8.0,
+        "p95_midline_shift_mm": 7.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": true,
+          "ncr_et": true
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Frontal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "True",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "Speech motor",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Frontal Lobe",
+            0.8422229909
+          ]
+        ],
+        "vasari_text_report": "Frontal lobe tumor, in the left hemisphere, mildly enhancing, solitary, no ependymal invasion, deep white matter invasion present, enhancing region crosses midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00008-000": {
+    "findings": "**FINDINGS**\n\n**Mass effect & ventricles:**  \nThere is no appreciable midline shift; the maximal displacement measured is approximately 3\u202fmm at the level of the fourth ventricle. The ventricular system is symmetric and not enlarged. No evidence of herniation.\n\n**Brain / enhancement:**  \nA solitary, right\u2011temporal lobe glioma is present. The lesion demonstrates mild, thin enhancement that involves less than 5\u202f% of the tumor volume, with an enhancing margin thickness greater than 3\u202fmm. There is no appreciable necrosis (<5\u202f% of the lesion). A substantial volume of surrounding vasogenic edema is noted, comprising roughly one\u2011third to two\u2011thirds of the overall tumor burden. The enhancing component does not cross the midline. There is no cortical involvement, no deep white\u2011matter invasion, and no ependymal invasion. No satellite nodules are identified. The tumor does not involve eloquent cortex.",
+    "metadata": {
+      "pathology": "glioma",
+      "data_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00008-000",
+      "seg_path": "/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00008-000/BraTS-GLI-00008-000-seg.nii.gz",
+      "data_in_mni_path": "/gscratch/kurtlab/brats2023/data/MNI152/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00008-000",
+      "mni_in_data_path": "/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/moved/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00008-000",
+      "midline_path": "/gscratch/kurtlab/brats2023/data/midline/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00008-000",
+      "vasari_path": "/gscratch/kurtlab/brats2023/data/vasari/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00008-000",
+      "global": {
+        "ncr_volume": 16.0,
+        "ed_volume": 18135.0,
+        "et_volume": 311.0,
+        "total_tumor_volume": 18462.0,
+        "median_midline_shift_mm": 0.0,
+        "mean_midline_shift_mm": 0.1161290323,
+        "max_midline_shift_mm": 3.0,
+        "p95_midline_shift_mm": 2.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": false,
+          "et": false,
+          "ncr_et": false
+        },
+        "vasari_asymmetrical_ventricles": "Absent",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Temporal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Right",
+        "vasari_f20_cortical_involvement": "Absent",
+        "vasari_f21_deep_wm_invasion": "Absent",
+        "vasari_f23_cet_crosses_midline": "False",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "<5%",
+        "vasari_f7_proportion_necrosis": "<5%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Temporal Lobe",
+            0.9972677596
+          ]
+        ],
+        "vasari_text_report": "Temporal lobe tumor, in the right hemisphere, mildly enhancing, solitary, no ependymal invasion, no deep white matter invasion, enhancing region does not cross midline, no tumor-associated ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "fourth ventricle"
+      }
+    }
+  }
+}

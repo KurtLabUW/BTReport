@@ -1,0 +1,58 @@
+[project]
+name = "btreport"
+version = "0.1.0"
+description = "Brain Tumor structured report generation, metadata extraction, VASARI feature extraction, and 3D midline shift estimation."
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+  {name = "Juampablo Heras Rivera"}
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "tqdm",
+    "lifelines",
+
+    "torch",
+    "torchvision",
+    "monai",
+
+    "nibabel",
+    "pydicom",
+    "openpyxl",
+    "python-dateutil",
+
+    "transformers",
+    "accelerate",
+    "huggingface-hub",
+    "tokenizers",
+    "sentencepiece",
+    "requests"
+]
+
+[project.optional-dependencies]
+nlp = [
+    "nltk",
+    "regex",
+    "spacy",
+    "medspacy",
+    "bert-score",
+    "rouge-score",
+]
+evaluation = [
+    "radgraph",
+    "radeval",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["btreport*"]
+
+[project.scripts]
+btreport-generate = "btreport.llm_report_generation:main"
+btreport-midline = "btreport.midline_shift:main"
+btreport-vasari = "btreport.vasari_features:main"

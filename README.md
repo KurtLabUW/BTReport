@@ -47,10 +47,10 @@ BTReport extracts a set of interpretable, clinically meaningful variables from e
 BTReport is an open-source framework for brain tumor radiology report generation using quantitative neuroimaging features.  BTReport first extracts clinically relevant features (patient metadata, VASARI features, midline shift) using a patients scan and tumor segmentation mask, then uses large language models for report formatting.
 
 The framework consists of four components:
--  **[patient_metadata](./patient_metadata/)** — demographic and clinical information (e.g., age, sex, diagnosis, outcome).
--  **[vasari_features](./vasari_features/)** — standardized VASARI features.
--  **[midline_shift](./midline_shift/)** — quantitative estimation of 3D midline shift using a deep learning registration approach.
--  **[llm_report_generation](./llm_report_generation/)** — LLM synthesis of structured radiology reports grounded in deterministic features.
+-  **[patient_metadata](./btreport/patient_metadata/)** — demographic and clinical information (e.g., age, sex, diagnosis, outcome).
+-  **[vasari_features](./btreport/vasari_features/)** — standardized VASARI features.
+-  **[midline_shift](./btreport/midline_shift/)** — quantitative estimation of 3D midline shift using a deep learning registration approach.
+-  **[llm_report_generation](./btreport/llm_report_generation/)** — LLM synthesis of structured radiology reports grounded in deterministic features.
 
 
 

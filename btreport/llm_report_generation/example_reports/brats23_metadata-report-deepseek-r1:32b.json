@@ -1,0 +1,286 @@
+{
+  "BraTS-GLI-00000-000": {
+    "findings": "FINDINGS:  \nThere is a small midline shift at the level of the septum pellucidum. The tumor is located in the left frontal lobe and does not cross the midline. It exhibits marked enhancement with an enhancing margin greater than 3 mm. There is evidence of deep white matter invasion and cortical involvement. No ependymal invasion or tumor satellites are identified. The ventricles are symmetric without enlargement, and there is no associated asymmetry or entrapment. The tumor is solitary and does not involve eloquent brain regions.",
+    "metadata": {
+      "pathology": "glioma",
+      "global": {
+        "ncr_volume": 11738.0,
+        "ed_volume": 12836.0,
+        "et_volume": 32731.0,
+        "total_tumor_volume": 57305.0,
+        "median_midline_shift_mm": 1.0,
+        "mean_midline_shift_mm": 0.6903225806,
+        "max_midline_shift_mm": -4.0,
+        "p95_midline_shift_mm": 4.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": false,
+          "ncr_et": false
+        },
+        "vasari_asymmetrical_ventricles": "Absent",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Frontal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "6-33%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "False",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Marked",
+        "vasari_f5_proportion_enhancing": "34-67%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Frontal Lobe",
+            0.6204029521
+          ]
+        ],
+        "vasari_text_report": "Frontal lobe tumor, in the left hemisphere, mostly enhancing, solitary, no ependymal invasion, deep white matter invasion present, enhancing region does not cross midline, no tumor-associated ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00002-000": {
+    "findings": "FINDINGS:  \nMASS EFFECT & VENTRICLES: There is a mild midline shift at the level of the septum pellucidum, with a maximum measured shift of 10 mm. The ventricles demonstrate asymmetry on the tumor side but are not enlarged overall.  \n\nBRAIN/ENHANCEMENT: A mass is identified in the left insula and frontal lobe. The enhancing margin of the mass measures greater than 3 mm. There is mild enhancement observed within the tumor, with approximately 6-33% of the tumor demonstrating enhancement. Areas of necrosis are present, accounting for approximately 6-33% of the tumor volume. There is no evidence of diffusion restriction or calcifications. The enhancing region crosses the midline.  \n\nThe tumor demonstrates cortical involvement and deep white matter invasion. Ependymal surface invasion is noted. There is no involvement of eloquent brain regions. No satellites are identified, and the tumor appears solitary in its presentation.",
+    "metadata": {
+      "pathology": "glioma",
+      "global": {
+        "ncr_volume": 11248.0,
+        "ed_volume": 155695.0,
+        "et_volume": 23651.0,
+        "total_tumor_volume": 190594.0,
+        "median_midline_shift_mm": 2.0,
+        "mean_midline_shift_mm": 3.2709677419,
+        "max_midline_shift_mm": 10.0,
+        "p95_midline_shift_mm": 10.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": true,
+          "ncr_et": true
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Insula",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Present",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "True",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Insula",
+            0.2147653318
+          ],
+          [
+            "Frontal Lobe",
+            0.185840708
+          ]
+        ],
+        "vasari_text_report": "Insular tumor, in the left hemisphere, mildly enhancing, solitary, ependymal invasion present, deep white matter invasion present, enhancing region crosses midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00003-000": {
+    "findings": "FINDINGS:\nMASS EFFECT & VENTRICLES: There is a maximum midline shift of 7 mm at the level of the falx cerebri above. The ventricles demonstrate asymmetry without enlargement. No significant herniation or effacement is observed.\n\nBRAIN/ENHANCEMENT: A glioma is identified in the left frontal lobe with midline crossing. The enhancement is mild, involving a small to moderate portion (6-33%) of the tumor. Necrosis accounts for 6-33% of the tumor volume. Moderate vasogenic edema (34-67%) surrounds the lesion. Ependymal invasion and deep white matter extension are present. The tumor involves the motor eloquent area. No satellite lesions are seen.",
+    "metadata": {
+      "pathology": "glioma",
+      "global": {
+        "ncr_volume": 17214.0,
+        "ed_volume": 57773.0,
+        "et_volume": 24252.0,
+        "total_tumor_volume": 99239.0,
+        "median_midline_shift_mm": 2.0,
+        "mean_midline_shift_mm": 2.3290322581,
+        "max_midline_shift_mm": 7.0,
+        "p95_midline_shift_mm": 6.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": true,
+          "ncr_et": true
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Frontal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Present",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "True",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "Motor",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Frontal Lobe",
+            0.4287622596
+          ]
+        ],
+        "vasari_text_report": "Frontal lobe tumor, in the left hemisphere, mildly enhancing, solitary, ependymal invasion present, deep white matter invasion present, enhancing region crosses midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "falx cerebri above"
+      }
+    }
+  },
+  "BraTS-GLI-00005-000": {
+    "findings": "FINDINGS:\nMASS EFFECT & VENTRICLES: Mild ventricular asymmetry without enlargement is noted with a maximal midline shift of 8 mm at the level of the septum pellucidum. There is no evidence of herniation or tonsillar displacement. The basal cisterns remain patent.\n\nBRAIN/ENHANCEMENT: Within the left parietal lobe, there is a solitary glioma with mild enhancement involving approximately 6-33% of the tumor volume. The enhancing margins are greater than 3 mm in thickness. There is associated necrosis comprising about 6-33% of the lesion. A moderate surrounding vasogenic edema (34-67%) is present. No evidence of satellites, ependymal invasion, or deep white matter invasion is identified.",
+    "metadata": {
+      "pathology": "glioma",
+      "global": {
+        "ncr_volume": 24187.0,
+        "ed_volume": 76742.0,
+        "et_volume": 23854.0,
+        "total_tumor_volume": 124783.0,
+        "median_midline_shift_mm": 1.0,
+        "mean_midline_shift_mm": 2.2903225806,
+        "max_midline_shift_mm": 8.0,
+        "p95_midline_shift_mm": 8.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": false,
+          "ncr_et": false
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Parietal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Absent",
+        "vasari_f23_cet_crosses_midline": "False",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Parietal Lobe",
+            0.8442959111
+          ],
+          [
+            "Frontal Lobe",
+            0.1281653025
+          ]
+        ],
+        "vasari_text_report": "Parietal lobe tumor, in the left hemisphere, mildly enhancing, solitary, no ependymal invasion, no deep white matter invasion, enhancing region does not cross midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00006-000": {
+    "findings": "FINDINGS:\nMASS EFFECT & VENTRICLES: There is a maximum midline shift of 8 mm at the level of the septum pellucidum. The ventricles demonstrate asymmetry but are not enlarged, with no evidence of frank herniation or tonsillar herniation.\n\nBRAIN/ENHANCEMENT: A glioma involving the left frontal lobe is noted, with mild enhancement. The enhancing region crosses the midline. There is significant vasogenic edema surrounding the tumor, accounting for approximately 34-67% of the total tumor volume. The tumor demonstrates deep white matter invasion and cortical involvement but no ependymal invasion or satellites. A focus of T2 hyperintensity within the tumor may represent necrosis.",
+    "metadata": {
+      "pathology": "glioma",
+      "global": {
+        "ncr_volume": 25506.0,
+        "ed_volume": 85957.0,
+        "et_volume": 26448.0,
+        "total_tumor_volume": 137911.0,
+        "median_midline_shift_mm": 0.0,
+        "mean_midline_shift_mm": 1.4322580645,
+        "max_midline_shift_mm": 8.0,
+        "p95_midline_shift_mm": 7.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": true,
+          "et": true,
+          "ncr_et": true
+        },
+        "vasari_asymmetrical_ventricles": "Present",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Frontal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Left",
+        "vasari_f20_cortical_involvement": "Present",
+        "vasari_f21_deep_wm_invasion": "Present",
+        "vasari_f23_cet_crosses_midline": "True",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "Speech motor",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "6-33%",
+        "vasari_f7_proportion_necrosis": "6-33%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Frontal Lobe",
+            0.8422229909
+          ]
+        ],
+        "vasari_text_report": "Frontal lobe tumor, in the left hemisphere, mildly enhancing, solitary, no ependymal invasion, deep white matter invasion present, enhancing region crosses midline, tumor-side ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "septum pellucidum"
+      }
+    }
+  },
+  "BraTS-GLI-00008-000": {
+    "findings": "FINDINGS:\nMASS EFFECT & VENTRICLES: There is minimal to no midline shift noted overall. The median midline shift is 0 mm, with a maximum shift of 3 mm at the level of the fourth ventricle. No medialization or frank herniation is observed. The ventricles are not enlarged, and there is no evidence of tumor-associated ventricular asymmetry or entrapment.\n\nBRAIN/ENHANCEMENT: In the right temporal lobe, there is a solitary glioma with mild enhancement. Less than 5% of the tumor demonstrates enhancement. There is a focus of T2 hyperintensity, likely representing necrosis (<5%). Susceptibility foci suggest possible intratumoral bleeding. The enhancing margin measures greater than 3 mm in thickness. There is significant vasogenic edema involving approximately 34-67% of the affected region. No ependymal invasion or deep white matter invasion is identified. The tumor does not cross the midline, and there are no satellite lesions observed.",
+    "metadata": {
+      "pathology": "glioma",
+      "global": {
+        "ncr_volume": 16.0,
+        "ed_volume": 18135.0,
+        "et_volume": 311.0,
+        "total_tumor_volume": 18462.0,
+        "median_midline_shift_mm": 0.0,
+        "mean_midline_shift_mm": 0.1161290323,
+        "max_midline_shift_mm": 3.0,
+        "p95_midline_shift_mm": 2.0,
+        "crosses_midline": {
+          "ncr": false,
+          "ed": false,
+          "et": false,
+          "ncr_et": false
+        },
+        "vasari_asymmetrical_ventricles": "Absent",
+        "vasari_enlarged_ventricles": "Absent",
+        "vasari_f1_tumour_location": "Temporal",
+        "vasari_f11_thickness_of_enhancing_margin": ">3mm",
+        "vasari_f14_proportion_of_oedema": "34-67%",
+        "vasari_f19_ependymal_invasion": "Absent",
+        "vasari_f2_side_of_tumour_epicenter": "Right",
+        "vasari_f20_cortical_involvement": "Absent",
+        "vasari_f21_deep_wm_invasion": "Absent",
+        "vasari_f23_cet_crosses_midline": "False",
+        "vasari_f24_satellites": "Absent",
+        "vasari_f3_eloquent_brain": "No involvement",
+        "vasari_f4_enhancement_quality": "Mild",
+        "vasari_f5_proportion_enhancing": "<5%",
+        "vasari_f7_proportion_necrosis": "<5%",
+        "vasari_f9_multifocal_or_multicentric": "Solitary",
+        "vasari_region_proportions": [
+          [
+            "Temporal Lobe",
+            0.9972677596
+          ]
+        ],
+        "vasari_text_report": "Temporal lobe tumor, in the right hemisphere, mildly enhancing, solitary, no ependymal invasion, no deep white matter invasion, enhancing region does not cross midline, no tumor-associated ventricular asymmetry, ventricles not enlarged.",
+        "level_max_shift": "fourth ventricle"
+      }
+    }
+  }
+}
