@@ -21,28 +21,26 @@ export SYNTHSEG_SIF=/pscratch/sd/j/jehr/synthseg/synthseg.sif
 """
 
 
-def get_modality_paths(d):
-    return {
-        "t1": glob.glob(os.path.join(d, "*-t1.nii.gz"))[0],
-        "t2": glob.glob(os.path.join(d, "*-t2.nii.gz"))[0],
-        "t2f": glob.glob(os.path.join(d, "*-t2f.nii.gz"))[0],
-        "t1c": glob.glob(os.path.join(d, "*-t1c.nii.gz"))[0],
-    }
+def load_metadata(metadata_json_pth):
+    if not os.path.exists(metadata_json_pth):
+        return {}
+    with open(metadata_json_pth, "r") as f:
+        return json.load(f)
 
-
-def register_atlas(subject_folder: str):
-    print(subject_folder)
-    pass
 
 
 def main(args: argparse.Namespace):
     # modality_paths = get_modality_paths(args.subject_folder)
     # t1_path = modality_paths['t1']
-    t1_path = glob.glob(os.path.join(args.subject_folder, "*-t1.nii.gz"))[0]
+    t1_path = glob.glob(os.path.join(args.subject_folder, "*-t1n.nii.gz"))[0]
     tumor_path = glob.glob(os.path.join(args.subject_folder, "*-seg.nii.gz"))[0]
 
     tmp_dir = join(args.subject_folder, "tmp")
     os.makedirs(tmp_dir, exist_ok=True)
+
+    # Load patient metadata from metadata.json in subject folder
+    metadata_json_pth = join(args.subject_folder, "metadata.json")
+    metadata = load_metadata(metadata_json_pth)
 
     # Register atlas to image, image to atlas, and midline
     mni_in_subj = join(tmp_dir, "MNI152_in_subject_space.nii.gz")
@@ -55,7 +53,7 @@ def main(args: argparse.Namespace):
 
     midline_out = join(tmp_dir, "patient_midline.nii.gz")
 
-    logger.info(f'Starting registration steps...')
+    logger.info(f'** [0/4] Starting registration steps...')
     register.register_mni_to_subject(
         fixed=t1_path, moved=mni_in_subj, transform=mni_tfm, overwrite=args.overwrite
     )  # register MNI152 to subject space
@@ -64,11 +62,11 @@ def main(args: argparse.Namespace):
         moved=midline_out, transform=mni_tfm, overwrite=args.overwrite
     )  # register MNI152 midline to subject space using mni_tfm
     register.apply_transform(moving=tumor_path, moved=tum_in_mni, transform=sub_tfm, is_seg=True)
-    logger.info(f'Finished registration steps!')
+    logger.info(f'* Finished registration steps!')
 
 
     # SynthSeg is unreliable on images with tumors, so we run it on the (healthy) MNI atlas registered to the subject space
-    logger.info(f'Starting anatomical segmentation steps...')
+    logger.info(f'** [1/4] Starting anatomical segmentation steps...')
     anatseg = mni_in_subj.replace(".nii.gz", "_synthseg.nii.gz")
     merged_seg = mni_in_subj.replace(".nii.gz", "_merged_seg.nii.gz")
     anat_segmentation.synthseg(input_path=mni_in_subj, output_path=anatseg)
@@ -82,15 +80,16 @@ def main(args: argparse.Namespace):
         ncr_label=args.ncr_label,
         ed_label=args.ed_label,
         et_label=args.et_label,
+        tumor_type=metadata['tumor-type']
     )
-    logger.info(f'Finished segmentation steps! Merged mask can be found in {merged_seg}')
+    logger.info(f'* Finished segmentation steps! Merged mask can be found in {merged_seg}')
 
-    # Extract metadata to be used in the report
-    metadata = {}  # TODO: load from json with load_metadata, make sure it includes tumor_type for merged, add tumor measurements
 
+    # Extract midline shift features
     midline_summary = midline_shift_3d(tmp_dir=tmp_dir, tumor=tumor_path, ncr_label=args.ncr_label, ed_label=args.ed_label, et_label=args.et_label, overwrite=args.overwrite)
     metadata.update(midline_summary)
 
+    # Extract VASARI features
     vasari_summary = vasari_features(tumor=tumor_path, tumor_mni=tum_in_mni, metadata=metadata, merged=merged_seg, verbose=False, translate=True, ncr_label=args.ncr_label, ed_label=args.ed_label, et_label=args.et_label)
     metadata.update(vasari_summary)
 

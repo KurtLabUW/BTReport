@@ -1,12 +1,32 @@
 # This is the codebase for VASARI-auto
-###	vasari-auto.py | a pipeline for automated VASARI characterisation of glioma.
-###	Copyright 2024 James Ruffle, High-Dimensional Neurology, UCL Queen Square Institute of Neurology.
-###	This program is licensed under the APACHE 2.0 license.
-###	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-### This program is not intended for clinical use of any kind.
-###	See the License for more details.
-###	This code is part of the repository https://github.com/james-ruffle/vasari-auto
-###	Correspondence to Dr James K Ruffle by email: j.ruffle@ucl.ac.uk
+# -------------------------------------------------------------------------
+# vasari-auto.py | a pipeline for automated VASARI characterisation of glioma.
+# Copyright 2024 James Ruffle, High-Dimensional Neurology,
+# UCL Queen Square Institute of Neurology.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty
+# of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# Not intended for clinical use.
+#
+# Original repository:
+#     https://github.com/james-ruffle/vasari-auto
+# Correspondence:
+#     Dr James K Ruffle — j.ruffle@ucl.ac.uk
+# -------------------------------------------------------------------------
+
+# --- Modifications by Juampablo Heras Rivera for BTReport----------------------------------------
+# This file has been modified from the original VASARI-auto implementation.
+# Changes include:
+#   - Improved midline crossing logic in the original subject space
+#   - Multifocal or Multicentric logic: used connected components to get the number of tumor bodies, then only kept mutliple lesions if the non-largest lesions are >1cm.  Lesion is multifocal when more than one of these lesions exists
+#   - Used the images image in their original space instead of the version registered MNI152 space to better estimate quantities like proportion necrotic, etc.. This was noted as an option in the original paper, but they used the MNI152 version.
+#   - Added eloquent regions obtained from Brodmann Area Maps (https://surfer.nmr.mgh.harvard.edu/fswiki/BrodmannAreaMaps)
+#   - Added lesion sizes APxTVxCC
+#   - Adjusted to only include quantities that can be derived from BraTS masks. Removed proportion
+# -------------------------------------------------------------------------
+
 
 # Import packages
 import numpy as np
@@ -14,19 +34,12 @@ import os, logging
 import pandas as pd
 import nibabel as nib
 from scipy.ndimage import label
-import matplotlib.pyplot as plt
 from sklearn.metrics import *
 import time
 from skimage.morphology import skeletonize
 
 pd.set_option("display.max_rows", 500)
-import json
 import math
-
-import typer
-import random
-
-from pprint import pprint
 
 logger = logging.getLogger(__name__)
 
@@ -62,8 +75,6 @@ def get_vasari_features(
     focus_thresh=30000,
     num_components_bin_thresh=10,
     num_components_cet_thresh=15,
-    translate=True,
-    map_name="vasari",
 ):
     """
     #Required argument
@@ -688,7 +699,6 @@ def get_vasari_features(
         "CET Crosses midline": CET_cross_midline_f,
         "Multiple satellites present": num_components_cet_f,
         #    'F25 Calvarial modelling':np.nan, #unsupported in current version
-        #    'COMMENTS':'Please note that this software is in beta and utilises only irrevocably anonymised lesion masks. VASARI features that require source data shall not be derived and return NaN'
         "Asymmetrical Ventricles": asymmetrical_ventricles,
         "Enlarged Ventricles": enlarged_ventricles,
         "Region Proportions": region_prop_list,

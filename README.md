@@ -27,7 +27,7 @@ Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 </td>
 <!-- <td width="200"></td> spacer column -->
 <td align="right">
-  <img src="assets/affiliations.png" width="200" alt="BTReport affiliations">
+  <img src="assets/affiliations.png" width="220" alt="BTReport affiliations">
 </td>
 </tr>
 </table>

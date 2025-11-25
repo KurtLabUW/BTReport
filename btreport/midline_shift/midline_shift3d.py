@@ -1,7 +1,5 @@
 import os, logging
 from pathlib import Path
-import argparse
-import subprocess
 
 import nibabel as nib
 import numpy as np
@@ -320,7 +318,7 @@ def midline_shift_3d(tmp_dir, tumor, ncr_label=1, ed_label=2, et_label=4, overwr
     deformed_midline_path = os.path.join(tmp_dir, "patient_midline.nii.gz")
     ideal_midline_path = os.path.join(tmp_dir, "ideal_midline.nii.gz")
     midline_distances_path = os.path.join(tmp_dir, "midline_distances.nii.gz")
-    logger.info(f"** Starting midline shift processing...")
+    logger.info(f"** [2/4] Starting midline shift processing...")
 
     ideal_midline_from_deformed(
         deformed_midline_path=deformed_midline_path,
@@ -349,7 +347,7 @@ def midline_shift_3d(tmp_dir, tumor, ncr_label=1, ed_label=2, et_label=4, overwr
         metadata=metadata,
         overwrite=overwrite,
     )
-    logger.info(f"** Finished processing midline shift! Saved results to {tmp_dir}")
+    logger.info(f"* Finished processing midline shift! Saved results to {tmp_dir}")
 
     return summary
 
