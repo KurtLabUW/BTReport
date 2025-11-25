@@ -45,6 +45,7 @@ dependencies:
       - autograd==1.8.0
       - autograd-gamma==0.5.0
       - bert-score==0.3.13
+      - black==25.11.0
       - blis==0.7.11
       - catalogue==2.0.10
       - certifi==2025.11.12
@@ -112,6 +113,7 @@ dependencies:
       - multidict==6.7.0
       - multiprocess==0.70.16
       - murmurhash==1.0.15
+      - mypy-extensions==1.1.0
       - narwhals==2.12.0
       - nest-asyncio==1.6.0
       - networkx==3.2.1
@@ -137,6 +139,7 @@ dependencies:
       - packaging==25.0
       - pandas==2.3.3
       - parso==0.8.5
+      - pathspec==0.12.1
       - pexpect==4.9.0
       - pillow==10.3.0
       - platformdirs==4.4.0
@@ -161,6 +164,7 @@ dependencies:
       - pystrum==0.4
       - pytest==8.4.2
       - python-dateutil==2.9.0.post0
+      - pytokens==0.3.0
       - pytz==2025.2
       - pyyaml==6.0.3
       - pyzmq==27.1.0
@@ -177,6 +181,7 @@ dependencies:
       - scikit-image==0.24.0
       - scikit-learn==1.6.1
       - scipy==1.13.1
+      - seaborn==0.13.2
       - sentence-transformers==3.0.1
       - sentencepiece==0.2.0
       - shellingham==1.5.4

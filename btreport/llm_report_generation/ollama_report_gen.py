@@ -6,7 +6,6 @@ from tqdm import tqdm
 import argparse
 
 
-
 EXAMPLE_FINDINGS = """
 FINDINGS:
 MASS EFFECT & VENTRICLES: There is at least 8 mm the left-to-right midline shift at
@@ -46,6 +45,7 @@ METADATA (for subject {subject_id}):
 Write the FINDINGS section now, using clinical radiology language.
 """
 
+
 def generate_report(subject_id, metadata, model="gpt-oss:120b"):
     prompt = REPORT_TEMPLATE.format(
         example_findings=EXAMPLE_FINDINGS,
@@ -62,11 +62,11 @@ def generate_report(subject_id, metadata, model="gpt-oss:120b"):
 
 # TODO: add merge logic
 def main(args):
-    model_name=args.model_name
+    model_name = args.model_name
     num_splits = args.num_splits
     save_every = args.save_every
     split_no = args.split_no
-    
+
     input_json = "brats23_metadata.json"
     outdir = f"reports/{model_name}"
     os.makedirs(outdir, exist_ok=True)
@@ -94,7 +94,7 @@ def main(args):
 
     # iterate through subjects in this split
     for idx, (subject_id, metadata) in enumerate(tqdm(subjects, desc="Subjects"), start=1):
-        if subject_id in output: # skip subjects already done
+        if subject_id in output:  # skip subjects already done
             continue
 
         print(f"Processing {idx} / {len(subjects)}: {subject_id}")
@@ -121,10 +121,9 @@ def main(args):
     print("Final save complete.")
 
 
-
 # model_name="gpt-oss:120b"
 # # model_name="deepseek-r1:32b"
-    
+
 # python ollama_report_gen.py --num_splits 4 --split_no 3
 
 if __name__ == "__main__":

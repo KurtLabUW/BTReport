@@ -7,7 +7,6 @@ Contains scripts and models for 3D midline shift quantification from MRI data:
 
 
 
-
 ## Setting up Synthmorph
 
 SynthMorph is a great tool for registering arbitrary brain scans to each other, without needing specific preprocessing. SynthMorph is incredibly robust and can do cross-modality (MRI-to-CT) alignment as well. In this project, we use SynthMorph to register T1 scans to the MNI152 Atlas and vice-versa.

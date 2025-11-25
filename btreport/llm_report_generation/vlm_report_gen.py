@@ -8,18 +8,16 @@ import json
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_NAME = "llama3:70b"
 
+
 def encode_image(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode("utf-8")
 
+
 def main():
     image_b64 = encode_image(image_path)
 
-    payload = {
-        "model": MODEL_NAME,
-        "prompt": "Describe visible pathology in this MRI slice.",
-        "images": [image_b64]
-    }
+    payload = {"model": MODEL_NAME, "prompt": "Describe visible pathology in this MRI slice.", "images": [image_b64]}
 
     r = requests.post(OLLAMA_URL, json=payload, stream=True)
 
