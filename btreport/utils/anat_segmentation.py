@@ -13,19 +13,42 @@ if WRAPPER is None:
     raise RuntimeError("Environment variable SYNTHSEG_SIF pointing to SynthSeg .sif is not set!")
 
 
-def synthseg(input_path, output_path, parc=False, robust=False, fast=False, cpu=False, wrapper=WRAPPER, overwrite=False):
-    if os.path.exists(output_path) and not overwrite:
-        logger.info(f"Path {output_path} exists, skipping segmentation..")
-        return
-    """Run SynthSeg segmentation for one subject."""
-    logger.info(f"========================================")
-    logger.info(f"    SynthSeg Segmentation")
-    logger.info(f"----------------------------------------")
-    logger.info(f"  Input    : {input_path}")
-    logger.info(f"  Output    : {output_path}")
-    logger.info(f"========================================")
+# def synthseg(input_path, output_path, parc=False, robust=False, fast=False, cpu=False, wrapper=WRAPPER, overwrite=False):
+#     if os.path.exists(output_path) and not overwrite:
+#         logger.info(f"Path {output_path} exists, skipping segmentation..")
+#         return
+#     """Run SynthSeg segmentation for one subject."""
+#     logger.info(f"========================================")
+#     logger.info(f"    SynthSeg Segmentation")
+#     logger.info(f"----------------------------------------")
+#     logger.info(f"  Input    : {input_path}")
+#     logger.info(f"  Output    : {output_path}")
+#     logger.info(f"========================================")
 
-    cmd = [wrapper, "--i", input_path, "--o", output_path]
+#     cmd = [wrapper, "--i", input_path, "--o", output_path]
+#     if parc:
+#         cmd.append("--parc")
+#     if robust:
+#         cmd.append("--robust")
+#     if fast:
+#         cmd.append("--fast")
+#     if cpu:
+#         cmd.append("--cpu")
+#     subprocess.run(cmd, check=True)
+
+def synthseg(input_path, output_path, parc=False, robust=False, fast=False, cpu=False, sif=WRAPPER):
+    if os.path.exists(output_path):
+        return
+
+    cmd = [
+        "apptainer", "exec", "--nv",
+        sif,
+        "python", "/opt/SynthSeg/scripts/commands/SynthSeg_predict.py",
+        "--i", input_path,
+        "--o", output_path
+    ]
+
+
     if parc:
         cmd.append("--parc")
     if robust:
@@ -34,11 +57,8 @@ def synthseg(input_path, output_path, parc=False, robust=False, fast=False, cpu=
         cmd.append("--fast")
     if cpu:
         cmd.append("--cpu")
+
     subprocess.run(cmd, check=True)
-
-
-def merge_masks(anat, tumor):
-    pass
 
 
 TUMOR_LABEL_MAPS = {
@@ -55,8 +75,11 @@ def update_tumor_labels(image_array: np.ndarray, label_map: dict):
     return new_array.astype(np.uint8)
 
 
-def merge_tumor_midline_and_anat_masks(tumor_path, synthseg_path, midline_path, save_path, tumor_type="glioma", ncr_label=1, ed_label=2, et_label=3):
-
+def merge_tumor_midline_and_anat_masks(tumor_path, synthseg_path, midline_path, save_path, overwrite=False, tumor_type="glioma", ncr_label=1, ed_label=2, et_label=3):
+    
+    if os.path.exists(save_path) and not overwrite:
+        logger.info(f'Path {save_path} exists, skipping merging of anatomical, midline, and tumor segmentations..')
+        return
     TUMOR_LABEL_MAPS = {
         "meningioma": {ncr_label: 64, ed_label: 65, et_label: 66},  # Meningioma NCR, ED, ET
         "pediatric-glioma": {ncr_label: 67, ed_label: 68, et_label: 69},  # Pediatric Glioma NCR, ED, ET
@@ -67,6 +90,7 @@ def merge_tumor_midline_and_anat_masks(tumor_path, synthseg_path, midline_path, 
     tumor = tumor_im.get_fdata()
     midline = nib.load(midline_path).get_fdata()
     synthseg = nib.load(synthseg_path).get_fdata()
+    brainmask = (synthseg > 0).astype(np.uint8)
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
     for tt in TUMOR_LABEL_MAPS.keys():
@@ -81,9 +105,11 @@ def merge_tumor_midline_and_anat_masks(tumor_path, synthseg_path, midline_path, 
     tumor = update_tumor_labels(image_array=tumor, label_map=TUMOR_LABEL_MAPS[tumor_type])
     merged[tumor != 0] = tumor[tumor != 0]
     merged[midline != 0] = midline[midline != 0]
+    merged[brainmask == 0] = 0   
 
     merged = np.rint(merged).astype(np.uint8)
     nib.save(nib.Nifti1Image(merged, affine=tumor_im.affine, header=tumor_im.header), save_path)
+    logger.info('Merged anatomical, midline, and tumor segmentations successfully!')
 
 
 """

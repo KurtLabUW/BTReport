@@ -1,6 +1,22 @@
 #!/bin/bash
 
-# Load Apptainer
+GPUS="0"   # Default if none provided
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --gpus)
+            GPUS="$2"; shift 2;;
+        *)
+            echo "Unknown option: $1"; exit 1;;
+    esac
+done
+
+echo "OLLAMA GPUs set to: $GPUS"
+export CUDA_VISIBLE_DEVICES=$GPUS
+
+
+
+# Load Apptainer 
 export PATH="${PATH}:/cvmfs/oasis.opensciencegrid.org/mis/apptainer/1.3.3/x86_64/bin"
 
 # Model directory
@@ -21,4 +37,4 @@ echo "Press Ctrl+C to stop."
 apptainer exec --nv \
     -B /pscratch:/pscratch \
     -B /cvmfs:/cvmfs \
-    "$IMAGE" ollama serve 
+    "$IMAGE" ollama serve

@@ -53,6 +53,6 @@ where = ["."]
 include = ["btreport*"]
 
 [project.scripts]
-btreport-generate = "btreport.llm_report_generation:main"
-btreport-midline = "btreport.midline_shift:main"
-btreport-vasari = "btreport.vasari_features:main"
+btreport-generate = "btreport.generate_report:main"      # runs one subject
+btreport-runall   = "btreport.run_all_reports:main"      # runs batch of subjects
+btreport-ollama   = "scripts.ollama_server:main"        # starts ollama (GPU selectable)

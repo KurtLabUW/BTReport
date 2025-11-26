@@ -9,10 +9,10 @@ logger = logging.getLogger(__name__)
 ATLASES = "btreport/vasari_features/atlas_masks/"
 
 
-def vasari_features(tumor, tumor_mni, metadata, merged, map_name="vasari_concise", save_dir=None, verbose=False, translate=True, ncr_label=1, ed_label=2, et_label=4):
+def vasari_features(tumor, tumor_mni, metadata, merged, map_name="vasari_concise", save_dir=None, verbose=False, ncr_label=1, ed_label=2, et_label=4):
     logger.info('** [3/4] Starting VASARI Feature extraction...')
     vasari_auto_report = get_vasari_features(
-        file=tumor_mni, file_ss=tumor, atlases=ATLASES, metadata=metadata, merged=merged, verbose=verbose, translate=translate, enh_quality_thresh=50,
+        file=tumor_mni, file_ss=tumor, atlases=ATLASES, metadata=metadata, merged=merged, verbose=verbose, enh_quality_thresh=50,
         enhancing_label=et_label, nonenhancing_label=ncr_label, oedema_label=ed_label,
     )
     result = translate_vasari_report(vasari_auto_report, map_name=map_name)
@@ -78,12 +78,12 @@ VASARI_MAPS = {
     "Side of Tumor Epicenter": {1: "Right", 2: "Bilateral", 3: "Left"},
     "Eloquent Brain Involvement": {1: "No involvement", 2: "Speech motor", 3: "Motor", 4: "Vision"},
     "Enhancement Quality": {1: "None", 2: "Mild", 3: "Marked"},
-    "Proportion Enhancing": {3: "<5%", 4: "6-33%", 5: "34-67%", 6: ">68%"},
-    "Proportion nCET": {3: "<5%", 4: "6-33%", 5: "34-67%", 6: "68-95%", 7: "95-99%", 8: "100%"},
-    "Proportion Necrosis": {2: "0%", 3: "<5%", 4: "6-33%", 5: "34-67%"},  #
+    # "Proportion Enhancing": {3: "<5%", 4: "6-33%", 5: "34-67%", 6: ">68%"},
+    # "Proportion nCET": {3: "<5%", 4: "6-33%", 5: "34-67%", 6: "68-95%", 7: "95-99%", 8: "100%"},
+    # "Proportion Necrosis": {2: "0%", 3: "<5%", 4: "6-33%", 5: "34-67%"},  #
     "Multifocal or Multicentric": {1: "Solitary", 2: "Multifocal", 3: "Multicentric", 4: "Gliomatosis"},
     "Thickness of enhancing margin": {3: "<3mm", 4: ">3mm", 5: "Solid"},
-    "Proportion of Oedema": {2: "0%", 3: "<5%", 4: "6-33%", 5: "34-67%"},
+    # "Proportion of Oedema": {2: "0%", 3: "<5%", 4: "6-33%", 5: "34-67%"},
     "Edema crosses midline": {3: "True", 2: "False"},  #
     "Ependymal (ventricular) Invasion": {1: "Absent", 2: "Present"},
     "Cortical involvement": {1: "Absent", 2: "Present"},

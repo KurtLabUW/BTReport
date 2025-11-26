@@ -1,0 +1,502 @@
+ID,Sex,Age at MRI,WHO CNS Grade,Final pathologic diagnosis (WHO 2021),MGMT status,MGMT index,1p/19q,IDH,1-dead 0-alive,OS,EOR,Biopsy prior to imaging,BraTS21 ID,BraTS21 Segmentation Cohort,BraTS21 MGMT Cohort
+UCSF-PDGM-004,M,66,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,1303,STR,No,BraTS2021_00097,Training,Training
+UCSF-PDGM-005,F,80,4,"Glioblastoma, IDH-wildtype",indeterminate,unknown,unknown,wildtype,1,274,biopsy,No,,,
+UCSF-PDGM-007,M,70,4,"Glioblastoma, IDH-wildtype",indeterminate,unknown,unknown,wildtype,1,417,STR,No,BraTS2021_00103,Training,
+UCSF-PDGM-008,M,70,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,185,STR,No,,,
+UCSF-PDGM-009,F,68,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,389,STR,No,BraTS2021_00049,Training,Training
+UCSF-PDGM-010,M,39,4,"Glioblastoma, IDH-wildtype",positive,7,unknown,wildtype,0,17,GTR,No,BraTS2021_00087,Training,Training
+UCSF-PDGM-011,F,68,4,"Glioblastoma, IDH-wildtype",positive,5,unknown,wildtype,0,133,STR,No,BraTS2021_00068,Training,Training
+UCSF-PDGM-012,F,74,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,15,GTR,No,,,
+UCSF-PDGM-013,F,65,4,"Glioblastoma, IDH-wildtype",positive,13,unknown,wildtype,1,322,STR,No,BraTS2021_00056,Training,Training
+UCSF-PDGM-014,F,64,4,"Glioblastoma, IDH-wildtype",positive,4,unknown,wildtype,1,313,STR,No,BraTS2021_00002,Training,Training
+UCSF-PDGM-015,M,50,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,54,STR,No,BraTS2021_00021,Training,Training
+UCSF-PDGM-016,F,57,4,"Glioblastoma, IDH-wildtype",positive,7,unknown,wildtype,0,14,STR,Yes,BraTS2021_00054,Training,Training
+UCSF-PDGM-017,M,54,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,241,STR,No,BraTS2021_00003,Training,Training
+UCSF-PDGM-018,M,51,4,"Glioblastoma, IDH-wildtype",positive,11,unknown,wildtype,0,1449,GTR,No,,,
+UCSF-PDGM-019,F,50,4,"Glioblastoma, IDH-wildtype",positive,16,unknown,wildtype,1,719,GTR,No,BraTS2021_00027,Validation,Validation
+UCSF-PDGM-020,M,49,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,551,GTR,No,BraTS2021_00032,Training,Training
+UCSF-PDGM-021,M,41,4,"Astrocytoma, IDH-mutant",positive,8,unknown,mutated (NOS),0,1759,GTR,No,BraTS2021_00085,Training,Training
+UCSF-PDGM-022,F,61,4,"Glioblastoma, IDH-wildtype",positive,14,unknown,wildtype,1,533,STR,No,BraTS2021_00013,Validation,Validation
+UCSF-PDGM-023,F,67,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,1,1161,GTR,No,BraTS2021_00035,Training,Training
+UCSF-PDGM-024,M,51,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,653,STR,No,BraTS2021_00072,Training,Training
+UCSF-PDGM-025,M,34,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,465,STR,No,BraTS2021_00094,Training,Training
+UCSF-PDGM-026,F,83,4,"Glioblastoma, IDH-wildtype",positive,3,unknown,wildtype,0,236,biopsy,No,,,
+UCSF-PDGM-027,F,54,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,298,STR,No,BraTS2021_00016,Training,
+UCSF-PDGM-029,M,66,4,"Glioblastoma, IDH-wildtype",indeterminate,unknown,unknown,wildtype,1,75,biopsy,No,BraTS2021_01027,Training,
+UCSF-PDGM-030,M,78,4,"Glioblastoma, IDH-wildtype",positive,3,unknown,wildtype,0,17,STR,No,BraTS2021_00098,Training,Training
+UCSF-PDGM-031,F,40,4,"Astrocytoma, IDH-mutant",positive,13,intact,mutated (NOS),1,824,GTR,No,,,
+UCSF-PDGM-032,F,66,4,"Glioblastoma, IDH-wildtype",indeterminate,unknown,unknown,wildtype,0,105,STR,No,BraTS2021_01028,Training,
+UCSF-PDGM-033,M,37,4,"Glioblastoma, IDH-wildtype",positive,10,unknown,wildtype,1,1489,STR,No,BraTS2021_00070,Training,Training
+UCSF-PDGM-034,M,63,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,52,STR,No,BraTS2021_00088,Training,Training
+UCSF-PDGM-035,M,69,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,1,132,STR,No,,,
+UCSF-PDGM-036,M,52,4,"Glioblastoma, IDH-wildtype",positive,8,intact,wildtype,0,1673,GTR,No,BraTS2021_00025,Training,Training
+UCSF-PDGM-037,M,74,4,"Glioblastoma, IDH-wildtype",positive,17,unknown,wildtype,0,460,GTR,No,BraTS2021_00078,Training,Training
+UCSF-PDGM-038,M,78,4,"Glioblastoma, IDH-wildtype",positive,16,unknown,wildtype,1,152,STR,No,BraTS2021_00082,Validation,Validation
+UCSF-PDGM-039,M,53,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,0,134,GTR,No,BraTS2021_00024,Training,Training
+UCSF-PDGM-040,M,65,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,716,GTR,No,,,
+UCSF-PDGM-041,M,69,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,128,STR,No,BraTS2021_00015,Validation,Validation
+UCSF-PDGM-042,M,58,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,635,GTR,No,BraTS2021_00044,Training,Training
+UCSF-PDGM-043,F,58,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,1,1116,GTR,No,BraTS2021_00058,Training,Training
+UCSF-PDGM-044,M,38,4,"Astrocytoma, IDH-mutant",positive,6,unknown,mutated (NOS),0,930,STR,No,BraTS2021_00059,Training,Training
+UCSF-PDGM-045,M,32,4,"Astrocytoma, IDH-mutant",positive,11,relative co-deletion,mutated (NOS),0,1718,GTR,No,BraTS2021_00043,Training,Training
+UCSF-PDGM-046,M,48,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,178,STR,Yes,BraTS2021_00030,Training,Training
+UCSF-PDGM-047,M,55,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,0,385,STR,No,,,
+UCSF-PDGM-048,M,74,4,"Glioblastoma, IDH-wildtype",positive,16,unknown,wildtype,1,54,biopsy,No,BraTS2021_00026,Training,Training
+UCSF-PDGM-049,F,65,4,"Glioblastoma, IDH-wildtype",positive,13,unknown,wildtype,0,721,STR,No,,,
+UCSF-PDGM-050,M,37,4,"Glioblastoma, IDH-wildtype",positive,7,unknown,wildtype,1,554,GTR,No,BraTS2021_00048,Training,Training
+UCSF-PDGM-053,F,64,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,0,575,GTR,No,BraTS2021_00018,Training,Training
+UCSF-PDGM-055,F,69,4,"Glioblastoma, IDH-wildtype",positive,13,unknown,wildtype,0,1328,GTR,No,BraTS2021_00011,Training,Training
+UCSF-PDGM-056,F,79,4,"Glioblastoma, IDH-wildtype",positive,16,unknown,wildtype,1,207,STR,No,,,
+UCSF-PDGM-057,M,38,4,"Glioblastoma, IDH-wildtype",positive,4,unknown,wildtype,0,224,STR,No,BraTS2021_00000,Training,Training
+UCSF-PDGM-058,F,51,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,0,1540,GTR,No,,,
+UCSF-PDGM-059,M,71,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,0,223,STR,No,BraTS2021_00036,Training,Training
+UCSF-PDGM-061,F,46,4,"Astrocytoma, IDH-mutant",positive,16,intact,mutated (NOS),0,1907,STR,No,BraTS2021_00012,Training,Training
+UCSF-PDGM-063,M,56,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,1,287,STR,No,BraTS2021_00031,Training,Training
+UCSF-PDGM-064,M,49,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,1,187,GTR,No,,,
+UCSF-PDGM-065,M,64,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,167,STR,No,BraTS2021_00095,Training,Training
+UCSF-PDGM-066,F,38,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,1913,biopsy,No,BraTS2021_01035,Training,
+UCSF-PDGM-067,M,71,4,"Glioblastoma, IDH-wildtype",positive,4,unknown,wildtype,1,299,STR,No,BraTS2021_00074,Training,Training
+UCSF-PDGM-068,M,54,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,336,biopsy,No,BraTS2021_00047,Validation,Validation
+UCSF-PDGM-069,M,55,4,"Glioblastoma, IDH-wildtype",positive,12,unknown,wildtype,1,245,biopsy,No,BraTS2021_00037,Validation,Validation
+UCSF-PDGM-070,M,66,4,"Glioblastoma, IDH-wildtype",positive,5,unknown,wildtype,1,678,STR,No,BraTS2021_00052,Training,Training
+UCSF-PDGM-071,F,71,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,315,STR,No,,,
+UCSF-PDGM-072,M,52,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,0,184,STR,No,,,
+UCSF-PDGM-073,F,54,4,"Astrocytoma, IDH-mutant",positive,12,unknown,mutated (NOS),0,1617,STR,No,BraTS2021_00079,Validation,Validation
+UCSF-PDGM-074,M,61,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,583,GTR,Yes,BraTS2021_00084,Training,Training
+UCSF-PDGM-075,M,61,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,421,GTR,No,BraTS2021_00061,Training,Training
+UCSF-PDGM-076,M,76,4,"Glioblastoma, IDH-wildtype",positive,15,unknown,wildtype,0,108,biopsy,No,,,
+UCSF-PDGM-077,M,84,4,"Glioblastoma, IDH-wildtype",positive,17,unknown,wildtype,1,142,STR,No,BraTS2021_00077,Training,Training
+UCSF-PDGM-078,F,79,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,1,354,GTR,No,,,
+UCSF-PDGM-079,F,79,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,560,STR,No,BraTS2021_00081,Training,Training
+UCSF-PDGM-080,F,77,4,"Glioblastoma, IDH-wildtype",positive,4,unknown,wildtype,1,253,GTR,No,BraTS2021_00066,Training,Training
+UCSF-PDGM-082,M,60,4,"Glioblastoma, IDH-wildtype",positive,16,unknown,wildtype,0,6,STR,No,,,
+UCSF-PDGM-083,F,62,4,"Glioblastoma, IDH-wildtype",positive,17,unknown,wildtype,1,260,GTR,No,,,
+UCSF-PDGM-084,M,60,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,902,GTR,No,BraTS2021_00045,Training,Training
+UCSF-PDGM-085,M,77,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,232,GTR,No,BraTS2021_00017,Training,Training
+UCSF-PDGM-086,F,72,4,"Glioblastoma, IDH-wildtype",positive,15,unknown,wildtype,0,266,STR,No,BraTS2021_00089,Training,Training
+UCSF-PDGM-087,M,63,4,"Glioblastoma, IDH-wildtype",positive,7,intact,wildtype,1,406,GTR,No,BraTS2021_00071,Training,Training
+UCSF-PDGM-088,F,60,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,1797,GTR,No,BraTS2021_00008,Training,Training
+UCSF-PDGM-089,M,25,4,"Astrocytoma, IDH-mutant",positive,4,intact,IDH1 p.R132H,0,1785,STR,No,,,
+UCSF-PDGM-090,M,65,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,1,749,STR,No,BraTS2021_00060,Training,Training
+UCSF-PDGM-091,M,79,4,"Glioblastoma, IDH-wildtype",positive,12,unknown,wildtype,1,463,GTR,Yes,,,
+UCSF-PDGM-092,F,52,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,567,GTR,No,BraTS2021_00009,Training,Training
+UCSF-PDGM-093,M,79,4,"Glioblastoma, IDH-wildtype",positive,12,unknown,wildtype,1,994,GTR,No,BraTS2021_00020,Training,Training
+UCSF-PDGM-094,M,61,4,"Glioblastoma, IDH-wildtype",positive,12,unknown,wildtype,0,161,STR,No,BraTS2021_00091,Validation,Validation
+UCSF-PDGM-095,F,62,4,"Glioblastoma, IDH-wildtype",positive,13,unknown,wildtype,1,777,STR,No,BraTS2021_00046,Training,Training
+UCSF-PDGM-096,M,46,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,591,STR,No,BraTS2021_00001,Validation,Validation
+UCSF-PDGM-097,F,69,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,110,STR,No,BraTS2021_00022,Training,Training
+UCSF-PDGM-099,M,48,4,"Glioblastoma, IDH-wildtype",positive,3,unknown,wildtype,1,472,GTR,No,BraTS2021_00028,Training,Training
+UCSF-PDGM-101,M,50,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,705,STR,No,BraTS2021_00090,Training,Training
+UCSF-PDGM-102,M,45,4,"Glioblastoma, IDH-wildtype",positive,6,unknown,wildtype,0,798,STR,No,,,
+UCSF-PDGM-103,M,55,4,"Glioblastoma, IDH-wildtype",positive,5,intact,wildtype,0,1694,GTR,No,BraTS2021_00096,Training,Training
+UCSF-PDGM-104,M,52,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,70,biopsy,No,BraTS2021_00053,Training,Training
+UCSF-PDGM-105,M,66,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,667,GTR,No,,,
+UCSF-PDGM-106,F,51,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,351,GTR,No,BraTS2021_00014,Training,Training
+UCSF-PDGM-107,F,62,4,"Glioblastoma, IDH-wildtype",positive,14,unknown,wildtype,0,175,STR,No,,,
+UCSF-PDGM-108,M,29,4,"Astrocytoma, IDH-mutant",positive,8,unknown,mutated (NOS),0,1715,GTR,No,BraTS2021_00033,Training,Training
+UCSF-PDGM-109,M,51,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,611,STR,No,BraTS2021_00063,Training,Training
+UCSF-PDGM-111,M,61,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,39,biopsy,No,BraTS2021_00019,Training,Training
+UCSF-PDGM-112,M,55,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,301,STR,Yes,BraTS2021_00064,Training,Training
+UCSF-PDGM-113,F,54,4,"Glioblastoma, IDH-wildtype",positive,11,intact,wildtype,1,1351,GTR,No,,,
+UCSF-PDGM-114,F,63,4,"Glioblastoma, IDH-wildtype",positive,12,unknown,wildtype,1,92,GTR,No,BraTS2021_00062,Training,Training
+UCSF-PDGM-115,M,58,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,430,GTR,No,BraTS2021_00080,Validation,Validation
+UCSF-PDGM-116,F,37,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,0,1611,GTR,No,BraTS2021_00006,Training,Training
+UCSF-PDGM-118,F,65,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,1,162,GTR,No,BraTS2021_00099,Training,Training
+UCSF-PDGM-119,M,49,4,"Astrocytoma, IDH-mutant",positive,15,relative co-deletion,mutated (NOS),0,1650,STR,No,BraTS2021_00005,Training,Training
+UCSF-PDGM-121,M,56,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,879,GTR,No,,,
+UCSF-PDGM-122,M,64,4,"Glioblastoma, IDH-wildtype",positive,7,intact,wildtype,1,1024,GTR,No,BraTS2021_00535,Validation,Validation
+UCSF-PDGM-123,M,52,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,485,GTR,No,,,
+UCSF-PDGM-124,M,17,4,"Astrocytoma, IDH-mutant",negative,0,intact,IDH1 p.R132H,0,1299,STR,Yes,BraTS2021_00530,Training,Training
+UCSF-PDGM-126,M,48,4,"Glioblastoma, IDH-wildtype",positive,7,intact,wildtype,1,919,GTR,No,BraTS2021_00517,Training,Training
+UCSF-PDGM-127,M,53,4,"Glioblastoma, IDH-wildtype",positive,17,unknown,wildtype,0,1296,GTR,No,BraTS2021_00548,Training,Training
+UCSF-PDGM-128,M,60,4,"Glioblastoma, IDH-wildtype",positive,17,unknown,wildtype,0,645,STR,No,BraTS2021_00511,Training,Training
+UCSF-PDGM-129,M,47,4,"Glioblastoma, IDH-wildtype",positive,5,intact,wildtype,1,553,GTR,No,,,
+UCSF-PDGM-130,M,60,4,"Glioblastoma, IDH-wildtype",positive,16,unknown,wildtype,0,1440,GTR,No,BraTS2021_00529,Training,Training
+UCSF-PDGM-131,M,76,4,"Glioblastoma, IDH-wildtype",negative,0,unknown,wildtype,0,410,GTR,No,BraTS2021_00547,Training,Training
+UCSF-PDGM-132,M,29,4,"Astrocytoma, IDH-mutant",positive,12,intact,IDH1 p.R132C,0,1139,STR,No,BraTS2021_00525,Training,Training
+UCSF-PDGM-133,F,64,4,"Glioblastoma, IDH-wildtype",positive,1,unknown,wildtype,1,109,GTR,No,BraTS2021_00481,Training,Training
+UCSF-PDGM-134,M,67,4,"Glioblastoma, IDH-wildtype",positive,2,unknown,wildtype,0,288,STR,No,BraTS2021_00502,Training,Training
+UCSF-PDGM-135,F,36,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,868,GTR,No,BraTS2021_00549,Training,Training
+UCSF-PDGM-136,M,78,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,586,GTR,No,,,
+UCSF-PDGM-137,M,53,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,799,GTR,No,BraTS2021_00491,Training,Training
+UCSF-PDGM-0429_FU003d,F,58,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,624,GTR,No,BraTS2021_00557,Training,Training
+UCSF-PDGM-139,M,65,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,188,GTR,No,BraTS2021_00466,Training,Training
+UCSF-PDGM-140,M,76,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,39,GTR,No,BraTS2021_00554,Training,Training
+UCSF-PDGM-141,M,65,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,758,GTR,No,,,
+UCSF-PDGM-142,M,61,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,430,GTR,No,BraTS2021_00553,Validation,Validation
+UCSF-PDGM-143,M,81,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,1,91,biopsy,No,BraTS2021_00552,Training,Training
+UCSF-PDGM-144,M,57,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,1,142,STR,No,BraTS2021_00559,Training,Training
+UCSF-PDGM-145,M,57,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,310,GTR,No,BraTS2021_00463,Validation,Validation
+UCSF-PDGM-146,M,57,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,1392,GTR,No,BraTS2021_00498,Training,Training
+UCSF-PDGM-147,M,58,4,"Astrocytoma, IDH-mutant",positive,13,intact,IDH1 p.R132H,1,482,STR,No,BraTS2021_00532,Training,Training
+UCSF-PDGM-148,F,78,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,86,biopsy,No,BraTS2021_00493,Training,Training
+UCSF-PDGM-149,M,66,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,15,GTR,No,BraTS2021_00464,Training,Training
+UCSF-PDGM-150,M,51,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,1,1308,GTR,No,BraTS2021_00506,Training,Training
+UCSF-PDGM-151,F,66,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,611,GTR,No,BraTS2021_00507,Training,Training
+UCSF-PDGM-152,F,58,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,471,STR,No,,,
+UCSF-PDGM-153,F,68,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,1,316,GTR,No,,,
+UCSF-PDGM-154,M,63,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,394,GTR,No,,,
+UCSF-PDGM-155,F,71,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,1,1132,GTR,No,,,
+UCSF-PDGM-156,F,27,4,"Astrocytoma, IDH-mutant",positive,16,intact,IDH1 p.R132C,0,1035,GTR,Yes,BraTS2021_00504,Training,Training
+UCSF-PDGM-157,F,60,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,0,902,GTR,No,BraTS2021_00505,Training,Training
+UCSF-PDGM-158,F,83,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,1,130,GTR,No,BraTS2021_00516,Training,Training
+UCSF-PDGM-159,F,65,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,729,STR,No,BraTS2021_00483,Training,Training
+UCSF-PDGM-160,F,67,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,628,STR,No,BraTS2021_00462,Validation,Validation
+UCSF-PDGM-161,M,29,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,248,GTR,No,,,
+UCSF-PDGM-162,M,33,4,"Astrocytoma, IDH-mutant",positive,14,intact,IDH1 p.R132C,0,1366,STR,No,BraTS2021_00543,Training,Training
+UCSF-PDGM-163,M,51,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,194,STR,No,BraTS2021_00469,Training,Training
+UCSF-PDGM-164,M,48,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,633,GTR,No,BraTS2021_00518,Training,Training
+UCSF-PDGM-165,M,70,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,60,GTR,No,,,
+UCSF-PDGM-166,F,49,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,689,STR,No,,,
+UCSF-PDGM-167,M,60,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,1196,GTR,No,BraTS2021_00470,Training,Training
+UCSF-PDGM-168,M,49,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,418,GTR,No,BraTS2021_00533,Training,Training
+UCSF-PDGM-169,M,79,4,"Glioblastoma, IDH-wildtype",positive,7,intact,wildtype,1,,,No,BraTS2021_00556,Training,Training
+UCSF-PDGM-170,M,42,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,418,biopsy,No,BraTS2021_00537,Training,Training
+UCSF-PDGM-172,F,64,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,925,GTR,No,,,
+UCSF-PDGM-173,M,80,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,72,GTR,No,BraTS2021_00551,Training,Training
+UCSF-PDGM-174,M,26,4,"Astrocytoma, IDH-mutant",positive,8,intact,IDH1 p.R132H,1,376,STR,No,BraTS2021_00528,Training,Training
+UCSF-PDGM-0396_FU175d,M,36,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,1084,STR,No,BraTS2021_00538,Training,Training
+UCSF-PDGM-176,F,74,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,302,GTR,No,BraTS2021_00503,Validation,Validation
+UCSF-PDGM-178,F,77,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,676,STR,No,BraTS2021_00512,Training,Training
+UCSF-PDGM-179,M,75,4,"Glioblastoma, IDH-wildtype",positive,5,intact,wildtype,0,1201,GTR,No,BraTS2021_00472,Training,Training
+UCSF-PDGM-180,M,71,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,494,GTR,No,BraTS2021_00545,Training,Training
+UCSF-PDGM-0409_FU001d,F,56,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,0,1167,GTR,No,BraTS2021_00539,Training,Training
+UCSF-PDGM-182,M,65,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,446,GTR,No,,,
+UCSF-PDGM-183,F,76,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,1163,GTR,No,BraTS2021_00524,Training,Training
+UCSF-PDGM-184,F,59,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,545,GTR,No,BraTS2021_00520,Training,Training
+UCSF-PDGM-185,M,35,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,0,1142,GTR,Yes,BraTS2021_00526,Training,Training
+UCSF-PDGM-186,M,60,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,230,GTR,No,BraTS2021_00558,Training,Training
+UCSF-PDGM-187,F,61,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,115,GTR,No,BraTS2021_00501,Training,Training
+UCSF-PDGM-188,M,46,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,329,STR,Yes,BraTS2021_00513,Training,Training
+UCSF-PDGM-189,F,62,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,0,416,STR,Yes,BraTS2021_00550,Training,Training
+UCSF-PDGM-190,F,39,4,"Astrocytoma, IDH-mutant",positive,16,intact,IDH1 p.R132H,0,698,STR,No,BraTS2021_00523,Training,Training
+UCSF-PDGM-191,F,26,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,837,GTR,No,BraTS2021_00478,Training,Training
+UCSF-PDGM-193,M,61,4,"Glioblastoma, IDH-wildtype",positive,11,intact,wildtype,1,394,GTR,Yes,BraTS2021_00500,Training,Training
+UCSF-PDGM-194,F,52,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,512,GTR,No,BraTS2021_00485,Training,Training
+UCSF-PDGM-195,M,58,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,304,STR,No,BraTS2021_00510,Training,Training
+UCSF-PDGM-196,M,72,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,150,GTR,No,BraTS2021_00496,Training,Training
+UCSF-PDGM-197,M,43,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,809,GTR,No,,,
+UCSF-PDGM-198,M,71,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,809,GTR,No,BraTS2021_00542,Training,Training
+UCSF-PDGM-200,F,65,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,1,141,GTR,No,BraTS2021_00479,Training,Training
+UCSF-PDGM-201,M,46,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,1015,GTR,No,,,
+UCSF-PDGM-202,M,58,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,920,GTR,No,BraTS2021_00519,Training,Training
+UCSF-PDGM-203,M,81,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,421,GTR,Yes,BraTS2021_00540,Training,Training
+UCSF-PDGM-204,F,68,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,428,GTR,No,BraTS2021_00467,Validation,Validation
+UCSF-PDGM-205,F,67,4,"Astrocytoma, IDH-mutant",positive,11,intact,IDH1 p.R132H,1,60,GTR,Yes,BraTS2021_00474,Validation,Validation
+UCSF-PDGM-206,M,35,4,"Astrocytoma, IDH-mutant",positive,2,intact,IDH1 p.R132H,0,125,STR,No,BraTS2021_00521,Validation,Validation
+UCSF-PDGM-207,F,57,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,281,GTR,No,BraTS2021_00492,Validation,Validation
+UCSF-PDGM-208,M,73,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,52,biopsy,Yes,,,
+UCSF-PDGM-209,F,61,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,446,GTR,No,BraTS2021_00495,Training,Training
+UCSF-PDGM-210,F,67,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,603,GTR,No,BraTS2021_00560,Validation,Validation
+UCSF-PDGM-212,F,86,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,48,biopsy,No,BraTS2021_00514,Training,Training
+UCSF-PDGM-213,M,76,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,1,361,GTR,No,BraTS2021_00494,Training,Training
+UCSF-PDGM-214,M,68,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,845,GTR,No,,,
+UCSF-PDGM-215,M,79,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,128,biopsy,Yes,,,
+UCSF-PDGM-223,M,55,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,961,GTR,Yes,BraTS2021_00488,Training,Training
+UCSF-PDGM-225,M,72,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,108,biopsy,No,BraTS2021_00477,Training,Training
+UCSF-PDGM-227,M,72,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,421,GTR,Yes,BraTS2021_00468,Training,Training
+UCSF-PDGM-228,F,89,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,203,STR,No,BraTS2021_00555,Training,Training
+UCSF-PDGM-229,M,69,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,476,GTR,No,,,
+UCSF-PDGM-231,F,36,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,2043,STR,No,,,
+UCSF-PDGM-232,M,22,2,"Astrocytoma, IDH-mutant",positive,11,intact,IDH1 p.R132H,1,1612,STR,No,,,
+UCSF-PDGM-233,F,31,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1182,STR,No,,,
+UCSF-PDGM-234,M,30,2,"Astrocytoma, IDH-mutant",positive,9,intact,IDH1 p.R132G,1,2191,GTR,No,,,
+UCSF-PDGM-235,F,34,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH2 p.R172K,0,1848,GTR,No,,,
+UCSF-PDGM-236,F,35,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,2209,GTR,No,,,
+UCSF-PDGM-237,M,42,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,534,STR,No,,,
+UCSF-PDGM-238,M,24,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,2098,STR,No,,,
+UCSF-PDGM-239,M,57,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,157,STR,No,,,
+UCSF-PDGM-240,F,26,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,2018,STR,No,,,
+UCSF-PDGM-241,M,30,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,1382,STR,No,,,
+UCSF-PDGM-242,M,37,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,1833,GTR,No,,,
+UCSF-PDGM-243,M,59,3,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,relative co-deletion,mutated (NOS),0,1850,STR,No,,,
+UCSF-PDGM-244,F,43,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,1714,STR,No,,,
+UCSF-PDGM-245,M,34,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132C,0,1840,STR,No,,,
+UCSF-PDGM-246,F,46,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,41,STR,No,,,
+UCSF-PDGM-247,M,26,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,13,STR,No,,,
+UCSF-PDGM-248,M,46,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1643,STR,No,,,
+UCSF-PDGM-249,M,59,3,"Astrocytoma, IDH-wildtype",positive,9,intact,wildtype,0,22,STR,No,,,
+UCSF-PDGM-250,M,44,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,14,STR,No,,,
+UCSF-PDGM-251,M,36,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,689,STR,No,,,
+UCSF-PDGM-252,F,35,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132G,0,1595,STR,No,,,
+UCSF-PDGM-253,M,25,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1547,STR,Yes,,,
+UCSF-PDGM-254,F,53,3,"Astrocytoma, IDH-wildtype",negative,0,intact,wildtype,1,718,STR,No,,,
+UCSF-PDGM-255,F,40,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,1521,GTR,No,,,
+UCSF-PDGM-256,F,28,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1513,GTR,No,,,
+UCSF-PDGM-257,M,32,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1449,STR,No,,,
+UCSF-PDGM-258,M,23,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,187,STR,No,,,
+UCSF-PDGM-259,M,28,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),1,1421,STR,No,,,
+UCSF-PDGM-260,F,56,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,relative co-deletion,mutated (NOS),0,1118,GTR,No,,,
+UCSF-PDGM-261,F,29,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,805,STR,No,,,
+UCSF-PDGM-262,M,44,3,"Astrocytoma, IDH-mutant",negative,0,intact,IDH1 p.R132S,0,1190,STR,No,,,
+UCSF-PDGM-263,M,54,3,"Astrocytoma, IDH-wildtype",positive,1,intact,wildtype,1,663,STR,Yes,,,
+UCSF-PDGM-264,F,48,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,839,STR,No,,,
+UCSF-PDGM-265,F,44,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,916,STR,No,,,
+UCSF-PDGM-266,M,31,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,mutated (NOS),0,689,STR,No,,,
+UCSF-PDGM-267,M,45,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,55,STR,No,,,
+UCSF-PDGM-268,F,51,3,"Astrocytoma, IDH-wildtype",positive,17,intact,wildtype,0,639,GTR,No,,,
+UCSF-PDGM-269,M,48,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,co-deletion,mutated (NOS),0,565,STR,No,,,
+UCSF-PDGM-270,F,46,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,0,166,GTR,No,,,
+UCSF-PDGM-272,M,35,3,"Astrocytoma, IDH-mutant",negative,unknown,intact,IDH2 p.Arg172Trp,0,574,STR,No,,,
+UCSF-PDGM-273,M,47,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,0,483,GTR,No,BraTS2021_00544,Training,Training
+UCSF-PDGM-274,F,35,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132C,0,728,biopsy,No,,,
+UCSF-PDGM-275,F,65,4,"Glioblastoma, IDH-wildtype",positive,unknown,intact,wildtype,1,465,STR,Yes,BraTS2021_00480,Training,Training
+UCSF-PDGM-276,M,51,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,439,STR,No,BraTS2021_00489,Validation,Validation
+UCSF-PDGM-277,F,75,3,"Astrocytoma, IDH-wildtype",positive,11,intact,wildtype,1,629,biopsy,No,,,
+UCSF-PDGM-0431_FU001d,M,69,4,"Glioblastoma, IDH-wildtype",positive,4,intact,wildtype,0,358,GTR,No,BraTS2021_00499,Training,Training
+UCSF-PDGM-279,M,60,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,0,163,STR,No,,,
+UCSF-PDGM-280,M,62,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,773,GTR,No,BraTS2021_00734,Training,Training
+UCSF-PDGM-281,M,46,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,relative co-deletion,mutated (NOS),0,836,STR,No,,,
+UCSF-PDGM-282,F,48,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,763,GTR,No,,,
+UCSF-PDGM-283,M,69,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,0,748,GTR,No,,,
+UCSF-PDGM-284,F,69,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,685,GTR,Yes,,,
+UCSF-PDGM-285,F,60,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,714,GTR,No,,,
+UCSF-PDGM-286,F,39,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,189,STR,No,,,
+UCSF-PDGM-287,F,59,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,435,biopsy,No,BraTS2021_00694,Training,Training
+UCSF-PDGM-288,M,46,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,420,biopsy,Yes,,,
+UCSF-PDGM-0391_FU016d,F,59,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,711,STR,No,,,
+UCSF-PDGM-290,M,43,4,"Astrocytoma, IDH-mutant",positive,4,intact,IDH1 p.R132H,0,407,GTR,No,BraTS2021_00768,Training,Training
+UCSF-PDGM-291,F,71,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,1,396,biopsy,No,BraTS2021_00725,Training,Training
+UCSF-PDGM-295,F,56,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,221,STR,No,,,
+UCSF-PDGM-296,M,64,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,491,GTR,No,BraTS2021_00692,Training,Training
+UCSF-PDGM-297,F,68,4,"Glioblastoma, IDH-wildtype",unknown,0,intact,wildtype,1,357,GTR,No,BraTS2021_01153,Training,
+UCSF-PDGM-298,M,48,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,757,STR,No,,,
+UCSF-PDGM-300,F,33,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,184,biopsy,Yes,,,
+UCSF-PDGM-302,M,45,2,"Astrocytoma, IDH-wildtype",positive,5,intact,wildtype,1,999,biopsy,No,,,
+UCSF-PDGM-303,M,64,3,"Astrocytoma, IDH-mutant",positive,15,intact,IDH1 p.R132H,0,624,STR,No,,,
+UCSF-PDGM-304,M,52,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1176,STR,No,,,
+UCSF-PDGM-305,F,36,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,706,GTR,Yes,,,
+UCSF-PDGM-306,F,70,4,"Glioblastoma, IDH-wildtype",positive,9,intact,wildtype,1,163,STR,No,,,
+UCSF-PDGM-307,M,31,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,740,STR,Yes,,,
+UCSF-PDGM-308,M,45,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,720,biopsy,No,,,
+UCSF-PDGM-309,M,57,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,319,STR,Yes,BraTS2021_00703,Training,Training
+UCSF-PDGM-310,M,74,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,174,GTR,No,BraTS2021_00765,Training,Training
+UCSF-PDGM-311,M,57,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,405,GTR,No,BraTS2021_00706,Training,Training
+UCSF-PDGM-312,F,75,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,55,biopsy,No,BraTS2021_01154,Training,
+UCSF-PDGM-313,M,71,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,349,STR,No,BraTS2021_00757,Training,Training
+UCSF-PDGM-314,M,68,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,135,GTR,No,,,
+UCSF-PDGM-0433_FU007d,M,65,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,205,GTR,No,BraTS2021_00758,Training,Training
+UCSF-PDGM-316,M,60,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,300,GTR,No,BraTS2021_00682,Training,Training
+UCSF-PDGM-317,M,69,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,677,GTR,No,BraTS2021_00728,Training,Training
+UCSF-PDGM-318,F,33,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,128,biopsy,Yes,,,
+UCSF-PDGM-319,F,83,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,275,GTR,No,BraTS2021_00697,Training,Training
+UCSF-PDGM-320,F,54,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,0,571,GTR,No,BraTS2021_00772,Training,Training
+UCSF-PDGM-321,F,63,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,0,280,STR,No,BraTS2021_00691,Training,Training
+UCSF-PDGM-323,M,76,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,1,332,GTR,No,BraTS2021_00698,Training,Training
+UCSF-PDGM-324,M,37,4,"Astrocytoma, IDH-mutant",positive,2,intact,IDH1 p.R132G,0,15,STR,No,BraTS2021_00680,Training,Training
+UCSF-PDGM-325,M,61,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,108,GTR,No,BraTS2021_00702,Validation,Validation
+UCSF-PDGM-326,F,32,3,"Astrocytoma, IDH-mutant",positive,11,intact,IDH1 p.R132C,0,514,STR,No,,,
+UCSF-PDGM-327,M,57,2,"Astrocytoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,658,STR,No,,,
+UCSF-PDGM-328,M,54,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,292,GTR,No,BraTS2021_00723,Training,Training
+UCSF-PDGM-329,F,44,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,1812,STR,Yes,,,
+UCSF-PDGM-330,F,63,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,599,GTR,No,BraTS2021_01155,Training,
+UCSF-PDGM-331,M,46,3,"Astrocytoma, IDH-mutant",positive,10,intact,IDH1 p.R132H,0,1640,STR,No,,,
+UCSF-PDGM-332,M,68,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,42,GTR,No,,,
+UCSF-PDGM-333,F,52,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,496,GTR,No,BraTS2021_00719,Validation,Validation
+UCSF-PDGM-334,F,62,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,386,GTR,No,BraTS2021_00778,Training,Training
+UCSF-PDGM-335,F,41,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,1690,GTR,No,,,
+UCSF-PDGM-336,M,57,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,177,GTR,No,BraTS2021_01156,Training,
+UCSF-PDGM-337,M,48,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,1113,STR,Yes,BraTS2021_01157,Training,
+UCSF-PDGM-338,M,62,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,356,GTR,No,BraTS2021_00686,Training,Training
+UCSF-PDGM-339,M,50,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,0,930,GTR,Yes,,,
+UCSF-PDGM-340,F,69,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,0,1347,GTR,No,BraTS2021_00708,Training,Training
+UCSF-PDGM-341,F,57,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,1067,GTR,No,BraTS2021_00681,Validation,Validation
+UCSF-PDGM-342,F,66,4,"Glioblastoma, IDH-wildtype",positive,11,intact,wildtype,1,1248,GTR,Yes,BraTS2021_00732,Training,Training
+UCSF-PDGM-343,F,48,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,183,STR,No,BraTS2021_00704,Training,Training
+UCSF-PDGM-344,M,66,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,329,STR,Yes,,,
+UCSF-PDGM-345,F,46,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,743,GTR,No,BraTS2021_00731,Training,Training
+UCSF-PDGM-346,F,72,4,"Glioblastoma, IDH-wildtype",positive,unknown,intact,wildtype,1,676,STR,Yes,,,
+UCSF-PDGM-347,F,54,4,"Glioblastoma, IDH-wildtype",positive,6,intact,wildtype,0,1333,GTR,Yes,BraTS2021_00693,Training,Training
+UCSF-PDGM-348,F,54,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,627,STR,Yes,BraTS2021_00769,Validation,Validation
+UCSF-PDGM-349,M,52,3,"Astrocytoma, IDH-wildtype",negative,0,intact,wildtype,1,445,GTR,No,,,
+UCSF-PDGM-350,M,44,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,643,STR,Yes,BraTS2021_00715,Training,Training
+UCSF-PDGM-351,F,61,2,"Astrocytoma, IDH-wildtype",positive,1,intact,wildtype,0,1226,STR,No,,,
+UCSF-PDGM-352,M,78,3,"Astrocytoma, IDH-wildtype",positive,16,intact,wildtype,1,631,STR,No,,,
+UCSF-PDGM-353,F,59,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,539,GTR,No,BraTS2021_00746,Training,Training
+UCSF-PDGM-354,F,56,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,248,STR,No,BraTS2021_00773,Training,Training
+UCSF-PDGM-355,F,69,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,1037,GTR,No,BraTS2021_00756,Training,Training
+UCSF-PDGM-356,M,61,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,1098,GTR,No,,,
+UCSF-PDGM-357,F,43,3,"Astrocytoma, IDH-wildtype",negative,0,intact,wildtype,0,567,STR,No,,,
+UCSF-PDGM-358,M,57,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,430,STR,Yes,BraTS2021_00712,Validation,Validation
+UCSF-PDGM-359,F,69,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,681,GTR,Yes,BraTS2021_00709,Training,Training
+UCSF-PDGM-360,F,62,4,"Glioblastoma, IDH-wildtype",positive,15,intact,wildtype,0,777,GTR,No,BraTS2021_00689,Training,
+UCSF-PDGM-361,F,58,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,499,GTR,No,BraTS2021_00688,Training,Training
+UCSF-PDGM-362,F,75,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,364,GTR,No,BraTS2021_00687,Training,Training
+UCSF-PDGM-363,M,66,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,363,STR,Yes,BraTS2021_00724,Training,Training
+UCSF-PDGM-364,M,47,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,740,GTR,No,BraTS2021_00733,Training,Training
+UCSF-PDGM-365,M,74,3,"Astrocytoma, IDH-wildtype",positive,12,intact,wildtype,1,415,STR,No,,,
+UCSF-PDGM-366,F,56,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,762,GTR,Yes,BraTS2021_00777,Training,Training
+UCSF-PDGM-367,F,59,3,"Astrocytoma, IDH-mutant",positive,10,intact,IDH1 p.R132H,0,1029,STR,Yes,,,
+UCSF-PDGM-368,F,59,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,561,GTR,No,BraTS2021_00729,Training,Training
+UCSF-PDGM-369,F,58,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,421,GTR,Yes,BraTS2021_00759,Training,Training
+UCSF-PDGM-370,F,76,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,461,STR,Yes,BraTS2021_00736,Training,Training
+UCSF-PDGM-371,M,48,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,660,GTR,Yes,BraTS2021_00735,Training,Training
+UCSF-PDGM-372,M,64,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,219,biopsy,No,BraTS2021_00774,Training,Training
+UCSF-PDGM-373,F,65,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,18,GTR,No,BraTS2021_01158,Training,
+UCSF-PDGM-374,F,63,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,566,GTR,Yes,BraTS2021_00684,Training,Training
+UCSF-PDGM-375,M,44,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,0,616,GTR,No,BraTS2021_00775,Training,Training
+UCSF-PDGM-376,F,57,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,509,STR,Yes,BraTS2021_00742,Training,Training
+UCSF-PDGM-377,F,72,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,384,GTR,No,BraTS2021_00714,Training,Training
+UCSF-PDGM-378,F,31,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,510,biopsy,Yes,BraTS2021_00753,Training,Training
+UCSF-PDGM-379,M,43,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,213,biopsy,No,BraTS2021_00751,Training,Training
+UCSF-PDGM-380,M,60,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,534,GTR,No,BraTS2021_00744,Training,Training
+UCSF-PDGM-381,M,78,4,"Glioblastoma, IDH-wildtype",positive,4,intact,wildtype,0,302,GTR,No,BraTS2021_00779,Validation,Validation
+UCSF-PDGM-382,M,68,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,19,STR,No,BraTS2021_00730,Training,Training
+UCSF-PDGM-383,F,82,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,754,GTR,Yes,,,
+UCSF-PDGM-384,M,60,4,"Glioblastoma, IDH-wildtype",positive,9,intact,wildtype,1,319,STR,No,BraTS2021_00750,Training,Training
+UCSF-PDGM-385,F,54,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,450,STR,Yes,BraTS2021_00699,Validation,Validation
+UCSF-PDGM-386,F,60,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,912,GTR,Yes,BraTS2021_00721,Validation,Validation
+UCSF-PDGM-387,F,68,4,"Glioblastoma, IDH-wildtype",positive,11,intact,wildtype,0,86,biopsy,No,BraTS2021_00737,Training,Training
+UCSF-PDGM-388,M,62,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,1119,STR,No,,,
+UCSF-PDGM-389,M,58,4,"Glioblastoma, IDH-wildtype",positive,10,intact,wildtype,1,498,STR,No,,,
+UCSF-PDGM-390,M,71,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,618,GTR,No,BraTS2021_00727,Training,Training
+UCSF-PDGM-391,F,59,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,711,STR,No,BraTS2021_00716,Training,Training
+UCSF-PDGM-392,F,67,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,363,biopsy,No,BraTS2021_00762,Validation,Validation
+UCSF-PDGM-393,M,66,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,375,STR,No,BraTS2021_00685,Training,Training
+UCSF-PDGM-394,M,57,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,0,565,GTR,Yes,BraTS2021_00740,Training,Training
+UCSF-PDGM-395,F,60,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,785,GTR,Yes,BraTS2021_01159,Training,
+UCSF-PDGM-396,M,36,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,1084,STR,No,,,
+UCSF-PDGM-397,M,81,4,"Glioblastoma, IDH-wildtype",positive,9,intact,wildtype,1,19,GTR,No,BraTS2021_00690,Training,Training
+UCSF-PDGM-398,F,58,4,"Glioblastoma, IDH-wildtype",positive,11,intact,wildtype,1,753,GTR,No,,,
+UCSF-PDGM-399,M,48,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,548,GTR,No,,,
+UCSF-PDGM-400,M,60,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,244,STR,Yes,BraTS2021_00747,Training,Training
+UCSF-PDGM-401,M,78,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,114,biopsy,No,,,
+UCSF-PDGM-402,M,61,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,90,STR,No,,,
+UCSF-PDGM-403,M,64,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,69,STR,No,,,
+UCSF-PDGM-404,M,69,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,191,GTR,No,BraTS2021_00683,Training,Training
+UCSF-PDGM-405,M,45,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,319,GTR,No,BraTS2021_00718,Training,Training
+UCSF-PDGM-406,M,52,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,169,GTR,No,BraTS2021_00760,Training,Training
+UCSF-PDGM-407,M,42,4,"Astrocytoma, IDH-mutant",positive,17,intact,IDH1 p.R132H,0,165,GTR,No,,,
+UCSF-PDGM-409,F,56,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,0,1167,GTR,No,,,
+UCSF-PDGM-410,M,49,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,366,GTR,No,BraTS2021_00749,Validation,Validation
+UCSF-PDGM-411,M,60,4,"Glioblastoma, IDH-wildtype",positive,7,intact,wildtype,0,388,GTR,Yes,BraTS2021_00739,Training,Training
+UCSF-PDGM-412,M,47,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,239,biopsy,No,BraTS2021_00764,Training,Training
+UCSF-PDGM-413,F,56,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,2144,GTR,Yes,BraTS2021_00707,Training,Training
+UCSF-PDGM-414,F,77,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,351,GTR,No,BraTS2021_00767,Training,Training
+UCSF-PDGM-415,M,30,4,"Astrocytoma, IDH-mutant",positive,7,intact,IDH1 p.R132H,0,1320,GTR,Yes,BraTS2021_00705,Training,Training
+UCSF-PDGM-416,M,63,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,484,STR,No,,,
+UCSF-PDGM-417,M,68,4,"Glioblastoma, IDH-wildtype",positive,5,intact,wildtype,1,334,GTR,No,BraTS2021_00625,Training,Training
+UCSF-PDGM-418,M,52,4,"Glioblastoma, IDH-wildtype",positive,9,intact,wildtype,1,657,STR,No,BraTS2021_00610,Training,Training
+UCSF-PDGM-419,M,77,4,"Glioblastoma, IDH-wildtype",positive,10,intact,wildtype,0,307,GTR,No,BraTS2021_00675,Training,Training
+UCSF-PDGM-420,F,57,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,213,GTR,No,,,
+UCSF-PDGM-421,M,80,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,518,GTR,No,BraTS2021_00615,Training,Training
+UCSF-PDGM-422,M,78,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,264,GTR,No,,,
+UCSF-PDGM-423,M,52,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,602,STR,No,BraTS2021_00676,Training,Training
+UCSF-PDGM-424,M,42,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,504,GTR,No,BraTS2021_00651,Training,Training
+UCSF-PDGM-425,M,54,4,"Glioblastoma, IDH-wildtype",positive,5,intact,wildtype,1,605,GTR,No,BraTS2021_00658,Training,Training
+UCSF-PDGM-426,M,65,4,"Glioblastoma, IDH-wildtype",positive,8,intact,wildtype,0,249,STR,No,BraTS2021_00608,Training,Training
+UCSF-PDGM-427,M,51,4,"Astrocytoma, IDH-mutant",positive,16,intact,IDH1 p.R132H,0,222,GTR,No,BraTS2021_00656,Training,Training
+UCSF-PDGM-428,M,42,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,422,GTR,No,BraTS2021_00636,Training,Training
+UCSF-PDGM-429,F,58,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,624,GTR,No,BraTS2021_00639,Training,Training
+UCSF-PDGM-430,M,79,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,406,GTR,Yes,BraTS2021_00642,Training,Training
+UCSF-PDGM-431,M,69,4,"Glioblastoma, IDH-wildtype",positive,4,intact,wildtype,0,358,GTR,No,,,
+UCSF-PDGM-432,F,19,4,"Astrocytoma, IDH-mutant",positive,9,intact,IDH1 p.R132H,1,639,GTR,No,,,
+UCSF-PDGM-433,M,65,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,205,GTR,No,BraTS2021_00626,Training,Training
+UCSF-PDGM-434,M,67,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,134,STR,No,BraTS2021_00624,Training,Training
+UCSF-PDGM-435,M,73,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,183,GTR,No,,,
+UCSF-PDGM-436,F,57,3,"Astrocytoma, IDH-wildtype",positive,3,intact,wildtype,0,424,biopsy,No,,,
+UCSF-PDGM-437,F,38,3,"Astrocytoma, IDH-mutant",negative,0,intact,IDH1 p.R132G,0,4177,STR,Yes,,,
+UCSF-PDGM-438,F,38,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132C,0,1280,STR,No,,,
+UCSF-PDGM-439,M,38,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1022,GTR,No,,,
+UCSF-PDGM-440,M,31,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132G,0,1210,STR,No,,,
+UCSF-PDGM-441,F,26,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,375,GTR,No,,,
+UCSF-PDGM-442,F,66,2,"Astrocytoma, IDH-wildtype",negative,0,intact,wildtype,1,1145,STR,No,,,
+UCSF-PDGM-443,F,47,2,"Astrocytoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,187,biopsy,No,,,
+UCSF-PDGM-444,M,32,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1730,STR,No,,,
+UCSF-PDGM-445,M,48,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,672,STR,No,,,
+UCSF-PDGM-446,F,71,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,118,STR,No,,,
+UCSF-PDGM-447,F,71,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,28,biopsy,No,BraTS2021_00638,Training,Training
+UCSF-PDGM-448,M,55,2,"Astrocytoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,158,biopsy,No,,,
+UCSF-PDGM-449,M,61,3,"Astrocytoma, IDH-wildtype",positive,4,intact,wildtype,1,404,biopsy,No,,,
+UCSF-PDGM-450,F,55,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,1,369,STR,No,,,
+UCSF-PDGM-451,M,43,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,512,GTR,No,BraTS2021_00667,Training,Training
+UCSF-PDGM-452,M,76,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,1,112,GTR,No,,,
+UCSF-PDGM-453,M,75,4,"Glioblastoma, IDH-wildtype",positive,13,intact,wildtype,1,96,biopsy,No,BraTS2021_00606,Training,Training
+UCSF-PDGM-454,M,64,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,0,285,STR,No,BraTS2021_00674,Training,Training
+UCSF-PDGM-455,M,55,4,"Glioblastoma, IDH-wildtype",negative,unknown,intact,wildtype,1,165,STR,Yes,,,
+UCSF-PDGM-456,M,66,2,"Astrocytoma, IDH-wildtype",positive,2,intact,wildtype,1,409,biopsy,No,,,
+UCSF-PDGM-457,M,61,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,241,GTR,No,,,
+UCSF-PDGM-458,M,65,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,110,STR,No,BraTS2021_01160,Training,
+UCSF-PDGM-459,M,78,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,78,STR,No,BraTS2021_00641,Training,Training
+UCSF-PDGM-460,F,33,4,"Astrocytoma, IDH-mutant",positive,14,intact,IDH1 p.R132C,0,106,STR,No,,,
+UCSF-PDGM-461,F,73,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,66,STR,No,,,
+UCSF-PDGM-462,M,83,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,84,GTR,No,BraTS2021_00618,Training,Training
+UCSF-PDGM-463,F,74,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,108,STR,No,,,
+UCSF-PDGM-464,F,75,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,0,10,biopsy,No,BraTS2021_00602,Training,Training
+UCSF-PDGM-465,M,35,2,"Astrocytoma, IDH-wildtype",unknown,unknown,intact,wildtype,1,92,biopsy,No,,,
+UCSF-PDGM-466,F,72,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,287,biopsy,No,BraTS2021_00668,Training,Training
+UCSF-PDGM-467,M,75,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,169,STR,No,BraTS2021_00607,Training,Training
+UCSF-PDGM-468,M,38,3,"Astrocytoma, IDH-mutant",positive,9,intact,IDH1 p.R132H,0,523,STR,No,,,
+UCSF-PDGM-469,F,43,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1338,STR,Yes,,,
+UCSF-PDGM-470,M,71,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,70,biopsy,No,BraTS2021_00650,Training,Training
+UCSF-PDGM-471,F,26,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,1,319,STR,Yes,,,
+UCSF-PDGM-472,F,76,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,38,biopsy,No,BraTS2021_00613,Training,Training
+UCSF-PDGM-473,F,34,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,952,STR,No,,,
+UCSF-PDGM-474,M,40,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,1,593,STR,No,,,
+UCSF-PDGM-475,F,31,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1369,GTR,No,,,
+UCSF-PDGM-476,F,22,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,1677,STR,No,,,
+UCSF-PDGM-477,F,69,2,"Astrocytoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,792,STR,No,,,
+UCSF-PDGM-478,M,37,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,957,STR,No,,,
+UCSF-PDGM-479,M,67,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,475,STR,Yes,BraTS2021_00619,Training,Training
+UCSF-PDGM-480,M,94,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,54,GTR,No,BraTS2021_00679,Training,Training
+UCSF-PDGM-481,M,57,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,483,GTR,No,BraTS2021_00616,Training,Training
+UCSF-PDGM-482,M,45,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,1,998,biopsy,No,,,
+UCSF-PDGM-483,M,71,2,"Astrocytoma, IDH-wildtype",positive,1,intact,wildtype,0,342,STR,No,,,
+UCSF-PDGM-484,F,60,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,1,149,GTR,Yes,,,
+UCSF-PDGM-485,M,65,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,524,STR,No,,,
+UCSF-PDGM-486,F,54,3,"Astrocytoma, IDH-wildtype",negative,0,intact,wildtype,0,232,STR,No,,,
+UCSF-PDGM-487,M,21,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,111,STR,Yes,,,
+UCSF-PDGM-488,M,77,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,142,GTR,Yes,BraTS2021_00646,Training,Training
+UCSF-PDGM-489,M,42,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.Arg132His,0,846,STR,Yes,,,
+UCSF-PDGM-490,M,29,2,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,505,STR,No,,,
+UCSF-PDGM-491,M,64,3,"Astrocytoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,2708,STR,No,,,
+UCSF-PDGM-492,F,63,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,262,GTR,No,BraTS2021_00605,Training,Training
+UCSF-PDGM-493,M,74,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,114,GTR,No,BraTS2021_00663,Training,Training
+UCSF-PDGM-494,F,71,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,111,GTR,No,BraTS2021_00644,Validation,Validation
+UCSF-PDGM-495,M,71,4,"Glioblastoma, IDH-wildtype",positive,2,intact,wildtype,1,168,STR,No,,,
+UCSF-PDGM-496,F,68,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,92,GTR,No,BraTS2021_00611,Training,Training
+UCSF-PDGM-497,M,73,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,262,GTR,No,BraTS2021_00603,Validation,Validation
+UCSF-PDGM-498,F,53,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,95,GTR,No,BraTS2021_01161,Training,
+UCSF-PDGM-499,M,34,3,"Astrocytoma, IDH-mutant",unknown,unknown,intact,IDH1 p.R132H,0,12,GTR,No,,,
+UCSF-PDGM-500,M,47,3,"Astrocytoma, IDH-wildtype",positive,1,intact,wildtype,1,185,biopsy,No,,,
+UCSF-PDGM-501,M,26,3,"Astrocytoma, IDH-mutant",positive,16,intact,IDH1 p.R132H,1,531,STR,No,,,
+UCSF-PDGM-502,F,77,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,59,GTR,No,,,
+UCSF-PDGM-503,F,73,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,204,GTR,No,BraTS2021_00620,Training,Training
+UCSF-PDGM-504,F,63,4,"Glioblastoma, IDH-wildtype",positive,9,intact,wildtype,0,1101,GTR,No,,,
+UCSF-PDGM-505,M,63,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,208,GTR,No,,,
+UCSF-PDGM-506,M,85,4,"Glioblastoma, IDH-wildtype",indeterminate,unknown,unknown,wildtype,1,86,STR,No,,,
+UCSF-PDGM-507,F,61,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,35,GTR,No,BraTS2021_00645,Training,Training
+UCSF-PDGM-508,M,61,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,81,STR,No,BraTS2021_00662,Validation,Validation
+UCSF-PDGM-509,F,68,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,0,267,GTR,No,BraTS2021_00659,Training,Training
+UCSF-PDGM-510,M,62,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,252,GTR,No,BraTS2021_00677,Training,Training
+UCSF-PDGM-511,M,60,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,112,GTR,No,,,
+UCSF-PDGM-512,F,80,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,1,303,GTR,No,BraTS2021_00649,Training,Training
+UCSF-PDGM-513,F,73,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,1,80,GTR,No,,,
+UCSF-PDGM-514,F,54,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,375,biopsy,No,BraTS2021_00623,Training,Training
+UCSF-PDGM-515,F,82,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,45,GTR,No,BraTS2021_00654,Training,Training
+UCSF-PDGM-516,F,55,4,"Glioblastoma, IDH-wildtype",positive,4,intact,wildtype,0,316,GTR,No,BraTS2021_00622,Training,Training
+UCSF-PDGM-517,M,53,4,"Astrocytoma, IDH-mutant",positive,15,intact,IDH1 p.R132H,0,86,GTR,No,BraTS2021_00671,Validation,Validation
+UCSF-PDGM-518,M,32,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,369,GTR,No,BraTS2021_00657,Training,Training
+UCSF-PDGM-519,M,64,4,"Glioblastoma, IDH-wildtype",positive,14,intact,wildtype,0,320,GTR,No,,,
+UCSF-PDGM-520,M,70,4,"Glioblastoma, IDH-wildtype",positive,8,intact,wildtype,0,373,GTR,No,BraTS2021_00655,Training,Training
+UCSF-PDGM-521,M,58,4,"Glioblastoma, IDH-wildtype",unknown,unknown,intact,wildtype,0,305,biopsy,No,,,
+UCSF-PDGM-522,M,62,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,306,GTR,No,BraTS2021_00631,Training,Training
+UCSF-PDGM-523,F,65,4,"Glioblastoma, IDH-wildtype",positive,3,intact,wildtype,0,156,GTR,No,BraTS2021_00661,Training,Training
+UCSF-PDGM-524,M,47,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,680,STR,Yes,BraTS2021_00628,Training,Training
+UCSF-PDGM-525,F,62,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,37,biopsy,No,BraTS2021_00630,Training,Training
+UCSF-PDGM-526,M,74,4,"Glioblastoma, IDH-wildtype",positive,1,intact,wildtype,0,126,GTR,No,BraTS2021_00601,Training,Training
+UCSF-PDGM-527,F,58,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,150,GTR,No,BraTS2021_00640,Training,Training
+UCSF-PDGM-528,M,57,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,54,biopsy,No,,,
+UCSF-PDGM-529,M,34,4,"Astrocytoma, IDH-mutant",positive,14,intact,IDH1 p.R132S,0,112,GTR,No,BraTS2021_00604,Training,Training
+UCSF-PDGM-530,F,34,3,"Astrocytoma, IDH-mutant",positive,13,intact,IDH1 p.R132H,0,96,STR,No,,,
+UCSF-PDGM-531,M,36,4,"Astrocytoma, IDH-mutant",positive,15,intact,IDH1 p.R132H,0,21,STR,Yes,BraTS2021_00612,Training,Training
+UCSF-PDGM-532,M,75,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,1,322,GTR,No,BraTS2021_00647,Validation,Validation
+UCSF-PDGM-533,F,31,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,292,GTR,No,BraTS2021_00652,Training,Training
+UCSF-PDGM-534,M,71,4,"Glioblastoma, IDH-wildtype",positive,17,intact,wildtype,0,55,biopsy,No,BraTS2021_00621,Training,Training
+UCSF-PDGM-535,M,19,3,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",unknown,unknown,relative co-deletion,IDH1 p.R132H,0,749,GTR,No,,,
+UCSF-PDGM-536,F,58,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,267,STR,No,,,
+UCSF-PDGM-537,M,64,4,"Glioblastoma, IDH-wildtype",positive,16,intact,wildtype,0,334,biopsy,Yes,,,
+UCSF-PDGM-538,F,41,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,287,GTR,No,,,
+UCSF-PDGM-539,M,72,4,"Glioblastoma, IDH-wildtype",positive,12,intact,wildtype,0,291,GTR,No,,,
+UCSF-PDGM-540,F,70,2,"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",positive,17,co-deletion,IDH1 p.R132H,0,215,STR,No,,,
+UCSF-PDGM-541,F,68,4,"Glioblastoma, IDH-wildtype",negative,0,intact,wildtype,0,199,GTR,No,,,

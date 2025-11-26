@@ -1,32 +1,20 @@
 from .utils import register, plotting, anat_segmentation
-from .llm_report_generation import ollama_report_gen
+from .utils.log import get_logger
+from .llm_report_generation.ollama_report_gen import generate_llm_report
 from .midline_shift.midline_shift3d import midline_shift_3d
 from .vasari_features.extract_vasari_features import vasari_features
 import os, shutil, glob, json
-import argparse, logging
-from os.path import join as join
-
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-)
-
-logger = logging.getLogger(__name__)
+import argparse
+from os.path import join
 
 
 """
+conda activate BTReport
 export SYNTHMORPH_SIF=/pscratch/sd/j/jehr/synthmorph/synthmorph_4.sif
 export PATH=${PATH}:/cvmfs/oasis.opensciencegrid.org/mis/apptainer/1.3.3/x86_64/bin
 export SYNTHSEG_SIF=/pscratch/sd/j/jehr/synthseg/synthseg.sif
+python3 -m btreport.generate_report --subject_folder $SF
 """
-
-
-def load_metadata(metadata_json_pth):
-    if not os.path.exists(metadata_json_pth):
-        return {}
-    with open(metadata_json_pth, "r") as f:
-        return json.load(f)
-
 
 
 def main(args: argparse.Namespace):
@@ -40,7 +28,11 @@ def main(args: argparse.Namespace):
 
     # Load patient metadata from metadata.json in subject folder
     metadata_json_pth = join(args.subject_folder, "metadata.json")
-    metadata = load_metadata(metadata_json_pth)
+    if not os.path.exists(metadata_json_pth):
+        metadata = {}
+    else:
+        with open(metadata_json_pth, "r") as f:
+            metadata = json.load(f)
 
     # Register atlas to image, image to atlas, and midline
     mni_in_subj = join(tmp_dir, "MNI152_in_subject_space.nii.gz")
@@ -80,7 +72,8 @@ def main(args: argparse.Namespace):
         ncr_label=args.ncr_label,
         ed_label=args.ed_label,
         et_label=args.et_label,
-        tumor_type=metadata['tumor-type']
+        tumor_type=metadata.get('tumor-type', 'glioma'),
+        overwrite=args.overwrite,
     )
     logger.info(f'* Finished segmentation steps! Merged mask can be found in {merged_seg}')
 
@@ -90,35 +83,50 @@ def main(args: argparse.Namespace):
     metadata.update(midline_summary)
 
     # Extract VASARI features
-    vasari_summary = vasari_features(tumor=tumor_path, tumor_mni=tum_in_mni, metadata=metadata, merged=merged_seg, verbose=False, translate=True, ncr_label=args.ncr_label, ed_label=args.ed_label, et_label=args.et_label)
+    vasari_summary = vasari_features(tumor=tumor_path, tumor_mni=tum_in_mni, metadata=metadata, merged=merged_seg, verbose=False, ncr_label=args.ncr_label, ed_label=args.ed_label, et_label=args.et_label)
     metadata.update(vasari_summary)
+
+    logger.info(f'** [4/4] Starting report generation with LLM...')
+    metadata_no_clinical={k: v for k, v in metadata.items() if k != "Clinical Report"}
+    # if 'llm report' in metadata_no_clinical.keys():
+    #     logger.info(f'* LLM report alredy found in metadata! Skipping generation..')
+    # else:
+    report = generate_llm_report(args.subject_folder.split('/')[-1], metadata_no_clinical, model=args.llm)
+    logger.info(f'* Finished LLM report generation using extracted metadata!')
+    metadata[f'BTReport Generated Report ({args.llm})'] = report
 
     with open(join(args.subject_folder, "patient_metadata_btreport.json"), "w") as f:
         json.dump(metadata, f, indent=2)
+    logger.info(f'Saved extracted metadata and LLM report to {join(args.subject_folder, "patient_metadata_btreport.json")}')
 
-    # print(metadata)
-
-    if args.clear_tmp:
+    if args.clear_tmp: # Delete intermediate files after processing, useful for memory reduction but you lose interpretability of results.
         shutil.rmtree(tmp_dir)
 
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser(description="Generate a brain tumor report for one subject.")
     parser.add_argument("--subject_folder", type=str, help="Path to the subject folder containing the MRI data.")
-
-    parser.add_argument(
-        "--output",
-        type=str,
-        default="report.json",
-        help="Path to save the generated report (default: report.json).",
-    )
 
     parser.add_argument("--clear_tmp", action="store_true", help="Delete the temporary directory after processing.")
     parser.add_argument("--overwrite", action="store_true", help="Redo this step, overwriting previous results.")
     parser.add_argument("--ncr_label", type=int, default=1)
     parser.add_argument("--ed_label", type=int, default=2)
     parser.add_argument("--et_label", type=int, default=4)
+    parser.add_argument("--devices", type=str, default='0', help="String with cuda device IDs for use by synthseg and SynthMorph. E.g. '0,1' or '0'.")
+
+    parser.add_argument("--llm", type=str, default="gpt-oss:120b")
+
 
     args = parser.parse_args()
 
+    subject = os.path.basename(os.path.normpath(args.subject_folder))
+    logger = get_logger(subject) 
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.devices)
+    logger.info(f"Using GPUs: CUDA_VISIBLE_DEVICES={os.environ['CUDA_VISIBLE_DEVICES']}")
+
     main(args)
+
+
+### TODO: Fix edema volume etc, tune prompt, tune metadata that is used for prompting.
+###       - Make --synthseg --merged args so I can just load in precalculated segs

@@ -24,7 +24,8 @@
 #   - Used the images image in their original space instead of the version registered MNI152 space to better estimate quantities like proportion necrotic, etc.. This was noted as an option in the original paper, but they used the MNI152 version.
 #   - Added eloquent regions obtained from Brodmann Area Maps (https://surfer.nmr.mgh.harvard.edu/fswiki/BrodmannAreaMaps)
 #   - Added lesion sizes APxTVxCC
-#   - Adjusted to only include quantities that can be derived from BraTS masks. Removed proportion
+#   - Adjusted to only include quantities that can be derived from BraTS masks. Removed proportion nCET e.g.
+#   - Changed proportions to continuous floats
 # -------------------------------------------------------------------------
 
 
@@ -522,39 +523,54 @@ def get_vasari_features(
     #  {1:"Frontal",2:"Temporal",3:"Insula",4:"Parietal",5:"Occipital",6:"Brainstem",7:"Corpus Callosum", 8:"Thalamus"}
     F2_dict = {"Right": 1, "Left": 3, "Bilateral": 2}
 
-    proportion_enhancing_f = np.nan
-    if proportion_enhancing <= 5:
-        proportion_enhancing_f = 3
-    if 5 < proportion_enhancing <= 33:
-        proportion_enhancing_f = 4
-    if 33 < proportion_enhancing <= 67:
-        proportion_enhancing_f = 5
-    if 67 < proportion_enhancing <= 100:
-        proportion_enhancing_f = 6
+    # Old logic: bin proportions
+    # proportion_enhancing_f = np.nan
+    # if proportion_enhancing <= 5:
+    #     proportion_enhancing_f = 3
+    # if 5 < proportion_enhancing <= 33:
+    #     proportion_enhancing_f = 4
+    # if 33 < proportion_enhancing <= 67:
+    #     proportion_enhancing_f = 5
+    # if 67 < proportion_enhancing <= 100:
+    #     proportion_enhancing_f = 6
 
-    proportion_nonenhancing_f = np.nan
-    if proportion_nonenhancing <= 5:
-        proportion_nonenhancing_f = 3
-    if 5 < proportion_nonenhancing <= 33:
-        proportion_nonenhancing_f = 4
-    if 33 < proportion_nonenhancing <= 67:
-        proportion_nonenhancing_f = 5
-    if 67 < proportion_nonenhancing <= 95:
-        proportion_nonenhancing_f = 6
-    if 95 < proportion_nonenhancing <= 99.5:
-        proportion_nonenhancing_f = 7
-    if proportion_nonenhancing > 99.5:  # allow for small segmentation variation
-        proportion_nonenhancing_f = 8
+    # New logic: return float proportions
+    proportion_enhancing_f = proportion_enhancing
 
-    proportion_necrosis_f = np.nan
-    if proportion_nonenhancing == 0:
-        proportion_necrosis_f = 2
-    if 0 < proportion_nonenhancing <= 5:
-        proportion_necrosis_f = 3
-    if 5 < proportion_nonenhancing <= 33:
-        proportion_necrosis_f = 4
-    if 33 < proportion_nonenhancing <= 67:
-        proportion_necrosis_f = 5
+    # Old logic: bin proportions
+    # proportion_nonenhancing_f = np.nan
+    # if proportion_nonenhancing <= 5:
+    #     proportion_nonenhancing_f = 3
+    # if 5 < proportion_nonenhancing <= 33:
+    #     proportion_nonenhancing_f = 4
+    # if 33 < proportion_nonenhancing <= 67:
+    #     proportion_nonenhancing_f = 5
+    # if 67 < proportion_nonenhancing <= 95:
+    #     proportion_nonenhancing_f = 6
+    # if 95 < proportion_nonenhancing <= 99.5:
+    #     proportion_nonenhancing_f = 7
+    # if proportion_nonenhancing > 99.5:  # allow for small segmentation variation
+    #     proportion_nonenhancing_f = 8
+
+    # New logic: return float proportions
+    proportion_nonenhancing_f = proportion_nonenhancing
+
+
+    # Old logic: bin proportions
+    # proportion_necrosis_f = np.nan
+    # if proportion_nonenhancing == 0:
+    #     proportion_necrosis_f = 2
+    # if 0 < proportion_nonenhancing <= 5:
+    #     proportion_necrosis_f = 3
+    # if 5 < proportion_nonenhancing <= 33:
+    #     proportion_necrosis_f = 4
+    # if 33 < proportion_nonenhancing <= 67:
+    #     proportion_necrosis_f = 5
+
+    # New logic: return float proportions
+    proportion_necrosis_f = proportion_nonenhancing
+
+
 
     # Original multifocal logic
     # segmentation_array_binary = segmentation_array.copy()
@@ -567,13 +583,35 @@ def get_vasari_features(
     # logger.debug('Number of lesion components: '+str(num_components_bin))
 
     # New multifocal logic
+    voxel_sizes = [1., 1., 1.]
     lesion_sizes = compute_ap_tv_cc_multifocal(
         file_ss,
         include_labels=[nonenhancing_label, enhancing_label],  # ncr+et
         cm_or_mm="cm",
         min_dim_thresh_cm=1.0,  # 0.5,
+        voxel_sizes=voxel_sizes
     )
     num_lesions = len(lesion_sizes)
+    seg =nib.load(file_ss).get_fdata()
+
+    # voxel_sizes = [sx, sy, sz] in mm
+    voxel_volume_mm3 = np.prod(voxel_sizes)        # mm^3 per voxel
+    voxel_volume_ml  = voxel_volume_mm3 / 1000.0   # convert mm^3 to mL
+
+    # voxel counts
+    ncr_vox = np.sum(seg == nonenhancing_label)
+    ed_vox  = np.sum(seg == oedema_label)
+    et_vox  = np.sum(seg == enhancing_label )
+
+    total_vox = ncr_vox + ed_vox + et_vox
+
+    # convert to mL
+    ncr_vol_ml = ncr_vox * voxel_volume_ml
+    ed_vol_ml  = ed_vox  * voxel_volume_ml
+    et_vol_ml  = et_vox  * voxel_volume_ml
+    global_vol_ml = total_vox * voxel_volume_ml
+
+
     f9_multifocal = 1
     if num_lesions > 1:
         f9_multifocal = 2
@@ -581,18 +619,24 @@ def get_vasari_features(
     if verbose:
         logger.debug("Number of lesion components: " + str(num_lesions))
 
-    proportion_oedema_f = np.nan
+    
     if verbose:
         logger.debug("prop oedema " + str(proportion_oedema))
+    
+    # Old logic: bin proportions
+    # proportion_oedema_f = np.nan
+    # if proportion_oedema == 0:
+    #     proportion_oedema_f = 2
+    # if 0 < proportion_oedema <= 5:
+    #     proportion_oedema_f = 3
+    # if 5 < proportion_oedema <= 33:
+    #     proportion_oedema_f = 4
+    # if 33 < proportion_oedema:
+    #     proportion_oedema_f = 5
 
-    if proportion_oedema == 0:
-        proportion_oedema_f = 2
-    if 0 < proportion_oedema <= 5:
-        proportion_oedema_f = 3
-    if 5 < proportion_oedema <= 33:
-        proportion_oedema_f = 4
-    if 33 < proportion_oedema:
-        proportion_oedema_f = 5
+    # New logic: return float proportions
+    proportion_oedema_f = proportion_oedema
+
 
     end_time = time.time()
     time_taken = end_time - start_time
@@ -603,6 +647,9 @@ def get_vasari_features(
     if verbose:
         logger.debug("")
         logger.debug("Complete! Generating output...")
+
+
+
 
     col_names = [
         "Tumor Location",
@@ -622,7 +669,13 @@ def get_vasari_features(
         "CET Crosses midline",
         "Multiple satellites present",
         "Region Proportions",
-        "Lesion Sizes APxTVxCC (cm)"
+        "Lesion Sizes APxTVxCC (cm)",
+        "NCR Volume (mL)",
+        "ED Volume (mL)",
+        "ET Volume (mL)",
+        "Total tumor volume (mL)",
+        "Number of lesions", 
+
     ]  # 'filename', 'reporter', 'time_taken_seconds', 'F8 Cyst(s)', 'F10 T1/FLAIR Ratio', 'F12 Definition of the Enhancing margin','F13 Definition of the non-enhancing tumour margin','F16 haemorrhage', 'F17 Diffusion','F18 Pial invasion', 'F25 Calvarial modelling', 'COMMENTS']
 
     if merged is not None:
@@ -703,6 +756,11 @@ def get_vasari_features(
         "Enlarged Ventricles": enlarged_ventricles,
         "Region Proportions": region_prop_list,
         "Lesion Sizes APxTVxCC (cm)": lesion_sizes,
+        "NCR Volume (mL)":float(ncr_vol_ml),
+        "ED Volume (mL)": float(ed_vol_ml),
+        "ET Volume (mL)": float(et_vol_ml),
+        "Total tumor volume (mL)":float(global_vol_ml),
+        "Number of lesions":len(lesion_sizes), 
     }
     return result
 

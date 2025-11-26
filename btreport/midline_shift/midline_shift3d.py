@@ -12,6 +12,154 @@ from collections import defaultdict
 logger = logging.getLogger(__name__)
 
 
+
+
+SLAB_NAME = {
+    1: "falx cerebri above",
+    2: "septum pellucidum",
+    3: "third ventricle",
+    4: "fourth ventricle",
+    5: "falx cerebri below"
+}
+
+def get_levels_zslabs(anat_seg, save_path=None):
+    atlas_nii = nib.load(anat_seg)
+    atlas = atlas_nii.get_fdata().astype(int)
+    brain_mask = atlas > 0
+
+    # original labels
+    SP_LABELS = [10, 49]
+    THIRD_V = 14
+    FOURTH_V = 15
+
+    # slab assignments
+    ABOVE = 1
+    SP = 2
+    V3 = 3
+    V4 = 4
+    BELOW = 5
+
+    vol = np.zeros_like(atlas, dtype=np.uint8)
+
+    # ===== find Z ranges =====
+    z_sp = np.where(np.any(np.isin(atlas, SP_LABELS), axis=(0,1)))[0]
+    z_3v = np.where(np.any(atlas == THIRD_V, axis=(0,1)))[0]
+    z_4v = np.where(np.any(atlas == FOURTH_V, axis=(0,1)))[0]
+
+    if len(z_sp)==0: raise ValueError("No septum pellucidum detected.")
+    if len(z_4v)==0: raise ValueError("No 4th ventricle detected.")
+
+    z_sp_min, z_sp_max = z_sp.min(), z_sp.max()
+    z_4v_min, z_4v_max = z_4v.min(), z_4v.max()
+
+    # ===== full-slice slab assignment =====
+    vol[:, :, :z_4v_min]         = BELOW          # inferior brain
+    if len(z_3v)>0:
+        z3_min, z3_max = z_3v.min(), z_3v.max()
+        vol[:, :, z_4v_min:z3_min]   = V4        # 4th vent slab zone
+        vol[:, :, z3_min:z_sp_min]   = V3        # 3rd vent slab zone
+    else:
+        vol[:, :, z_4v_min:z_sp_min] = V4        # no third vent found
+
+    vol[:, :, z_sp_min:z_sp_max+1] = SP          # SP slab block
+    vol[:, :, z_sp_max+1:]         = ABOVE       # superior slab
+
+    # remove outside brain
+    vol = vol * brain_mask.astype(np.uint8)
+
+    # save + return
+    if save_path is not None:
+        slab_nii = nib.Nifti1Image(vol, atlas_nii.affine, atlas_nii.header)
+        nib.save(slab_nii, save_path)
+
+    return vol
+
+
+# def get_levels_zslabs(anat_seg, save_path=None):
+#     atlas_nii = nib.load(anat_seg)
+#     atlas = atlas_nii.get_fdata().astype(int)
+#     brain_mask = atlas > 0
+
+#     # Label definitions
+#     SP_LABELS = [10, 49]
+#     SP_LABEL = 2
+#     THIRD_V_LABEL_ORIGINAL = 14
+#     FOURTH_V_LABEL_ORIGINAL = 15
+#     THIRD_V_LABEL = 3
+#     FOURTH_V_LABEL = 4
+#     FALX_ABOVE_LABEL = 1
+#     FALX_BELOW_LABEL = 5
+
+#     # Init output volume
+#     vol = np.zeros_like(atlas)
+
+#     # Assign base labels
+#     vol[np.isin(atlas, SP_LABELS)] = SP_LABEL
+#     vol[atlas == THIRD_V_LABEL_ORIGINAL] = THIRD_V_LABEL
+#     vol[atlas == FOURTH_V_LABEL_ORIGINAL] = FOURTH_V_LABEL
+
+#     # Determine slices covered by SP / 3rd vent / 4th vent
+#     z_slab = []
+#     for l in SP_LABELS:
+#         z = np.where(np.any(atlas == l, axis=(0, 1)))[0]
+#         if len(z) > 0:
+#             z_slab.append((z.min(), z.max()))
+
+#     if not z_slab:
+#         raise ValueError("No SP label occurrences found in segmentation.")
+
+#     z_min_SP = min(a for a, b in z_slab)
+#     z_max_SP = max(b for a, b in z_slab)
+
+#     z_4th = np.where(np.any(atlas == FOURTH_V_LABEL_ORIGINAL, axis=(0, 1)))[0]
+#     if len(z_4th) == 0:
+#         raise ValueError("No 4th ventricle label found.")
+
+#     z_min_4th = z_4th.min()
+
+#     # Assign falx-based superior vs inferior slabs
+#     vol[:, :, :z_min_4th] = FALX_BELOW_LABEL           # Inferior falx
+#     vol[:, :, z_max_SP + 1:] = FALX_ABOVE_LABEL        # Superior falx
+
+#     # Keep only brain
+#     vol = vol * brain_mask
+
+#     # Optional save
+#     if save_path is not None:
+#         slab_nii = nib.Nifti1Image(vol, atlas_nii.affine, atlas_nii.header)
+#         nib.save(slab_nii, save_path)
+
+#     return vol
+
+
+
+def get_max_level(zslabs, distances):
+    idx = np.unravel_index(np.argmax(distances), distances.shape)
+    _, _, z = idx
+    vals, counts = np.unique(zslabs[:, :, z][zslabs[:, :, z] != 0], return_counts=True)    
+    level = vals[np.argmax(counts)]
+    return level
+
+
+def get_level_of_midline_shift(metadata, distances_path, anat_seg_path):
+    distances = nib.load(distances_path).get_fdata()    
+    zslabs = get_levels_zslabs(anat_seg=anat_seg_path, save_path=distances_path.replace('.nii', '_slabs.nii'))
+    level_idx = get_max_level(zslabs=zslabs, distances=distances)
+
+    level_max_shift = SLAB_NAME[level_idx]
+
+    metadata['level_max_shift'] = level_max_shift
+
+    return metadata
+
+
+
+
+
+
+
+
+
 def interpolate_midline_rows(midline_path, t1_path, out_path, plane_axis=2, interp_axis=1):
     """
     Interpolates missing rows (all zeros) in a thin midline mask along the specified axis.
@@ -318,6 +466,8 @@ def midline_shift_3d(tmp_dir, tumor, ncr_label=1, ed_label=2, et_label=4, overwr
     deformed_midline_path = os.path.join(tmp_dir, "patient_midline.nii.gz")
     ideal_midline_path = os.path.join(tmp_dir, "ideal_midline.nii.gz")
     midline_distances_path = os.path.join(tmp_dir, "midline_distances.nii.gz")
+    anat_seg_path = os.path.join(tmp_dir, "MNI152_in_subject_space_synthseg.nii.gz")
+
     logger.info(f"** [2/4] Starting midline shift processing...")
 
     ideal_midline_from_deformed(
@@ -340,16 +490,19 @@ def midline_shift_3d(tmp_dir, tumor, ncr_label=1, ed_label=2, et_label=4, overwr
     else:
         metadata = None
 
-    summary = midline_distance_fill(
+    metadata = midline_distance_fill(
         ideal_midline_path=ideal_midline_path,
         deformed_midline_path=deformed_midline_path,
         midline_distances_path=midline_distances_path,
         metadata=metadata,
         overwrite=overwrite,
     )
+
+    metadata = get_level_of_midline_shift(metadata, distances_path=midline_distances_path, anat_seg_path=anat_seg_path)
+
     logger.info(f"* Finished processing midline shift! Saved results to {tmp_dir}")
 
-    return summary
+    return metadata
 
 
 # python3 midline_shift3d.py --transform "/mmfs1/gscratch/kurtlab/brats2023/data/MNI152_IN_SUBJECT_SPACE/transforms/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00134-000/BraTS-GLI-00134-000-t1n.nii.gz" --save_dir /mmfs1/gscratch/kurtlab/MSFT/metadata_analysis/midline/dev/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00134-000 --tumor /mmfs1/gscratch/kurtlab/brats2023/data/brats-gli/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00134-000/BraTS-GLI-00134-000-seg.nii.gz
