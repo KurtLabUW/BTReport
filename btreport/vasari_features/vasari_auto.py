@@ -1,4 +1,4 @@
-# This is the codebase for VASARI-auto
+# This is the codebase for VASARI-auto, modified by Juampablo Heras Rivera for BTReport
 # -------------------------------------------------------------------------
 # vasari-auto.py | a pipeline for automated VASARI characterisation of glioma.
 # Copyright 2024 James Ruffle, High-Dimensional Neurology,
@@ -56,7 +56,7 @@ def process_midline_stats(metadata):
 def get_vasari_features(
     file,
     file_ss=None,
-    atlases="/gscratch/kurtlab/MSFT/metadata_analysis/vasari/atlas_masks/",
+    atlases="atlas_masks/",
     merged=None,
     metadata=None,
     verbose=False,
@@ -263,6 +263,8 @@ def get_vasari_features(
     vols = vols.sort_values(by="prop", ascending=False).reset_index(drop=True)
 
     region_prop_list = [(row.ROI, row.prop) for _, row in vols.iterrows() if row.prop >= 0.1]  # >10%
+
+    raise ValueError(region_prop_list)
 
     if verbose:
         logger.debug(vols)

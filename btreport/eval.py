@@ -1,91 +1,73 @@
-import os, glob, shutil, json, argparse, re
+import os, glob, shutil, json, argparse, re, logging
+from .evaluation.utils import parse_radiology_report
+from .evaluation.eval_tbfact import TBFactEval
 from .utils.log import get_logger
 from RadEval import RadEval
+from .utils import load_json
 from pprint import pprint
 
-def load_json(path):
-    with open(path, 'r') as f:
-        data = json.load(f)
-    return data
+# from loguru import logger
+# logger.remove()
 
-
-TOP_LEVEL = [
-    "CLINICAL INDICATION",
-    "TECHNIQUE",
-    "CONTRAST",
-    "COMPARISON",
-    "FINDINGS",
-    "HEAD MRA",
-    "IMPRESSION"
-]
-
-SUBFINDINGS = [
-    "MASS EFFECT & VENTRICLES",
-    "BRAIN",
-    "ENHANCEMENT",
-    "VASCULAR",
-    "EXTRA-AXIAL",
-    "EXTRA-CRANIAL"
-]
-
-def parse_radiology_report(text):
-
-    text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)
-
-    header_regex = r"(?im)^(" + "|".join(TOP_LEVEL) + r")\s*:?\s*$"
-    matches = list(re.finditer(header_regex, text))
-
-    sections = {}
-    for i,m in enumerate(matches):
-        key = m.group(1).strip().upper()
-        start = m.end()
-        end   = matches[i+1].start() if i+1 < len(matches) else len(text)
-        sections[key] = text[start:end].strip()
-
-    if "FINDINGS" in sections:
-        block = sections["FINDINGS"]
-
-        sub_regex = r"(?im)^(" + "|".join(SUBFINDINGS) + r")\s*:?\s*"
-        sub = list(re.finditer(sub_regex, block))
-
-        for i,m in enumerate(sub):
-            key = m.group(1).strip().upper()
-            start = m.end()
-            end   = sub[i+1].start() if i+1 < len(sub) else len(block)
-            sections[key] = block[start:end].strip()
-
-        sections["FINDINGS"] = ""
-
-    return sections
-
-
-
-def eval_single_subject(args):
+def eval_single_subject(args, include_keys=['BRAIN', 'MASS EFFECT & VENTRICLES',]):
     metadata_json_pth=os.path.join(args.subject_folder, 'patient_metadata_btreport.json')
     metadata = load_json(metadata_json_pth)
+
+    # check that keys exist
+    assert args.real_report_key in metadata, f"Missing real report key '{args.real_report_key}' in {metadata_json_pth}"
+    assert args.synthetic_report_key in metadata,  f"Missing synthetic report key '{args.synthetic_report_key}' in {metadata_json_pth}"
+
+    # separate both real and generated reports into sections (e.g. FINDINGS, BRAIN, MASS EFFECT & VENTRICLES, etc.)
     real_reports = parse_radiology_report(metadata[args.real_report_key])
     synthetic_reports = parse_radiology_report(metadata[args.synthetic_report_key])
 
-    keys=['BRAIN', 'MASS EFFECT & VENTRICLES',]
-    refs = ["\n\n".join(f"{k}:\n{real_reports[k]}" for k in keys if k in real_reports)]
-    hyps = ["\n\n".join(f"{k}:\n{synthetic_reports[k]}" for k in keys if k in synthetic_reports)]
+    # select subsections from report, merge them into one text block
+    refs = ["\n\n".join(f"{k}:\n{real_reports[k]}" for k in include_keys if k in real_reports)]
+    hyps = ["\n\n".join(f"{k}:\n{synthetic_reports[k]}" for k in include_keys if k in synthetic_reports)]
 
-
+    # print(real_reports)
     print(refs)
-    print('--'*30)
+    print('-*-*'*30)
     print('-*-*'*30)
     print(hyps)
 
-    evaluator = RadEval(
-        do_rouge=True,
-        do_bertscore=True,
-        do_srr_bert=True,
-        do_ratescore=True,
-        do_details=args.do_details
-    )
-    
-    results = evaluator(refs=refs, hyps=hyps)
-    print(json.dumps(results, indent=2))
+    rouge_evaluator = RadEval(do_rouge=True, do_details=args.do_details)
+    bleu_evaluator = RadEval(do_bleu=True, do_details=args.do_details)
+    bertscore_evaluator = RadEval(do_bertscore=True, do_details=args.do_details)
+    srr_bert_evaluator = RadEval(do_radgraph=True, do_details=args.do_details)
+    ratescore_evaluator = RadEval(do_ratescore=True, do_details=args.do_details)
+    tbf_evaluator = TBFactEval(llm=args.llm, do_details=args.do_details)
+
+    if not args.do_details:
+        eval_functions = {
+        'bleu': lambda hyps, refs: bleu_evaluator(refs, hyps)['bleu'],
+        'rouge1': lambda hyps, refs: rouge_evaluator(refs, hyps)['rouge1'],
+        'rouge2': lambda hyps, refs: rouge_evaluator(refs, hyps)['rouge2'],
+        'rougeL': lambda hyps, refs: rouge_evaluator(refs, hyps)['rougeL'],
+        'bertscore': lambda hyps, refs: bertscore_evaluator(refs, hyps)['bertscore'],
+        'radgraph': lambda hyps, refs: srr_bert_evaluator(refs, hyps)['radgraph_partial'],
+        'ratescore': lambda hyps, refs: ratescore_evaluator(refs, hyps)['ratescore'],
+        'tbfact': lambda hyps, refs: tbf_evaluator(refs=refs, hyps=hyps),  
+        }
+    else:
+        eval_functions = {
+        'bleu': lambda hyps, refs: bleu_evaluator(refs, hyps),
+        'rouge1': lambda hyps, refs: rouge_evaluator(refs, hyps),
+        'rouge2': lambda hyps, refs: rouge_evaluator(refs, hyps),
+        'rougeL': lambda hyps, refs: rouge_evaluator(refs, hyps),
+        'bertscore': lambda hyps, refs: bertscore_evaluator(refs, hyps),
+        'radgraph': lambda hyps, refs: srr_bert_evaluator(refs, hyps),
+        'ratescore': lambda hyps, refs: ratescore_evaluator(refs, hyps),
+        'tbfact': lambda hyps, refs: tbf_evaluator(refs=refs, hyps=hyps),  
+        }
+
+    results = {k: fn(hyps, refs) for k, fn in eval_functions.items()}
+
+    save_path = os.path.join(args.subject_folder, "eval_results.json")
+    with open(save_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+    logger.info(f"Saved evaluation results to {save_path}")
 
     '''
     {
@@ -110,12 +92,9 @@ if __name__ == "__main__":
     parser.add_argument("--subject_folder", type=str, help="Path to the subject folder containing the MRI data.", required=True)
     parser.add_argument("--real_report_key", type=str, default='Clinical Report')
     parser.add_argument("--synthetic_report_key", type=str, default='llm report')
-    parser.add_argument("--devices", type=str, default='0', help="String with cuda device IDs for use by synthseg and SynthMorph. E.g. '0,1' or '0'.")
+    parser.add_argument("--devices", type=str, default='0,1,2,3', help="String with cuda device IDs for use by synthseg and SynthMorph. E.g. '0,1' or '0'.")
     parser.add_argument("--do_details", action="store_true")
-
-
-    # parser.add_argument("--et_label", type=int, default=4)
-    # parser.add_argument("--llm", type=str, default="gpt-oss:120b")
+    parser.add_argument("--llm", type=str, default="gpt-oss:120b", help="LLM to be used by TBFact evaluator.")
 
 
     args = parser.parse_args()
