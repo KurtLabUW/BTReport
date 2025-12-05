@@ -1,0 +1,1 @@
+from .vasari_auto_v2 import ExtractVASARI

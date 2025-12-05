@@ -11,4 +11,4 @@ apptainer exec --nv \
    -B /pscratch:/pscratch \
    -B /cvmfs:/cvmfs \
    $IMAGE \
-   ollama run deepseek-r1:70b
+   ollama run symptoma/medgemma3:27b

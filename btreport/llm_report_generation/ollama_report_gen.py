@@ -28,9 +28,8 @@ BRAIN:  Right parieto-occipital lobe intrinsically T1 bright mass measuring 5.4 
 
 3. 
  FINDINGS:
-MASS EFFECT & VENTRICLES: The below described right parieto-occipital enhancing lesion exerts significant mass effect on the posterior atrium of the right lateral ventricle. Approximately 1.1 cm of right-to-left midline shift with broad diffuse effacement of the right-sided cerebral sulci. The cisterns are normal.
-BRAIN:  Right parieto-occipital lobe intrinsically T1 bright mass measuring 5.4 x 4.1 x 3.5 cm (1103/57, 501/116), with peripheral rim enhancement which is nodular-like at the posterior medial margins. Diffusion restriction, with signal loss on ADC throughout the peripheral borders of the mass. Multiple punctate foci of SWI signal abnormalities compatible with hemosiderin deposition. Surrounding FLAIR abnormality likely from vasogenic edema within the right frontoparietal lobes with inferior extension into the superior right temporal lobe. Additionally the FLAIR signal abnormality crosses the posterior portion of the corpus callosum, including the body and splenium, and abuts the left posterior lateral ventricle.
-
+MASS EFFECT & VENTRICLES: Effacement of the anterior horns of the lateral ventricles. There is approximately 5 mm of rightward midline shift of the anterior brain.
+BRAIN:  There is a large enhancing lesion, be originating in the anterior paramedian left frontal lobe and crossing the corpus callosum. The lesion invades into the anterior aspect of the lateral ventricles and has multiple small enhancing satellite lesions in both frontal lobes. There is a large necrotic area, which facilitates diffusion, in the left frontal component which measures up to 2.5 cm.
 
 
 """
@@ -48,7 +47,13 @@ EXAMPLE FINDINGS:
 Now generate a similar FINDINGS section, but ONLY using the metadata provided below.
 
 Do NOT hallucinate any information that is not directly inferable.  
+Preserve all of the subsections in the example findings reports
+Choose the top 10 metadata entries, as true reports report around 7-10 facts.
+Prioritize abnormal or clinically significant findings.
 Only T1n, T2w, T2 Flair, and T1-Gd were obtained, so do not comment on features like diffusion.
+Remember to comment on midline shift in the style of the reports. Make sure to comment if there is a mass effect.
+Comment on the effacement of ventricles if present according to the metadata, and give details on the side and if the effacement is in the anterior/posterior horns.
+Comment on the dimension of the lesion(s) in 3D in cm.
 Do NOT mention measurements, structures, or features unless supported by the metadata.  
 Do NOT mention modalities or sequences not given.  
 The goal is to produce a realistic, readable FINDINGS section grounded purely in the structured fields.
@@ -62,12 +67,55 @@ Write the FINDINGS section now, using clinical radiology language.
 """
 
 
-def generate_llm_report(subject_id, metadata, model="gpt-oss:120b"):
-    prompt = REPORT_TEMPLATE.format(
-        example_findings=EXAMPLE_FINDINGS,
-        subject_id=subject_id,
-        metadata_json=json.dumps(metadata, indent=2),
-    )
+REPORT_TEMPLATE_IMAGE = """
+You are a radiologist generating a synthetic clinical MRI report.
+
+Below are example FINDINGS sections taken from real brain tumor reports:
+
+EXAMPLE FINDINGS:
+{example_findings}
+
+---
+
+Now generate a similar FINDINGS section, but ONLY using the metadata provided below and the T1c MRI image.
+
+Do NOT hallucinate any information that is not directly inferable.  
+Preserve all of the subsections in the example findings reports
+Choose the top 10 metadata entries, as true reports report around 7-10 facts.
+Prioritize abnormal or clinically significant findings.
+Only T1n, T2w, T2 Flair, and T1-Gd were obtained, so do not comment on features like diffusion.
+Remember to comment on midline shift in the style of the reports.
+Comment on the effacement of ventricles if present according to the metadata, and give details on the side and if the effacement is in the anterior/posterior horns.
+Do NOT mention measurements, structures, or features unless supported by the metadata.  
+Do NOT mention modalities or sequences not given.  
+The goal is to produce a realistic, readable FINDINGS section grounded purely in the structured fields.
+
+IMAGE:
+{image_path}
+METADATA (for subject {subject_id}):
+{metadata_json}
+
+---
+
+Write the FINDINGS section now, using clinical radiology language.
+"""
+
+
+def generate_llm_report(subject_id, metadata, image_path=None, model="gpt-oss:120b"):
+
+    if image_path is None:
+        prompt = REPORT_TEMPLATE.format(
+            example_findings=EXAMPLE_FINDINGS,
+            subject_id=subject_id,
+            metadata_json=json.dumps(metadata, indent=2),
+        )
+    else:
+        prompt = REPORT_TEMPLATE_IMAGE.format(
+            example_findings=EXAMPLE_FINDINGS,
+            image_path=image_path,
+            subject_id=subject_id,
+            metadata_json=json.dumps(metadata, indent=2),
+        )     
 
     response = ollama.chat(
         model=model,
@@ -77,81 +125,3 @@ def generate_llm_report(subject_id, metadata, model="gpt-oss:120b"):
     report = report.replace('\u2011', '-')
     return sanitize_text(report) 
 
-
-# TODO: add merge logic
-def main(args):
-    model_name = args.model_name
-    num_splits = args.num_splits
-    save_every = args.save_every
-    split_no = args.split_no
-
-    input_json = "brats23_metadata.json"
-    outdir = f"reports/{model_name}"
-    os.makedirs(outdir, exist_ok=True)
-    output_json = f"{outdir}/brats23_metadata-report-{model_name.replace(':','-')}-split{split_no}of{num_splits}.json"
-
-    # load all subjects
-    with open(input_json, "r") as f:
-        subjects = list(json.load(f).items())
-
-    # slice all subjects for this split
-    total = len(subjects)
-    per_split = total // num_splits + int(total % num_splits > 0)
-    start = (split_no - 1) * per_split
-    end = min(start + per_split, total)
-    subjects = subjects[start:end]
-
-    # resume from existing
-    if os.path.exists(output_json):
-        with open(output_json, "r") as f:
-            output = json.load(f)
-    else:
-        output = {}
-
-    processed = 0
-
-    # iterate through subjects in this split
-    for idx, (subject_id, metadata) in enumerate(tqdm(subjects, desc="Subjects"), start=1):
-        if subject_id in output:  # skip subjects already done
-            continue
-
-        print(f"Processing {idx} / {len(subjects)}: {subject_id}")
-        findings = generate_report(subject_id, metadata, model_name)
-        output[subject_id] = {"findings": findings, "metadata": metadata}
-        print(f"Finished {subject_id}")
-
-        processed += 1
-
-        # periodic save
-        if processed % save_every == 0:
-            tmp = output_json + ".tmp"
-            with open(tmp, "w") as f:
-                json.dump(output, f, indent=2)
-            os.replace(tmp, output_json)
-            print(f"Saved after {processed} new subjects")
-
-    # final save
-    tmp = output_json + ".tmp"
-    with open(tmp, "w") as f:
-        json.dump(output, f, indent=2)
-    os.replace(tmp, output_json)
-
-    print("Final save complete.")
-
-
-# model_name="gpt-oss:120b"
-# # model_name="deepseek-r1:32b"
-
-# python ollama_report_gen.py --num_splits 4 --split_no 3
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument("--model_name", type=str, default="gpt-oss:120b")
-    parser.add_argument("--save_every", type=int, default=15)
-    parser.add_argument("--num_splits", type=int, default=1)
-    parser.add_argument("--split_no", type=int, default=1)
-
-    args = parser.parse_args()
-
-    main(args)

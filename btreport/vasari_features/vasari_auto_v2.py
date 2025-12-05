@@ -17,9 +17,9 @@
 # -------------------------------------------------------------------------
 
 # --- Modifications by Juampablo Heras Rivera for BTReport----------------------------------------
-# This file has been modified from the original VASARI-auto implementation.
-# Changes include:
-#   - Refactored as ExtractVASARI class
+# This file has been modified from the original VASARI-auto implementation. If used, please remember to cite the original author.
+# Changes here include:
+#   - Refactored as ExtractVASARI class!
 #   - Improved midline crossing logic in the original subject space
 #   - Multifocal or Multicentric logic: used connected components to get the number of tumor bodies, then only kept mutliple lesions if the non-largest lesions are >1cm.  Lesion is multifocal when more than one of these lesions exists
 #   - Used the images image in their original space instead of the version registered MNI152 space to better estimate quantities like proportion necrotic, etc.. This was noted as an option in the original paper, but they used the MNI152 version.
@@ -48,6 +48,7 @@ from pprint import pprint
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
+from .vasari_translation_maps import MAP_STR_TO_MAP
 
 @attrs.define
 class NiftiImage:
@@ -62,19 +63,30 @@ class NiftiImage:
         if self.spacing is None:
             self.spacing = self.img.header.get_zooms()[:3]
 
+    def update(self):
+        self.img = nib.Nifti1Image(self.array, self.img.affine, self.img.header)
+
     @property
     def volume(self) -> float:
         """binarized mask volume returned in mL"""
         dx, dy, dz = self.spacing
         voxel_mm3 = dx * dy * dz
         return float(np.count_nonzero(self.array) * voxel_mm3 / 1000.0)
+    
+    def save(self, out_path=None):
+        """Save the NIfTI — auto-updates if needed."""
+        if out_path is None:
+            out_path = self.path
+        self.update()
+        nib.save(self.img, out_path)
+        return out_path
+
 
 @attrs.define
 class ExtractVASARI:
-    # tumorseg_mni: str
-    # tumorseg_ss: str | None = None
-    # merged: str | None = None
-    # metadata: dict | None = None
+
+    map_name: str = "vasari_concise" # options: 'vasari', 'vasari_sentence', 'vasari_reasoning', 'vasari_concise'
+
     verbose: bool = False
 
     atlases: str = "btreport/vasari_features/atlas_masks"
@@ -105,8 +117,9 @@ class ExtractVASARI:
     atlas_regions = [
     "brainstem", "midline", "frontal_lobe", "insula", "occipital",
     "parietal", "temporal", "thalamus", "corpus_callosum",
-    "ventricles", "internal_capsule", "cortex", "eloquent_grouped"]
+    "ventricles", "internal_capsule", "cortex", "eloquent_grouped",]
 
+    
     COL_NAMES = [
         "Tumor Location",
         "Side of Tumor Epicenter",
@@ -483,16 +496,44 @@ class ExtractVASARI:
 
         return lvol, rvol, asymmetrical_ventricles, enlarged_ventricles
 
+    def translate_vasari_report(self, df, map_name):
+        """Translate VASARI numeric codes in a DataFrame to human-readable strings and return as dict."""
+        def translate_row(row, map_name="vasari"):
+            mapping_dict = MAP_STR_TO_MAP[map_name]
+            out = row.to_dict()
+            for col, mapping in mapping_dict.items():
+                if col in out and pd.notna(out[col]):
+                    val = out[col]
+                    try:
+                        out[col] = mapping.get(int(val), val)
+                    except Exception:
+                        out[col] = val
+            return out
+        translated_dicts = df.apply(lambda row: translate_row(row, map_name), axis=1).to_list()
+        return translated_dicts[0]
 
 
-    def __call__(self, tumorseg_mni, tumorseg_ss, merged=None, metadata=None):
+    def extract_vasari_features(self, tumorseg_mni, tumorseg_ss, merged=None, metadata=None, mask_outside_brain=True):
         """Run full VASARI feature extraction"""
         start_time = time.time()
         atlas_regions = {k:NiftiImage(join(self.atlases, f'{k}.nii.gz')) for k in self.atlas_regions}
+
         segmentation = NiftiImage(tumorseg_mni)
+        if mask_outside_brain:
+            MNI152 = NiftiImage(join(self.atlases,  "MNI152_T1_1mm_brain.nii.gz"))
+            mni_mask = (MNI152.array != 0) & (segmentation.array > 0)
+            segmentation.array = segmentation.array * mni_mask
+            segmentation.save()
+
+        
         segmentation_ss = NiftiImage(tumorseg_ss)
         if merged:
             merged_anat_tumor = NiftiImage(merged)
+            if mask_outside_brain:
+                mask = (merged_anat_tumor.array != 0) & (segmentation_ss.array > 0)
+                segmentation_ss.array = segmentation_ss.array * mask
+                segmentation_ss.save()
+
 
         if self.verbose: logger.debug("Running voxel quantification per tissue class")
         total_lesion_burden = np.count_nonzero(segmentation_ss.array)
@@ -626,6 +667,28 @@ class ExtractVASARI:
 
         return result
 
+    def __call__(self, tumorseg_mni, tumorseg_ss, merged=None, metadata=None):
+        vasari_auto_report = self.extract_vasari_features(tumorseg_mni, tumorseg_ss, merged, metadata)
+        result = self.translate_vasari_report(vasari_auto_report, map_name = self.map_name)
+        keys_in_text_report = [
+            "Tumor Location",
+            "Side of Tumor Epicenter",
+            "Enhancement Quality",
+            "Multifocal or Multicentric",
+            "Ependymal (ventricular) Invasion",
+            "Deep WM invasion",
+            "CET Crosses midline",
+            "Asymmetrical Ventricles",
+            "Enlarged Ventricles",
+        ]
+        result = {key: val for key, val in result.items() if key in keys_in_text_report}
+        vasari_auto_report = self.translate_vasari_report(vasari_auto_report, map_name="vasari")
+        vasari_auto_report["Text Report"] = ", ".join(result.values()).capitalize() + "."
+        vasari_auto_report = dict(sorted(vasari_auto_report.items()))
+        logger.info('* Finished VASARI Feature extraction!')
+        return vasari_auto_report
+
+
 if __name__ == '__main__':
     tumorseg_mni='/pscratch/sd/j/jehr/MSFT/BTReport/data/example/45203724572086/tmp/tumor_seg_in_MNI152_space.nii.gz'
     tumorseg_ss = '/pscratch/sd/j/jehr/MSFT/BTReport/data/example/45203724572086/45203724572086-seg.nii.gz'
@@ -641,7 +704,7 @@ if __name__ == '__main__':
     extractor = ExtractVASARI(verbose=False)
     result = extractor(tumorseg_mni, tumorseg_ss, merged, metadata)
 
-    pprint(result.iloc[0].to_dict())
+    pprint(result) #.iloc[0].to_dict())
 
 
 

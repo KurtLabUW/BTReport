@@ -264,8 +264,6 @@ def get_vasari_features(
 
     region_prop_list = [(row.ROI, row.prop) for _, row in vols.iterrows() if row.prop >= 0.1]  # >10%
 
-    raise ValueError(region_prop_list)
-
     if verbose:
         logger.debug(vols)
         logger.debug("Regions with >=10% tumor involvement:")
