@@ -2,11 +2,11 @@
 
 
 # BTReport 
-[arXiv](https://arxiv.org/abs/2112.10752) | [BibTeX](#bibtex)
+[arXiv](#arxiv) | [BibTeX](#bibtex)
 
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-2112.1075-b31b1b.svg)](https://arxiv.org/abs/2112.1075)  -->
 
-[**BTReport: A Framework for Brain Tumor Radiology Report Generation with Clinically Relevant Features**](https://arxiv.org/abs/2508.10104)<br/>
+[**BTReport: A Framework for Brain Tumor Radiology Report Generation with Clinically Relevant Features**](#arxiv)<br/>
 
 
 <p align="center">
@@ -14,7 +14,7 @@
 </p>
 
 [Juampablo E. Heras Rivera](https://juampabloheras.github.io/)\*, Dickson T. Chen\*, Tianyi Ren, Daniel K. Low,  <br/>
-Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
+Jacob Ruzevick, Asma Ben Abacha, Alberto Santamaria-Pang, Mehmet Kurt<br/>
 \*equal contribution
 
 <table>
