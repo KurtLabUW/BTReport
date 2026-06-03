@@ -89,21 +89,25 @@ def main():
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--ncr_label", type=int, default=1)
     parser.add_argument("--ed_label", type=int, default=2)
-    parser.add_argument("--et_label", type=int, default=3)
+    parser.add_argument("--et_label", type=int, default=4)
     parser.add_argument("--llm", type=str, default="gpt-oss:120b")
     parser.add_argument("--run_name", type=str, default="v0")
 
     parser.add_argument("--eval", action="store_true")
     
-    parser.add_argument("--merged_json", type=str, default="merged_reports_btreport.json")
+    # parser.add_argument("--merged_json", type=str, default="merged_reports_btreport.json")
+
 
 
     args = parser.parse_args()
+
 
     if not (0 <= args.split_no < args.num_splits):
         raise ValueError("--split_no must satisfy 0 <= split_no < num_splits")
 
     root = os.path.realpath(args.root_folder)
+    args.merged_json = os.path.join(root, f"merged_reports_btreport_{args.llm}.json")
+
     llm = args.llm
     generate_script = "btreport.generate_report"
 

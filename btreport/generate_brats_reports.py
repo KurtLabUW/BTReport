@@ -1,6 +1,6 @@
 from .utils import register, plotting, anat_segmentation
 from .utils.log import get_logger
-from .llm_report_generation.ollama_report_gen import generate_llm_report
+from .llm_report_generation.factory import generate_llm_report, resolve_backend
 from .midline_shift.midline_shift3d import midline_shift_3d
 from .vasari_features import ExtractVASARI
 
@@ -110,7 +110,9 @@ def main(args: argparse.Namespace):
     vasari_summary = extractor(tumorseg_mni=tumorseg_in_MNI, tumorseg_ss=tumor_path, merged=merged_seg, metadata=metadata)
     metadata.update(vasari_summary)
 
-    logger.info(f"** [4/4] Starting report generation with LLM ({args.llm})...")
+    logger.info(
+        f"** [4/4] Starting report generation with LLM ({args.llm}, backend={resolve_backend(args.llm)})..."
+    )
     metadata_no_clinical = {k: v for k, v in metadata.items() if k != "Clinical Report"}
 
     keys_to_keep = [
@@ -200,7 +202,7 @@ if __name__ == "__main__":
         action="store_true",
         help="Indicator as to whther the model will use images for generation. Will look for tumor_maxslice.png in subject_folder",
     )
-    parser.add_argument("--llm", type=str, default="gpt-oss:120b")
+    parser.add_argument("--llm", type=str, default="gpt-5.4-mini")
 
     args = parser.parse_args()
 

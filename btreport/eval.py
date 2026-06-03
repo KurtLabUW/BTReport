@@ -1,6 +1,6 @@
 import os, glob, shutil, json, argparse, re, logging
 from .evaluation.utils import parse_radiology_report
-from .evaluation.eval_tbfact import TBFactEval
+from .evaluation.eval_tbfact_openai import TBFactEval
 from .utils.log import get_logger
 from RadEval import RadEval
 from .utils import load_json
@@ -128,10 +128,19 @@ if __name__ == "__main__":
     group.add_argument("--json", type=str, help="Path to .json file, expected structure {'subject0_id':{real_report_key:.., synthetic_report_key:...}, ...}")
 
     parser.add_argument("--real_report_key", type=str, default="Clinical Report")
-    parser.add_argument("--synthetic_report_key", type=str, default="BTReport Generated Report (gpt-oss:120b)")
+    parser.add_argument(
+        "--synthetic_report_key",
+        type=str,
+        default="BTReport Generated Report (gpt-5.4-mini, run_name=v0)",
+    )
     parser.add_argument("--devices", type=str, default="0,1,2,3", help="String with cuda device IDs for use by synthseg and SynthMorph. E.g. '0,1' or '0'.")
     parser.add_argument("--do_details", action="store_true")
-    parser.add_argument("--llm", type=str, default="gpt-oss:120b", help="LLM to be used by TBFact evaluator.")
+    parser.add_argument(
+        "--llm",
+        type=str,
+        default="gpt-5.4-mini",
+        help="OpenAI model used by the TBFact evaluator.",
+    )
 
     parser.add_argument(
         "--parse-real",
